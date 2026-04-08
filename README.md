@@ -2,7 +2,7 @@
 
 This repository contains all custom scripts used for the analyses and figures presented in:
 
-> Bouchard R. et al. (*in review*). [Indigenous knowledge reveals overlooked eco-evolutionary divergence in anadromous cisco]. *Nature Ecology & Evolution*.
+> Bouchard R. et al. (*in review*). Indigenous knowledge reveals overlooked eco-evolutionary divergence in anadromous cisco. *Nature Ecology & Evolution*.
 
 ---
 
@@ -113,7 +113,7 @@ Raw sequencing data (lcWGS and GTseq) are available on NCBI SRA under BioProject
 
 If you use these scripts, please cite:
 
-> Bouchard R. et al. (*in review*). [Manuscript title]. *Nature Ecology & Evolution*.
+> Bouchard R. et al. (*in review*). Indigenous knowledge reveals overlooked eco-evolutionary divergence in anadromous cisco. *Nature Ecology & Evolution*.
 
 ---
 
