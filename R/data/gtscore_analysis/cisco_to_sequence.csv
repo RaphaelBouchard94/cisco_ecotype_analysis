@@ -1,0 +1,1831 @@
+community,river.name,sample_number,species,date,latitude,longitude,fishes_id,stock_clean,species_clean
+Eastmain,EastmainRiver,M1,Cisco,22-07-2020,52.288,-78.565933,coarEASm_001-20,Mixed,Cisco
+Eastmain,EastmainRiver,M2,Cisco,22-07-2020,52.288,-78.565933,coarEASm_002-20,Mixed,Cisco
+Eastmain,EastmainRiver,M3,Cisco,22-07-2020,52.288,-78.565933,coarEASm_003-20,Mixed,Cisco
+Eastmain,EastmainRiver,M4,Cisco,22-07-2020,52.288,-78.565933,coarEASm_004-20,Mixed,Cisco
+Eastmain,EastmainRiver,M5,Cisco,22-07-2020,52.288,-78.565933,coarEASm_005-20,Mixed,Cisco
+Chisasibi,LaGrande,S1,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_001-20,Source,Cisco
+Chisasibi,LaGrande,S2,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_002-20,Source,Cisco
+Chisasibi,LaGrande,S3,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_003-20,Source,Cisco
+Chisasibi,LaGrande,S4,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_004-20,Source,Cisco
+Chisasibi,LaGrande,S5,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_005-20,Source,Cisco
+Chisasibi,LaGrande,S6,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_006-20,Source,Cisco
+Chisasibi,LaGrande,S7,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_007-20,Source,Cisco
+Chisasibi,LaGrande,S8,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_008-20,Source,Cisco
+Chisasibi,LaGrande,S9,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_009-20,Source,Cisco
+Chisasibi,LaGrande,S10,Cisco,17-10-2020,53.8295,-78.927617,coarLAGs_010-20,Source,Cisco
+Chisasibi,LaGrande,S11,Cisco,18-10-2020,53.8295,-78.927617,coarLAGs_011-20,Source,Cisco
+Chisasibi,LaGrande,S12,Cisco,18-10-2020,53.8295,-78.927617,coarLAGs_012-20,Source,Cisco
+Chisasibi,LaGrande,S13,Cisco,18-10-2020,53.8295,-78.927617,coarLAGs_013-20,Source,Cisco
+Chisasibi,LaGrande,S14,Cisco,18-10-2020,53.8295,-78.927617,coarLAGs_014-20,Source,Cisco
+Chisasibi,LaGrande,S15,Cisco,18-10-2020,53.8295,-78.927617,coarLAGs_015-20,Source,Cisco
+Chisasibi,LaGrande,S16,Cisco,19-10-2020,53.8295,-78.927617,coarLAGs_016-20,Source,Cisco
+Chisasibi,LaGrande,S17,Cisco,19-10-2020,53.8295,-78.927617,coarLAGs_017-20,Source,Cisco
+Chisasibi,LaGrande,S18,Cisco,19-10-2020,53.8295,-78.927617,coarLAGs_018-20,Source,Cisco
+Chisasibi,LaGrande,S19,Cisco,19-10-2020,53.8295,-78.927617,coarLAGs_019-20,Source,Cisco
+Chisasibi,LaGrande,S20,Cisco,19-10-2020,53.8295,-78.927617,coarLAGs_020-20,Source,Cisco
+Chisasibi,LaGrande,S31,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_031-20,Source,Cisco
+Chisasibi,LaGrande,S32,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_032-20,Source,Cisco
+Chisasibi,LaGrande,S33,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_033-20,Source,Cisco
+Chisasibi,LaGrande,S34,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_034-20,Source,Cisco
+Chisasibi,LaGrande,S35,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_035-20,Source,Cisco
+Chisasibi,LaGrande,S36,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_036-20,Source,Cisco
+Chisasibi,LaGrande,S37,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_037-20,Source,Cisco
+Chisasibi,LaGrande,S38,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_038-20,Source,Cisco
+Chisasibi,LaGrande,S39,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_039-20,Source,Cisco
+Chisasibi,LaGrande,S40,Cisco,20-10-2020,53.8294,-78.927671,coarLAGs_040-20,Source,Cisco
+Wemindji,AahchikukinMinistikush,M2,Cisco,09-07-2021,52.867417,-78.890285,coarWEMm_002-21,Mixed,Cisco
+Wemindji,AahchikukinMinistikush,M3,Cisco,09-07-2021,52.867417,-78.890285,coarWEMm_003-21,Mixed,Cisco
+Wemindji,FlipIsland,M43,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_043-21,Mixed,Cisco
+Wemindji,FlipIsland,M44,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_044-21,Mixed,Cisco
+Wemindji,FlipIsland,M45,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_045-21,Mixed,Cisco
+Wemindji,FlipIsland,M46,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_046-21,Mixed,Cisco
+Wemindji,FlipIsland,M47,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_047-21,Mixed,Cisco
+Wemindji,FlipIsland,M48,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_048-21,Mixed,Cisco
+Wemindji,FlipIsland,M49,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_049-21,Mixed,Cisco
+Wemindji,FlipIsland,M50,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_050-21,Mixed,Cisco
+Wemindji,FlipIsland,M51,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_051-21,Mixed,Cisco
+Wemindji,FlipIsland,M52,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_052-21,Mixed,Cisco
+Wemindji,FlipIsland,M53,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_053-21,Mixed,Cisco
+Wemindji,FlipIsland,M54,Cisco,26-08-2021,52.884665,-78.889472,coarWEMm_054-21,Mixed,Cisco
+Wemindji,FlipIsland,M55,Cisco,26-08-2021,52.893568,-78.891373,coarWEMm_055-21,Mixed,Cisco
+Wemindji,FlyIsland,M5,Cisco,26-08-2021,52.893568,-78.891373,coarWEMm_005-21,Mixed,Cisco
+Wemindji,FlyIsland,M6,Cisco,26-08-2021,52.893568,-78.891373,coarWEMm_006-21,Mixed,Cisco
+Wemindji,FlyIsland,M7,Cisco,26-08-2021,52.893568,-78.891373,coarWEMm_007-21,Mixed,Cisco
+Waskaganish,NottawayRiver,S1,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_1-20,Source,Cisco
+Waskaganish,NottawayRiver,S2,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_2-20,Source,Cisco
+Waskaganish,NottawayRiver,S3,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_3-20,Source,Cisco
+Waskaganish,NottawayRiver,S4,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_4-20,Source,Cisco
+Waskaganish,NottawayRiver,S5,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_5-20,Source,Cisco
+Waskaganish,NottawayRiver,S6,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_6-20,Source,Cisco
+Waskaganish,NottawayRiver,S7,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_7-20,Source,Cisco
+Waskaganish,NottawayRiver,S8,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_8-20,Source,Cisco
+Waskaganish,NottawayRiver,S9,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_9-20,Source,Cisco
+Waskaganish,NottawayRiver,S10,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_10-20,Source,Cisco
+Waskaganish,NottawayRiver,S11,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_11-20,Source,Cisco
+Waskaganish,NottawayRiver,S12,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_12-20,Source,Cisco
+Waskaganish,NottawayRiver,S13,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_13-20,Source,Cisco
+Waskaganish,NottawayRiver,S14,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_14-20,Source,Cisco
+Waskaganish,NottawayRiver,S15,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_15-20,Source,Cisco
+Waskaganish,NottawayRiver,S16,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_16-20,Source,Cisco
+Waskaganish,NottawayRiver,S17,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_17-20,Source,Cisco
+Waskaganish,NottawayRiver,S18,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_18-20,Source,Cisco
+Waskaganish,NottawayRiver,S19,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_19-20,Source,Cisco
+Waskaganish,NottawayRiver,S20,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_20-20,Source,Cisco
+Waskaganish,NottawayRiver,S21,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_21-20,Source,Cisco
+Waskaganish,NottawayRiver,S22,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_22-20,Source,Cisco
+Waskaganish,NottawayRiver,S23,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_23-20,Source,Cisco
+Waskaganish,NottawayRiver,S24,Cisco,02-09-2020,51.1687,-78.894282,coarNOTs_24-20,Source,Cisco
+Waskaganish,NottawayRiver,S25,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_025-20,Source,Cisco
+Waskaganish,NottawayRiver,S26,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_026-20,Source,Cisco
+Waskaganish,NottawayRiver,S27,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_027-20,Source,Cisco
+Waskaganish,NottawayRiver,S28,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_028-20,Source,Cisco
+Waskaganish,NottawayRiver,S29,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_029-20,Source,Cisco
+Waskaganish,NottawayRiver,S30,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_030-20,Source,Cisco
+Waskaganish,NottawayRiver,S31,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_031-20,Source,Cisco
+Waskaganish,NottawayRiver,S32,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_032-20,Source,Cisco
+Waskaganish,NottawayRiver,S33,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_033-20,Source,Cisco
+Waskaganish,NottawayRiver,S34,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_034-20,Source,Cisco
+Waskaganish,NottawayRiver,S35,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_035-20,Source,Cisco
+Waskaganish,NottawayRiver,S36,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_036-20,Source,Cisco
+Waskaganish,NottawayRiver,S37,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_037-20,Source,Cisco
+Waskaganish,NottawayRiver,S38,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_038-20,Source,Cisco
+Waskaganish,NottawayRiver,S39,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_039-20,Source,Cisco
+Waskaganish,NottawayRiver,S40,Cisco,03-09-2020,51.1687,-78.893078,coarNOTs_040-20,Source,Cisco
+Wemindji,FlyIsland,M8,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_008-21,Mixed,Cisco
+Wemindji,FlyIsland,M9,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_009-21,Mixed,Cisco
+Wemindji,KwaatipihunMinishtikush,M4,Cisco,10-07-2021,52.892821,-78.888554,coarWEMm_004-21,Mixed,Cisco
+Wemindji,LongPoint,M10,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_010-21,Mixed,Cisco
+Wemindji,LongPoint,M11,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_011-21,Mixed,Cisco
+Wemindji,LongPoint,M12,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_012-21,Mixed,Cisco
+Wemindji,LongPoint,M13,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_013-21,Mixed,Cisco
+Wemindji,LongPoint,M14,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_014-21,Mixed,Cisco
+Wemindji,LongPoint,M15,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_015-21,Mixed,Cisco
+Wemindji,LongPoint,M16,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_016-21,Mixed,Cisco
+Wemindji,LongPoint,M17,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_017-21,Mixed,Cisco
+Wemindji,LongPoint,M18,Cisco,24-08-2021,52.893568,-78.891373,coarWEMm_018-21,Mixed,Cisco
+Wemindji,LongPoint,M19,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_019-21,Mixed,Cisco
+Wemindji,LongPoint,M20,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_020-21,Mixed,Cisco
+Wemindji,LongPoint,M21,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_021-21,Mixed,Cisco
+Wemindji,LongPoint,M22,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_022-21,Mixed,Cisco
+Wemindji,LongPoint,M23,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_023-21,Mixed,Cisco
+Wemindji,LongPoint,M24,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_024-21,Mixed,Cisco
+Wemindji,LongPoint,M25,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_025-21,Mixed,Cisco
+Wemindji,LongPoint,M26,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_026-21,Mixed,Cisco
+Wemindji,LongPoint,M27,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_027-21,Mixed,Cisco
+Wemindji,LongPoint,M28,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_028-21,Mixed,Cisco
+Wemindji,LongPoint,M29,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_029-21,Mixed,Cisco
+Wemindji,LongPoint,M30,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_030-21,Mixed,Cisco
+Wemindji,LongPoint,M31,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_031-21,Mixed,Cisco
+Wemindji,LongPoint,M32,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_032-21,Mixed,Cisco
+Wemindji,LongPoint,M33,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_033-21,Mixed,Cisco
+Wemindji,LongPoint,M34,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_034-21,Mixed,Cisco
+Wemindji,LongPoint,M35,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_035-21,Mixed,Cisco
+Wemindji,LongPoint,M36,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_036-21,Mixed,Cisco
+Wemindji,LongPoint,M37,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_037-21,Mixed,Cisco
+Wemindji,LongPoint,M38,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_038-21,Mixed,Cisco
+Wemindji,LongPoint,M39,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_039-21,Mixed,Cisco
+Wemindji,LongPoint,M40,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_040-21,Mixed,Cisco
+Wemindji,LongPoint,M41,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_041-21,Mixed,Cisco
+Wemindji,LongPoint,M42,Cisco,26-08-2021,52.884665,-78.891373,coarWEMm_042-21,Mixed,Cisco
+Wemindji,LongPoint,M82,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_082-NA,Mixed,Cisco
+Wemindji,LongPoint,M83,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_083-NA,Mixed,Cisco
+Wemindji,LongPoint,M84,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_084-NA,Mixed,Cisco
+Wemindji,LongPoint,M85,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_085-NA,Mixed,Cisco
+Waskaganish,RupertRiver,S1,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_001-20,Source,Cisco
+Waskaganish,RupertRiver,S2,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_002-20,Source,Cisco
+Waskaganish,RupertRiver,S3,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_003-20,Source,Cisco
+Waskaganish,RupertRiver,S4,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_004-20,Source,Cisco
+Waskaganish,RupertRiver,S5,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_005-20,Source,Cisco
+Waskaganish,RupertRiver,S6,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_006-20,Source,Cisco
+Waskaganish,RupertRiver,S7,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_007-20,Source,Cisco
+Waskaganish,RupertRiver,S8,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_008-20,Source,Cisco
+Waskaganish,RupertRiver,S9,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_009-20,Source,Cisco
+Waskaganish,RupertRiver,S10,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_010-20,Source,Cisco
+Waskaganish,RupertRiver,S11,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_011-20,Source,Cisco
+Waskaganish,RupertRiver,S12,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_012-20,Source,Cisco
+Waskaganish,RupertRiver,S13,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_013-20,Source,Cisco
+Waskaganish,RupertRiver,S14,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_014-20,Source,Cisco
+Waskaganish,RupertRiver,S15,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_015-20,Source,Cisco
+Waskaganish,RupertRiver,S16,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_016-20,Source,Cisco
+Waskaganish,RupertRiver,S17,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_017-20,Source,Cisco
+Waskaganish,RupertRiver,S18,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_018-20,Source,Cisco
+Waskaganish,RupertRiver,S19,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_019-20,Source,Cisco
+Waskaganish,RupertRiver,S20,Cisco,08-09-2020,51.3806,-78.491475,coarRUPs_020-20,Source,Cisco
+Waskaganish,RupertRiver,S21,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_021-20,Source,Cisco
+Waskaganish,RupertRiver,S22,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_022-20,Source,Cisco
+Waskaganish,RupertRiver,S23,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_023-20,Source,Cisco
+Waskaganish,RupertRiver,S24,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_024-20,Source,Cisco
+Waskaganish,RupertRiver,S25,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_025-20,Source,Cisco
+Waskaganish,RupertRiver,S26,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_026-20,Source,Cisco
+Waskaganish,RupertRiver,S27,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_027-20,Source,Cisco
+Waskaganish,RupertRiver,S28,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_028-20,Source,Cisco
+Waskaganish,RupertRiver,S29,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_029-20,Source,Cisco
+Waskaganish,RupertRiver,S30,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_030-20,Source,Cisco
+Waskaganish,RupertRiver,S31,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_031-20,Source,Cisco
+Waskaganish,RupertRiver,S32,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_032-20,Source,Cisco
+Waskaganish,RupertRiver,S33,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_033-20,Source,Cisco
+Waskaganish,RupertRiver,S34,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_034-20,Source,Cisco
+Waskaganish,RupertRiver,S35,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_035-20,Source,Cisco
+Waskaganish,RupertRiver,S36,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_036-20,Source,Cisco
+Waskaganish,RupertRiver,S37,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_037-20,Source,Cisco
+Waskaganish,RupertRiver,S38,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_038-20,Source,Cisco
+Waskaganish,RupertRiver,S39,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_039-20,Source,Cisco
+Waskaganish,RupertRiver,S40,Cisco,09-09-2020,51.4166,-78.523536,coarRUPs_040-20,Source,Cisco
+Waskaganish,RupertRiver,S41,Cisco,13-10-2020,51.3806,-78.491475,coarRUPs_041-20,Source,Cisco
+Waskaganish,RupertRiver,S42,Cisco,13-10-2020,51.3806,-78.491475,coarRUPs_042-20,Source,Cisco
+Waskaganish,RupertRiver,S43,Cisco,13-10-2020,51.3806,-78.491475,coarRUPs_043-20,Source,Cisco
+Waskaganish,RupertRiver,S44,Cisco,13-10-2020,51.3806,-78.491475,coarRUPs_044-20,Source,Cisco
+Waskaganish,RupertRiver,S45,Cisco,13-10-2020,51.3806,-78.491475,coarRUPs_045-20,Source,Cisco
+Waskaganish,RupertRiver,S46,Cisco,13-10-2020,51.3806,-78.491475,coarRUPs_046-20,Source,Cisco
+Waskaganish,RupertRiver,S47,Cisco,13-10-2020,51.3806,-78.491475,coarRUPs_047-20,Source,Cisco
+Waskaganish,RupertRiver,S48,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_048-20,Source,Cisco
+Waskaganish,RupertRiver,S49,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_049-20,Source,Cisco
+Waskaganish,RupertRiver,S50,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_050-20,Source,Cisco
+Waskaganish,RupertRiver,S51,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_051-20,Source,Cisco
+Waskaganish,RupertRiver,S52,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_052-20,Source,Cisco
+Waskaganish,RupertRiver,S53,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_053-20,Source,Cisco
+Waskaganish,RupertRiver,S54,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_054-20,Source,Cisco
+Waskaganish,RupertRiver,S55,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_055-20,Source,Cisco
+Waskaganish,RupertRiver,S56,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_056-20,Source,Cisco
+Waskaganish,RupertRiver,S57,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_057-20,Source,Cisco
+Waskaganish,RupertRiver,S58,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_058-20,Source,Cisco
+Waskaganish,RupertRiver,S59,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_059-20,Source,Cisco
+Waskaganish,RupertRiver,S60,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_060-20,Source,Cisco
+Waskaganish,RupertRiver,S61,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_061-20,Source,Cisco
+Waskaganish,RupertRiver,S62,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_062-20,Source,Cisco
+Waskaganish,RupertRiver,S63,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_063-20,Source,Cisco
+Waskaganish,RupertRiver,S64,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_064-20,Source,Cisco
+Waskaganish,RupertRiver,S65,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_065-20,Source,Cisco
+Waskaganish,RupertRiver,S66,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_066-20,Source,Cisco
+Waskaganish,RupertRiver,S67,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_067-20,Source,Cisco
+Waskaganish,RupertRiver,S68,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_068-20,Source,Cisco
+Waskaganish,RupertRiver,S69,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_069-20,Source,Cisco
+Waskaganish,RupertRiver,S70,Cisco,14-10-2020,51.4166,-78.523,coarRUPs_070-20,Source,Cisco
+Waskaganish,RupertRiver,S71,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_071-20,Source,Cisco
+Waskaganish,RupertRiver,S72,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_072-20,Source,Cisco
+Waskaganish,RupertRiver,S73,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_073-20,Source,Cisco
+Waskaganish,RupertRiver,S74,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_074-20,Source,Cisco
+Waskaganish,RupertRiver,S75,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_075-20,Source,Cisco
+Waskaganish,RupertRiver,S76,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_076-20,Source,Cisco
+Waskaganish,RupertRiver,S77,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_077-20,Source,Cisco
+Waskaganish,RupertRiver,S78,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_078-20,Source,Cisco
+Waskaganish,RupertRiver,S79,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_079-20,Source,Cisco
+Waskaganish,RupertRiver,S80,Cisco,15-10-2020,51.417,-78.5239,coarRUPs_080-20,Source,Cisco
+Wemindji,LongPoint,M86,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_086-NA,Mixed,Cisco
+Wemindji,LongPoint,M87,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_087-NA,Mixed,Cisco
+Wemindji,LongPoint,M88,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_088-NA,Mixed,Cisco
+Wemindji,LongPoint,M89,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_089-NA,Mixed,Cisco
+Wemindji,LongPoint,M90,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_090-NA,Mixed,Cisco
+Wemindji,LongPoint,M91,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_091-NA,Mixed,Cisco
+Wemindji,LongPoint,M92,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_092-NA,Mixed,Cisco
+Wemindji,LongPoint,M93,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_093-NA,Mixed,Cisco
+Wemindji,LongPoint,M94,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_094-NA,Mixed,Cisco
+Wemindji,LongPoint,M95,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_095-NA,Mixed,Cisco
+Wemindji,LongPoint,M96,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_096-NA,Mixed,Cisco
+Wemindji,LongPoint,M97,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_097-NA,Mixed,Cisco
+Wemindji,LongPoint,M98,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_098-NA,Mixed,Cisco
+Wemindji,LongPoint,M99,Cisco,21-09-2021,52.883406,-78.89101,coarWEMm_099-NA,Mixed,Cisco
+Wemindji,MonkeyIsland,M1,Cisco,09-07-2021,52.818925,-78.90725,coarWEMm_001-21,Mixed,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S23,Cisco,18-02-2021,52.9261,-78.701491,coarSABs_023-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S24,Cisco,18-02-2021,52.9261,-78.701491,coarSABs_024-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S25,Cisco,18-02-2021,52.9261,-78.701491,coarSABs_025-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S26,Cisco,21-02-2021,52.9261,-78.701491,coarSABs_026-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S27,Cisco,22-02-2021,52.9261,-78.701491,coarSABs_027-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S28,Cisco,22-02-2021,52.9261,-78.701491,coarSABs_028-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S29,Cisco,22-02-2021,52.9261,-78.701491,coarSABs_029-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S30,Cisco,25-02-2021,52.9261,-78.701491,coarSABs_030-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S31,Cisco,25-02-2021,52.9261,-78.701491,coarSABs_031-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S32,Cisco,25-02-2021,52.9261,-78.701491,coarSABs_032-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S33,Cisco,25-02-2021,52.9261,-78.701491,coarSABs_033-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S34,Cisco,26-02-2021,52.9261,-78.701491,coarSABs_034-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S35,Cisco,26-02-2021,52.9261,-78.701491,coarSABs_035-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S36,Cisco,26-02-2021,52.9261,-78.701491,coarSABs_036-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S37,Cisco,04-03-2021,52.9261,-78.701491,coarSABs_037-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S38,Cisco,04-03-2021,52.9261,-78.701491,coarSABs_038-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S39,Cisco,04-03-2021,52.9261,-78.701491,coarSABs_039-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S40,Cisco,04-03-2021,52.9261,-78.701491,coarSABs_040-21,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S1,Cisco,14-10-2020,52.833,-78.76607,coarSABs_001-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S2,Cisco,14-10-2020,52.833,-78.76607,coarSABs_002-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S3,Cisco,14-10-2020,52.833,-78.76607,coarSABs_003-20,Source,Cisco
+Waskaganish,UpichunArea,M4,Cisco,22-07-2020,51.9558,-78.872863,coarWASm_004-20,Mixed,Cisco
+Waskaganish,UpichunArea,M5,Cisco,22-07-2020,51.9558,-78.872863,coarWASm_005-20,Mixed,Cisco
+Waskaganish,UpichunArea,M6,Cisco,22-07-2020,51.9558,-78.872863,coarWASm_006-20,Mixed,Cisco
+Waskaganish,UpichunArea,M7,Cisco,22-07-2020,51.9558,-78.872863,coarWASm_007-20,Mixed,Cisco
+Waskaganish,UpichunArea,M8,Cisco,22-07-2020,51.9558,-78.872863,coarWASm_008-20,Mixed,Cisco
+Waskaganish,UpichunArea,M9,Cisco,22-07-2020,51.9558,-78.872863,coarWASm_009-20,Mixed,Cisco
+Waskaganish,UpichunArea,M10,Cisco,22-07-2020,51.9558,-78.872863,coarWASm_010-20,Mixed,Cisco
+Waskaganish,UpichunArea,M11,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_011-20,Mixed,Cisco
+Waskaganish,UpichunArea,M12,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_012-20,Mixed,Cisco
+Waskaganish,UpichunArea,M13,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_013-20,Mixed,Cisco
+Waskaganish,UpichunArea,M14,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_014-20,Mixed,Cisco
+Waskaganish,UpichunArea,M15,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_015-20,Mixed,Cisco
+Waskaganish,UpichunArea,M16,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_016-20,Mixed,Cisco
+Waskaganish,UpichunArea,M17,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_017-20,Mixed,Cisco
+Waskaganish,UpichunArea,M18,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_018-20,Mixed,Cisco
+Waskaganish,UpichunArea,M19,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_019-20,Mixed,Cisco
+Waskaganish,UpichunArea,M20,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_020-20,Mixed,Cisco
+Waskaganish,UpichunArea,M21,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_021-20,Mixed,Cisco
+Waskaganish,UpichunArea,M22,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_022-20,Mixed,Cisco
+Waskaganish,UpichunArea,M23,Cisco,22-07-2020,51.9505,-78.830081,coarWASm_023-20,Mixed,Cisco
+Waskaganish,Upichun/SisichisinikuArea,M1,Cisco,17-07-2020,51.9505,-78.830081,coarWASm_001-20,Mixed,Cisco
+Waskaganish,Upichun/SisichisinikuArea,M2,Cisco,17-07-2020,51.9505,-78.830081,coarWASm_002-20,Mixed,Cisco
+Waskaganish,Upichun/SisichisinikuArea,M3,Cisco,17-07-2020,51.9505,-78.830081,coarWASm_003-20,Mixed,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S4,Cisco,14-10-2020,52.833,-78.76607,coarSABs_004-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S5,Cisco,14-10-2020,52.833,-78.76607,coarSABs_005-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S6,Cisco,14-10-2020,52.833,-78.76607,coarSABs_006-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S7,Cisco,14-10-2020,52.833,-78.76607,coarSABs_007-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S8,Cisco,14-10-2020,52.833,-78.76607,coarSABs_008-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S9,Cisco,14-10-2020,52.833,-78.76607,coarSABs_009-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S10,Cisco,14-10-2020,52.833,-78.76607,coarSABs_010-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S11,Cisco,14-10-2020,52.833,-78.76607,coarSABs_011-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S12,Cisco,14-10-2020,52.833,-78.76607,coarSABs_012-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S13,Cisco,14-10-2020,52.833,-78.76607,coarSABs_013-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S14,Cisco,14-10-2020,52.833,-78.76607,coarSABs_014-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S15,Cisco,14-10-2020,52.833,-78.76607,coarSABs_015-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S16,Cisco,14-10-2020,52.833,-78.76607,coarSABs_016-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S17,Cisco,17-10-2020,52.833,-78.76607,coarSABs_017-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S18,Cisco,17-10-2020,52.833,-78.76607,coarSABs_018-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S19,Cisco,17-10-2020,52.833,-78.76607,coarSABs_019-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S20,Cisco,17-10-2020,52.833,-78.76607,coarSABs_020-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S21,Cisco,17-10-2020,52.833,-78.76607,coarSABs_021-20,Source,Cisco
+Wemindji,SabacunicaRiver/MoarBay,S22,Cisco,17-10-2020,52.833,-78.76607,coarSABs_022-20,Source,Cisco
+Wemindji,WhitemanPoint,M56,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_056-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M57,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_057-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M58,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_058-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M59,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_059-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M60,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_060-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M61,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_061-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M62,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_062-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M63,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_063-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M64,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_064-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M65,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_065-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M66,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_066-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M67,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_067-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M68,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_068-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M69,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_069-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M70,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_070-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M71,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_071-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M72,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_072-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M73,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_073-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M74,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_074-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M75,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_075-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M76,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_076-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M77,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_077-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M78,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_078-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M79,Cisco,06-09-2021,52.883406,-78.89101,coarWEMm_079-21,Mixed,Cisco
+Wemindji,WhitemanPoint,M80,Cisco,06-09-2021,52.875473,-78.89101,coarWEMm_080-NA,Mixed,Cisco
+Wemindji,WhitemanPoint,M81,Cisco,06-09-2021,52.875473,-78.89101,coarWEMm_081-NA,Mixed,Cisco
+Puvirnituq,,coarPUVx_18-20,Cisco,2020,60.02739,-78.889472,coarPUVx_18-20,NA,Cisco
+Puvirnituq,,coarPUVx_19-20,Cisco,2020,60.02739,-78.889472,coarPUVx_19-20,NA,Cisco
+Puvirnituq,,coarPUVx_20-20,Cisco,2020,60.02739,-78.889472,coarPUVx_20-20,NA,Cisco
+Puvirnituq,,coarPUVx_21-20,Cisco,2020,60.02739,-78.889472,coarPUVx_21-20,NA,Cisco
+Puvirnituq,,coarPUVx_22-20,Cisco,2020,60.02739,-78.889472,coarPUVx_22-20,NA,Cisco
+Puvirnituq,,coarPUVx_23-20,Cisco,2020,60.02739,-78.889472,coarPUVx_23-20,NA,Cisco
+Puvirnituq,,coarPUVx_24-20,Cisco,2020,60.02739,-78.889472,coarPUVx_24-20,NA,Cisco
+Puvirnituq,,coarPUVx_25-20,Cisco,2020,60.02739,-78.889472,coarPUVx_25-20,NA,Cisco
+Puvirnituq,,coarPUVx_01-20,Cisco,2020,60.02739,-77.283208,coarPUVx_01-20,NA,Cisco
+Puvirnituq,,coarPUVx_02-20,Cisco,2020,60.02739,-77.283208,coarPUVx_02-20,NA,Cisco
+Puvirnituq,,coarPUVx_03-20,Cisco,2020,60.02739,-77.283208,coarPUVx_03-20,NA,Cisco
+Puvirnituq,,coarPUVx_04-20,Cisco,2020,60.02739,-77.283208,coarPUVx_04-20,NA,Cisco
+Puvirnituq,,coarPUVx_05-20,Cisco,2020,60.02739,-77.283208,coarPUVx_05-20,NA,Cisco
+Puvirnituq,,coarPUVx_06-20,Cisco,2020,60.02739,-77.283208,coarPUVx_06-20,NA,Cisco
+Puvirnituq,,coarPUVx_07-20,Cisco,2020,60.02739,-77.283208,coarPUVx_07-20,NA,Cisco
+Puvirnituq,,coarPUVx_08-20,Cisco,2020,60.02739,-77.283208,coarPUVx_08-20,NA,Cisco
+Puvirnituq,,coarPUVx_09-20,Cisco,2020,60.02739,-77.283208,coarPUVx_09-20,NA,Cisco
+Puvirnituq,,coarPUVx_10-20,Cisco,2020,60.02739,-77.283208,coarPUVx_10-20,NA,Cisco
+Puvirnituq,,coarPUVx_11-20,Cisco,2020,60.02739,-77.283208,coarPUVx_11-20,NA,Cisco
+Puvirnituq,,coarPUVx_12-20,Cisco,2020,60.02739,-77.283208,coarPUVx_12-20,NA,Cisco
+Puvirnituq,,coarPUVx_13-20,Cisco,2020,60.02739,-77.283208,coarPUVx_13-20,NA,Cisco
+Puvirnituq,,coarPUVx_14-20,Cisco,2020,60.02739,-77.283208,coarPUVx_14-20,NA,Cisco
+Puvirnituq,,coarPUVx_15-20,Cisco,2020,60.02739,-77.283208,coarPUVx_15-20,NA,Cisco
+Puvirnituq,,coarPUVx_16-20,Cisco,2020,60.02739,-77.283208,coarPUVx_16-20,NA,Cisco
+Puvirnituq,,coarPUVx_17-20,Cisco,2020,60.02739,-77.283208,coarPUVx_17-20,NA,Cisco
+Eastmain,JamesBay,188,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_188-21,Mixed,Cisco
+Eastmain,JamesBay,190,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_190-21,Mixed,Cisco
+Eastmain,JamesBay,191,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_191-21,Mixed,Cisco
+Eastmain,JamesBay,192,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_192-21,Mixed,Cisco
+Eastmain,JamesBay,193,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_193-21,Mixed,Cisco
+Eastmain,JamesBay,194,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_194-21,Mixed,Cisco
+Eastmain,JamesBay,195,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_195-21,Mixed,Cisco
+Eastmain,JamesBay,196,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_196-21,Mixed,Cisco
+Eastmain,JamesBay,197,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_197-21,Mixed,Cisco
+Eastmain,JamesBay,198,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_198-21,Mixed,Cisco
+Eastmain,JamesBay,199,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_199-21,Mixed,Cisco
+Eastmain,JamesBay,200,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_200-21,Mixed,Cisco
+Eastmain,JamesBay,201,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_201-21,Mixed,Cisco
+Eastmain,JamesBay,202,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_202-21,Mixed,Cisco
+Eastmain,JamesBay,203,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_203-21,Mixed,Cisco
+Eastmain,JamesBay,204,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_204-21,Mixed,Cisco
+Eastmain,JamesBay,205,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_205-21,Mixed,Cisco
+Eastmain,JamesBay,206,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_206-21,Mixed,Cisco
+Eastmain,JamesBay,207,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_207-21,Mixed,Cisco
+Eastmain,JamesBay,208,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_208-21,Mixed,Cisco
+Eastmain,JamesBay,209,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_209-21,Mixed,Cisco
+Eastmain,JamesBay,210,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_210-21,Mixed,Cisco
+Eastmain,JamesBay,211,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_211-21,Mixed,Cisco
+Eastmain,JamesBay,212,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_212-21,Mixed,Cisco
+Eastmain,JamesBay,213,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_213-21,Mixed,Cisco
+Eastmain,JamesBay,214,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_214-21,Mixed,Cisco
+Eastmain,JamesBay,215,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_215-21,Mixed,Cisco
+Eastmain,JamesBay,216,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_216-21,Mixed,Cisco
+Eastmain,JamesBay,217,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_217-21,Mixed,Cisco
+Eastmain,JamesBay,218,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_218-21,Mixed,Cisco
+Eastmain,JamesBay,219,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_219-21,Mixed,Cisco
+Eastmain,JamesBay,220,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_220-21,Mixed,Cisco
+Eastmain,JamesBay,221,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_221-21,Mixed,Cisco
+Eastmain,JamesBay,222,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_222-21,Mixed,Cisco
+Eastmain,JamesBay,223,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_223-21,Mixed,Cisco
+Eastmain,JamesBay,224,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_224-21,Mixed,Cisco
+Eastmain,JamesBay,225,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_225-21,Mixed,Cisco
+Eastmain,JamesBay,226,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_226-21,Mixed,Cisco
+Eastmain,JamesBay,227,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_227-21,Mixed,Cisco
+Eastmain,JamesBay,228,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_228-21,Mixed,Cisco
+Eastmain,JamesBay,229,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_229-21,Mixed,Cisco
+Eastmain,JamesBay,230,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_230-21,Mixed,Cisco
+Eastmain,JamesBay,231,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_231-21,Mixed,Cisco
+Eastmain,JamesBay,232,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_232-21,Mixed,Cisco
+Eastmain,JamesBay,233,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_233-21,Mixed,Cisco
+Eastmain,JamesBay,234,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_234-21,Mixed,Cisco
+Eastmain,JamesBay,235,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_235-21,Mixed,Cisco
+Eastmain,JamesBay,236,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_236-21,Mixed,Cisco
+Eastmain,JamesBay,237,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_237-21,Mixed,Cisco
+Eastmain,JamesBay,238,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_238-21,Mixed,Cisco
+Eastmain,JamesBay,239,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_239-21,Mixed,Cisco
+Eastmain,JamesBay,240,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_240-21,Mixed,Cisco
+Eastmain,JamesBay,241,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_241-21,Mixed,Cisco
+Eastmain,JamesBay,242,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_242-21,Mixed,Cisco
+Eastmain,JamesBay,243,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_243-21,Mixed,Cisco
+Eastmain,JamesBay,244,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_244-21,Mixed,Cisco
+Eastmain,JamesBay,245,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_245-21,Mixed,Cisco
+Eastmain,JamesBay,246,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_246-21,Mixed,Cisco
+Eastmain,JamesBay,247,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_247-21,Mixed,Cisco
+Eastmain,JamesBay,248,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_248-21,Mixed,Cisco
+Waskaganish,Upichun,2968,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2968-21,Mixed,Cisco
+Waskaganish,Upichun,2969,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2969-21,Mixed,Cisco
+Waskaganish,Upichun,2970,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2970-21,Mixed,Cisco
+Waskaganish,Upichun,2971,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2971-21,Mixed,Cisco
+Waskaganish,Upichun,2972,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2972-21,Mixed,Cisco
+Waskaganish,Upichun,2973,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2973-21,Mixed,Cisco
+Waskaganish,Upichun,2974,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2974-21,Mixed,Cisco
+Waskaganish,Upichun,2975,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2975-21,Mixed,Cisco
+Waskaganish,Upichun,2976,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2976-21,Mixed,Cisco
+Waskaganish,Upichun,2977,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2977-21,Mixed,Cisco
+Waskaganish,Upichun,2978,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2978-21,Mixed,Cisco
+Waskaganish,Upichun,2979,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2979-21,Mixed,Cisco
+Waskaganish,Upichun,2980,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2980-21,Mixed,Cisco
+Waskaganish,Upichun,2981,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2981-21,Mixed,Cisco
+Waskaganish,Upichun,2982,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2982-21,Mixed,Cisco
+Waskaganish,Upichun,2983,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2983-21,Mixed,Cisco
+Waskaganish,Upichun,2984,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2984-21,Mixed,Cisco
+Waskaganish,Upichun,2985,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2985-21,Mixed,Cisco
+Waskaganish,Upichun,2986,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2986-21,Mixed,Cisco
+Waskaganish,Upichun,2987,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2987-21,Mixed,Cisco
+Waskaganish,Upichun,2988,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2988-21,Mixed,Cisco
+Waskaganish,Upichun,2989,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2989-21,Mixed,Cisco
+Waskaganish,Upichun,2990,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2990-21,Mixed,Cisco
+Waskaganish,Upichun,2991,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2991-21,Mixed,Cisco
+Waskaganish,Upichun,2992,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2992-21,Mixed,Cisco
+Waskaganish,Upichun,2993,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2993-21,Mixed,Cisco
+Waskaganish,Upichun,2994,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2994-21,Mixed,Cisco
+Waskaganish,Upichun,2995,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2995-21,Mixed,Cisco
+Waskaganish,Upichun,2996,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2996-21,Mixed,Cisco
+Waskaganish,Upichun,2997,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2997-21,Mixed,Cisco
+Waskaganish,Upichun,2998,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2998-21,Mixed,Cisco
+Waskaganish,Upichun,2999,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_2999-21,Mixed,Cisco
+Waskaganish,Upichun,3000,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3000-21,Mixed,Cisco
+Waskaganish,Upichun,3012,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3012-21,Mixed,Cisco
+Waskaganish,Upichun,3013,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3013-21,Mixed,Cisco
+Waskaganish,Upichun,3276,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3276-21,Mixed,Cisco
+Waskaganish,Upichun,3277,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3277-21,Mixed,Cisco
+Waskaganish,Upichun,3278,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3278-21,Mixed,Cisco
+Waskaganish,Upichun,3279,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3279-21,Mixed,Cisco
+Waskaganish,Upichun,3280,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3280-21,Mixed,Cisco
+Waskaganish,Upichun,3281,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3281-21,Mixed,Cisco
+Waskaganish,Upichun,3282,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3282-21,Mixed,Cisco
+Waskaganish,Upichun,3283,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3283-21,Mixed,Cisco
+Waskaganish,Upichun,3284,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3284-21,Mixed,Cisco
+Waskaganish,Upichun,3285,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3285-21,Mixed,Cisco
+Waskaganish,Upichun,3286,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3286-21,Mixed,Cisco
+Waskaganish,Upichun,3287,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3287-21,Mixed,Cisco
+Waskaganish,Upichun,3288,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3288-21,Mixed,Cisco
+Waskaganish,Upichun,3289,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3289-21,Mixed,Cisco
+Waskaganish,Upichun,3290,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3290-21,Mixed,Cisco
+Waskaganish,Upichun,3291,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3291-21,Mixed,Cisco
+Waskaganish,Upichun,3292,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3292-21,Mixed,Cisco
+Waskaganish,Upichun,3293,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3293-21,Mixed,Cisco
+Waskaganish,Upichun,3294,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3294-21,Mixed,Cisco
+Waskaganish,Upichun,3295,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3295-21,Mixed,Cisco
+Waskaganish,Upichun,3296,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3296-21,Mixed,Cisco
+Waskaganish,Upichun,3297,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3297-21,Mixed,Cisco
+Waskaganish,Upichun,3298,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3298-21,Mixed,Cisco
+Waskaganish,Upichun,3299,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3299-21,Mixed,Cisco
+Waskaganish,Upichun,3300,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3300-21,Mixed,Cisco
+Waskaganish,Upichun,3301,Cisco,04-08-2021,51.95576,-78.872863,coarWASm_3301-21,Mixed,Cisco
+Waskaganish,Upichun,3302,Cisco,04-08-2021,51.95576,-78.872863,coarWASm_3302-21,Mixed,Cisco
+Waskaganish,Upichun,3303,Cisco,04-08-2021,51.95576,-78.872863,coarWASm_3303-21,Mixed,Cisco
+Waskaganish,Upichun,3304,Cisco,04-08-2021,51.95576,-78.872863,coarWASm_3304-21,Mixed,Cisco
+Waskaganish,Upichun,3305,Cisco,04-08-2021,51.95576,-78.872863,coarWASm_3305-21,Mixed,Cisco
+Waskaganish,Upichun,3306,Cisco,04-08-2021,51.95576,-78.872863,coarWASm_3306-21,Mixed,Cisco
+Waskaganish,Upichun,3307,Cisco,04-08-2021,51.95576,-78.872863,coarWASm_3307-21,Mixed,Cisco
+Waskaganish,Upichun,3308,Cisco,04-08-2021,51.95576,-78.872863,coarWASm_3308-21,Mixed,Cisco
+Eastmain,JamesBay,249,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_249-21,Mixed,Cisco
+Eastmain,JamesBay,250,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_250-21,Mixed,Cisco
+Eastmain,JamesBay,251,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_251-21,Mixed,Cisco
+Eastmain,JamesBay,252,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_252-21,Mixed,Cisco
+Eastmain,JamesBay,253,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_253-21,Mixed,Cisco
+Eastmain,JamesBay,254,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_254-21,Mixed,Cisco
+Eastmain,JamesBay,255,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_255-21,Mixed,Cisco
+Eastmain,JamesBay,256,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_256-21,Mixed,Cisco
+Eastmain,JamesBay,257,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_257-21,Mixed,Cisco
+Eastmain,JamesBay,258,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_258-21,Mixed,Cisco
+Eastmain,JamesBay,259,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_259-21,Mixed,Cisco
+Eastmain,JamesBay,276,Cisco,14-07-2021,52.395776,-78.585771,coarEASm_276-21,Mixed,Cisco
+Eastmain,JamesBay,277,Cisco,14-07-2021,52.395776,-78.585771,coarEASm_277-21,Mixed,Cisco
+Eastmain,JamesBay,278,Cisco,14-07-2021,52.395776,-78.585771,coarEASm_278-21,Mixed,Cisco
+Eastmain,JamesBay,279,Cisco,14-07-2021,52.395776,-78.585771,coarEASm_279-21,Mixed,Cisco
+Eastmain,JamesBay,280,Cisco,14-07-2021,52.395776,-78.585771,coarEASm_280-21,Mixed,Cisco
+Eastmain,JamesBay,282,Cisco,14-07-2021,52.395776,-78.585771,coarEASm_282-21,Mixed,Cisco
+Eastmain,JamesBay,283,Cisco,14-07-2021,52.395776,-78.585771,coarEASm_283-21,Mixed,Cisco
+Eastmain,JamesBay,284,Cisco,14-07-2021,52.395776,-78.585771,coarEASm_284-21,Mixed,Cisco
+Eastmain,JamesBay,285,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_285-21,Mixed,Cisco
+Eastmain,JamesBay,286,Cisco,13-07-2021,52.395776,-78.585771,coarEASm_286-21,Mixed,Cisco
+Eastmain,JamesBay,320,Cisco,17-07-2021,52.395776,-78.585771,coarEASm_320-21,Mixed,Cisco
+Eastmain,JamesBay,321,Cisco,17-07-2021,52.395776,-78.585771,coarEASm_321-21,Mixed,Cisco
+Eastmain,JamesBay,527,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_527-21,Mixed,Cisco
+Eastmain,JamesBay,528,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_528-21,Mixed,Cisco
+Eastmain,JamesBay,529,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_529-21,Mixed,Cisco
+Eastmain,JamesBay,530,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_530-21,Mixed,Cisco
+Eastmain,JamesBay,531,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_531-21,Mixed,Cisco
+Eastmain,JamesBay,532,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_532-21,Mixed,Cisco
+Eastmain,JamesBay,533,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_533-21,Mixed,Cisco
+Eastmain,JamesBay,534,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_534-21,Mixed,Cisco
+Eastmain,JamesBay,535,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_535-21,Mixed,Cisco
+Eastmain,JamesBay,536,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_536-21,Mixed,Cisco
+Eastmain,JamesBay,537,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_537-21,Mixed,Cisco
+Eastmain,JamesBay,538,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_538-21,Mixed,Cisco
+Eastmain,JamesBay,539,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_539-21,Mixed,Cisco
+Eastmain,JamesBay,540,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_540-21,Mixed,Cisco
+Eastmain,JamesBay,541,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_541-21,Mixed,Cisco
+Eastmain,JamesBay,542,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_542-21,Mixed,Cisco
+Eastmain,JamesBay,543,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_543-21,Mixed,Cisco
+Eastmain,JamesBay,544,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_544-21,Mixed,Cisco
+Eastmain,JamesBay,545,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_545-21,Mixed,Cisco
+Eastmain,JamesBay,546,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_546-21,Mixed,Cisco
+Eastmain,JamesBay,547,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_547-21,Mixed,Cisco
+Eastmain,JamesBay,548,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_548-21,Mixed,Cisco
+Eastmain,JamesBay,549,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_549-21,Mixed,Cisco
+Eastmain,JamesBay,550,Cisco,16-07-2021,52.395776,-78.585771,coarEASm_550-21,Mixed,Cisco
+Eastmain,JamesBay,655,Cisco,23-07-2021,52.340355,-78.611263,coarEASm_655-21,Mixed,Cisco
+Eastmain,JamesBay,656,Cisco,23-07-2021,52.340355,-78.611263,coarEASm_656-21,Mixed,Cisco
+Eastmain,JamesBay,657,Cisco,23-07-2021,52.340355,-78.611263,coarEASm_657-21,Mixed,Cisco
+Eastmain,JamesBay,658,Cisco,23-07-2021,52.340355,-78.611263,coarEASm_658-21,Mixed,Cisco
+Waskaganish,JamesBay,2951,Cisco,16-07-2021,51.9585761,-78.872863,coarWASm_2951-21,Mixed,Cisco
+Waskaganish,JamesBay,2952,Cisco,16-07-2021,51.9585761,-78.872863,coarWASm_2952-21,Mixed,Cisco
+Waskaganish,JamesBay,2953,Cisco,16-07-2021,51.9585761,-78.872863,coarWASm_2953-21,Mixed,Cisco
+Waskaganish,JamesBay,2954,Cisco,16-07-2021,51.9585761,-78.872863,coarWASm_2954-21,Mixed,Cisco
+Waskaganish,JamesBay,2955,Cisco,16-07-2021,51.9585761,-78.872863,coarWASm_2955-21,Mixed,Cisco
+Waskaganish,JamesBay,2956,Cisco,16-07-2021,51.9585761,-78.872863,coarWASm_2956-21,Mixed,Cisco
+Waskaganish,JamesBay,2957,Cisco,16-07-2021,51.9585761,-78.872863,coarWASm_2957-21,Mixed,Cisco
+Waskaganish,JamesBay,2958,Cisco,16-07-2021,51.9585761,-78.872863,coarWASm_2958-21,Mixed,Cisco
+Waskaganish,JamesBay,2959,Cisco,16-07-2021,51.9585761,-78.872863,coarWASm_2959-21,Mixed,Cisco
+Chisasibi,RogganRiver,2751,Cisco,22-06-2021,54.406767,-79.507696,coarROGs_2751-21,Source,Cisco
+Chisasibi,RogganRiver,2752,Cisco,22-06-2021,54.406767,-79.507696,coarROGs_2752-21,Source,Cisco
+Chisasibi,RogganRiver,2753,Cisco,22-06-2021,54.406767,-79.507696,coarROGs_2753-21,Source,Cisco
+Chisasibi,RogganRiver,2754,Cisco,22-06-2021,54.406767,-79.507696,coarROGs_2754-21,Source,Cisco
+Chisasibi,RogganRiver,2755,Cisco,22-06-2021,54.406767,-79.507696,coarROGs_2755-21,Source,Cisco
+Chisasibi,RogganRiver,2756,Cisco,22-06-2021,54.406767,-79.507696,coarROGs_2756-21,Source,Cisco
+Chisasibi,BeaverRiver,1951,Cisco,23-07-2021,53.406114,-79.025822,coarBEAs_1951-21,Source,Cisco
+Chisasibi,BeaverRiver,1952,Cisco,23-07-2021,53.406114,-79.025822,coarBEAs_1952-21,Source,Cisco
+Chisasibi,BeaverRiver,1953,Cisco,23-07-2021,53.406114,-79.025822,coarBEAs_1953-21,Source,Cisco
+Chisasibi,BeaverRiver,1954,Cisco,23-07-2021,53.406114,-79.025822,coarBEAs_1954-21,Source,Cisco
+Chisasibi,BeaverRiver,1955,Cisco,23-07-2021,53.406114,-79.025822,coarBEAs_1955-21,Source,Cisco
+Chisasibi,BeaverRiver,1956,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1956-21,Source,Cisco
+Chisasibi,BeaverRiver,1957,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1957-21,Source,Cisco
+Chisasibi,BeaverRiver,1958,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1958-21,Source,Cisco
+Chisasibi,BeaverRiver,1959,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1959-21,Source,Cisco
+Chisasibi,BeaverRiver,1960,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1960-21,Source,Cisco
+Chisasibi,BeaverRiver,1961,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1961-21,Source,Cisco
+Chisasibi,BeaverRiver,1962,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1962-21,Source,Cisco
+Chisasibi,BeaverRiver,1963,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1963-21,Source,Cisco
+Chisasibi,BeaverRiver,1964,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1964-21,Source,Cisco
+Chisasibi,BeaverRiver,1965,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1965-21,Source,Cisco
+Chisasibi,BeaverRiver,1966,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1966-21,Source,Cisco
+Chisasibi,BeaverRiver,1967,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1967-21,Source,Cisco
+Chisasibi,BeaverRiver,1968,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1968-21,Source,Cisco
+Chisasibi,BeaverRiver,1969,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1969-21,Source,Cisco
+Chisasibi,BeaverRiver,1970,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1970-21,Source,Cisco
+Chisasibi,BeaverRiver,1971,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1971-21,Source,Cisco
+Chisasibi,BeaverRiver,1972,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1972-21,Source,Cisco
+Chisasibi,BeaverRiver,1973,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1973-21,Source,Cisco
+Chisasibi,BeaverRiver,1974,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1974-21,Source,Cisco
+Chisasibi,BeaverRiver,1975,Cisco,24-07-2021,53.406114,-79.025822,coarBEAs_1975-21,Source,Cisco
+Chisasibi,BeaverRiver,2026,Cisco,25-07-2021,53.406114,-79.025822,coarBEAs_2026-21,Source,Cisco
+Chisasibi,BeaverRiver,2027,Cisco,25-07-2021,53.406114,-79.025822,coarBEAs_2027-21,Source,Cisco
+Chisasibi,BeaverRiver,2028,Cisco,25-07-2021,53.406114,-79.025822,coarBEAs_2028-21,Source,Cisco
+Chisasibi,BeaverRiver,2029,Cisco,25-07-2021,53.406114,-79.025822,coarBEAs_2029-21,Source,Cisco
+Chisasibi,BeaverRiver,2030,Cisco,25-07-2021,53.406114,-79.025822,coarBEAs_2030-21,Source,Cisco
+Chisasibi,BeaverRiver,2031,Cisco,25-07-2021,53.406114,-79.025822,coarBEAs_2031-21,Source,Cisco
+Chisasibi,BeaverRiver,2032,Cisco,25-07-2021,53.406114,-79.025822,coarBEAs_2032-21,Source,Cisco
+Chisasibi,BeaverRiver,2033,Cisco,26-07-2021,53.406114,-79.025822,coarBEAs_2033-21,Source,Cisco
+Chisasibi,BeaverRiver,2034,Cisco,26-07-2021,53.406114,-79.025822,coarBEAs_2034-21,Source,Cisco
+Chisasibi,BeaverRiver,2035,Cisco,26-07-2021,53.406114,-79.025822,coarBEAs_2035-21,Source,Cisco
+Chisasibi,BeaverRiver,2036,Cisco,26-07-2021,53.406114,-79.025822,coarBEAs_2036-21,Source,Cisco
+Chisasibi,BeaverRiver,2037,Cisco,26-07-2021,53.406114,-79.025822,coarBEAs_2037-21,Source,Cisco
+Chisasibi,BeaverRiver,2038,Cisco,26-07-2021,53.406114,-79.025822,coarBEAs_2038-21,Source,Cisco
+Chisasibi,BeaverRiver,2039,Cisco,26-07-2021,53.406114,-79.025822,coarBEAs_2039-21,Source,Cisco
+Chisasibi,BeaverRiver,2040,Cisco,26-07-2021,53.406114,-79.025822,coarBEAs_2040-21,Source,Cisco
+Chisasibi,BeaverRiver,2041,Cisco,26-07-2021,53.406114,-79.025822,coarBEAs_2041-21,Source,Cisco
+Chisasibi,BeaverRiver,2042,Cisco,27-07-2021,53.406114,-79.025822,coarBEAs_2042-21,Source,Cisco
+Chisasibi,BeaverRiver,2043,Cisco,27-07-2021,53.406114,-79.025822,coarBEAs_2043-21,Source,Cisco
+Chisasibi,BeaverRiver,2044,Cisco,27-07-2021,53.406114,-79.025822,coarBEAs_2044-21,Source,Cisco
+Chisasibi,BeaverRiver,2045,Cisco,27-07-2021,53.406114,-79.025822,coarBEAs_2045-21,Source,Cisco
+Chisasibi,BeaverRiver,2046,Cisco,27-07-2021,53.406114,-79.025822,coarBEAs_2046-21,Source,Cisco
+Chisasibi,BeaverRiver,2047,Cisco,27-07-2021,53.406114,-79.025822,coarBEAs_2047-21,Source,Cisco
+Chisasibi,BeaverRiver,2048,Cisco,27-07-2021,53.406114,-79.025822,coarBEAs_2048-21,Source,Cisco
+Chisasibi,BeaverRiver,2049,Cisco,27-07-2021,53.406114,-79.025822,coarBEAs_2049-21,Source,Cisco
+Chisasibi,BeaverRiver,2050,Cisco,27-07-2021,53.406114,-79.025822,coarBEAs_2050-21,Source,Cisco
+Waskaganish,Upichun,2960,Cisco,23-07-2021,51.955761,-78.872863,coarWASm_2960-21,Mixed,Cisco
+Waskaganish,Upichun,2961,Cisco,23-07-2021,51.955761,-78.872863,coarWASm_2961-21,Mixed,Cisco
+Waskaganish,Upichun,2962,Cisco,23-07-2021,51.955761,-78.872863,coarWASm_2962-21,Mixed,Cisco
+Waskaganish,Upichun,2963,Cisco,23-07-2021,51.955761,-78.872863,coarWASm_2963-21,Mixed,Cisco
+Waskaganish,Upichun,2964,Cisco,23-07-2021,51.955761,-78.872863,coarWASm_2964-21,Mixed,Cisco
+Waskaganish,Upichun,2965,Cisco,23-07-2021,51.955761,-78.872863,coarWASm_2965-21,Mixed,Cisco
+Waskaganish,Upichun,2966,Cisco,23-07-2021,51.955761,-78.872863,coarWASm_2966-21,Mixed,Cisco
+Waskaganish,Upichun,2967,Cisco,23-07-2021,51.955761,-78.872863,coarWASm_2967-21,Mixed,Cisco
+Waskaganish,Upichun,3309,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3309-21,Mixed,Cisco
+Waskaganish,Upichun,3310,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3310-21,Mixed,Cisco
+Waskaganish,Upichun,3311,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3311-21,Mixed,Cisco
+Waskaganish,Upichun,3312,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3312-21,Mixed,Cisco
+Waskaganish,Upichun,3313,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3313-21,Mixed,Cisco
+Waskaganish,Upichun,3314,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3314-21,Mixed,Cisco
+Waskaganish,Upichun,3315,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3315-21,Mixed,Cisco
+Waskaganish,Upichun,3316,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3316-21,Mixed,Cisco
+Waskaganish,Upichun,3317,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3317-21,Mixed,Cisco
+Waskaganish,Upichun,3318,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3318-21,Mixed,Cisco
+Waskaganish,Upichun,3319,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3319-21,Mixed,Cisco
+Waskaganish,Upichun,3320,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3320-21,Mixed,Cisco
+Waskaganish,Upichun,3321,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3321-21,Mixed,Cisco
+Waskaganish,Upichun,3322,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3322-21,Mixed,Cisco
+Waskaganish,Upichun,3323,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3323-21,Mixed,Cisco
+Waskaganish,Upichun,3324,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3324-21,Mixed,Cisco
+Waskaganish,Upichun,3325,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3325-21,Mixed,Cisco
+Waskaganish,Upichun,3326,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3326-21,Mixed,Cisco
+Waskaganish,Upichun,3327,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3327-21,Mixed,Cisco
+Waskaganish,Upichun,3328,Cisco,17-08-2021,51.955761,-78.872863,coarWASm_3328-21,Mixed,Cisco
+Waskaganish,Upichun,3329,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3329-21,Mixed,Cisco
+Waskaganish,Upichun,3330,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3330-21,Mixed,Cisco
+Waskaganish,Upichun,3331,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3331-21,Mixed,Cisco
+Waskaganish,Upichun,3332,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3332-21,Mixed,Cisco
+Waskaganish,Upichun,3333,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3333-21,Mixed,Cisco
+Waskaganish,Upichun,3334,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3334-21,Mixed,Cisco
+Waskaganish,Upichun,3335,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3335-21,Mixed,Cisco
+Waskaganish,Upichun,3336,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3336-21,Mixed,Cisco
+Waskaganish,Upichun,3337,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3337-21,Mixed,Cisco
+Waskaganish,Upichun,3338,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3338-21,Mixed,Cisco
+Waskaganish,Upichun,3339,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3339-21,Mixed,Cisco
+Waskaganish,Upichun,3340,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3340-21,Mixed,Cisco
+Waskaganish,Upichun,3341,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3341-21,Mixed,Cisco
+Waskaganish,Upichun,3342,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3342-21,Mixed,Cisco
+Waskaganish,Upichun,3343,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3343-21,Mixed,Cisco
+Waskaganish,Upichun,3344,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3344-21,Mixed,Cisco
+Waskaganish,Upichun,3345,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3345-21,Mixed,Cisco
+Waskaganish,Upichun,3346,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3346-21,Mixed,Cisco
+Waskaganish,Upichun,3347,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3347-21,Mixed,Cisco
+Waskaganish,Upichun,3348,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3348-21,Mixed,Cisco
+Waskaganish,Upichun,3349,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3349-21,Mixed,Cisco
+Waskaganish,Upichun,3350,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3350-21,Mixed,Cisco
+Waskaganish,Upichun,3351,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3351-21,Mixed,Cisco
+Waskaganish,Upichun,3352,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3352-21,Mixed,Cisco
+Waskaganish,Upichun,3353,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3353-21,Mixed,Cisco
+Waskaganish,Upichun,3354,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3354-21,Mixed,Cisco
+Waskaganish,Upichun,3355,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3355-21,Mixed,Cisco
+Waskaganish,Upichun,3356,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3356-21,Mixed,Cisco
+Waskaganish,Upichun,3357,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3357-21,Mixed,Cisco
+Waskaganish,Upichun,3358,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3358-21,Mixed,Cisco
+Waskaganish,Upichun,3359,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3359-21,Mixed,Cisco
+Waskaganish,Upichun,3360,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3360-21,Mixed,Cisco
+Waskaganish,Upichun,3361,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3361-21,Mixed,Cisco
+Waskaganish,Upichun,3362,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3362-21,Mixed,Cisco
+Waskaganish,Upichun,3363,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3363-21,Mixed,Cisco
+Waskaganish,Upichun,3364,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3364-21,Mixed,Cisco
+Waskaganish,Upichun,3365,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3365-21,Mixed,Cisco
+Waskaganish,Upichun,3366,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3366-21,Mixed,Cisco
+Waskaganish,Upichun,3367,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3367-21,Mixed,Cisco
+Waskaganish,Upichun,3368,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3368-21,Mixed,Cisco
+Waskaganish,Upichun,3369,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3369-21,Mixed,Cisco
+Waskaganish,Upichun,3370,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3370-21,Mixed,Cisco
+Waskaganish,Upichun,3371,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3371-21,Mixed,Cisco
+Waskaganish,Upichun,3372,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3372-21,Mixed,Cisco
+Waskaganish,Upichun,3373,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3373-21,Mixed,Cisco
+Waskaganish,Upichun,3374,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3374-21,Mixed,Cisco
+Waskaganish,Upichun,3375,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3375-21,Mixed,Cisco
+Waskaganish,Upichun,3376,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3376-21,Mixed,Cisco
+Waskaganish,Upichun,3377,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3377-21,Mixed,Cisco
+Waskaganish,Upichun,3378,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3378-21,Mixed,Cisco
+Waskaganish,Upichun,3379,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3379-21,Mixed,Cisco
+Waskaganish,Upichun,3380,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3380-21,Mixed,Cisco
+Waskaganish,Upichun,3381,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3381-21,Mixed,Cisco
+Waskaganish,Upichun,3382,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3382-21,Mixed,Cisco
+Waskaganish,Upichun,3383,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3383-21,Mixed,Cisco
+Waskaganish,Upichun,3384,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3384-21,Mixed,Cisco
+Waskaganish,Upichun,3385,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3385-21,Mixed,Cisco
+Waskaganish,Upichun,3386,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3386-21,Mixed,Cisco
+Waskaganish,Upichun,3387,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3387-21,Mixed,Cisco
+Waskaganish,Upichun,3388,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3388-21,Mixed,Cisco
+Waskaganish,Upichun,3389,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3389-21,Mixed,Cisco
+Waskaganish,Upichun,3390,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3390-21,Mixed,Cisco
+Waskaganish,Upichun,3391,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3391-21,Mixed,Cisco
+Waskaganish,Upichun,3392,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3392-21,Mixed,Cisco
+Waskaganish,Upichun,3393,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3393-21,Mixed,Cisco
+Waskaganish,Upichun,3394,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3394-21,Mixed,Cisco
+Waskaganish,Upichun,3395,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3395-21,Mixed,Cisco
+Waskaganish,Upichun,3396,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3396-21,Mixed,Cisco
+Waskaganish,Upichun,3397,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3397-21,Mixed,Cisco
+Waskaganish,Upichun,3398,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3398-21,Mixed,Cisco
+Waskaganish,Upichun,3399,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3399-21,Mixed,Cisco
+Waskaganish,Upichun,3400,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3400-21,Mixed,Cisco
+Waskaganish,Upichun,3401,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3401-21,Mixed,Cisco
+Waskaganish,Upichun,3402,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3402-21,Mixed,Cisco
+Waskaganish,Upichun,3403,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3403-21,Mixed,Cisco
+Waskaganish,Upichun,3404,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3404-21,Mixed,Cisco
+Waskaganish,Upichun,3405,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3405-21,Mixed,Cisco
+Waskaganish,Upichun,3406,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3406-21,Mixed,Cisco
+Waskaganish,Upichun,3407,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3407-21,Mixed,Cisco
+Waskaganish,Upichun,3408,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3408-21,Mixed,Cisco
+Waskaganish,Upichun,3409,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3409-21,Mixed,Cisco
+Waskaganish,Upichun,3410,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3410-21,Mixed,Cisco
+Waskaganish,Upichun,3411,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3411-21,Mixed,Cisco
+Waskaganish,Upichun,3412,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3412-21,Mixed,Cisco
+Waskaganish,Upichun,3413,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3413-21,Mixed,Cisco
+Waskaganish,Upichun,3414,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3414-21,Mixed,Cisco
+Waskaganish,Upichun,3415,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3415-21,Mixed,Cisco
+Waskaganish,Upichun,3416,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3416-21,Mixed,Cisco
+Waskaganish,Upichun,3417,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3417-21,Mixed,Cisco
+Waskaganish,Upichun,3418,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3418-21,Mixed,Cisco
+Waskaganish,Upichun,3419,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3419-21,Mixed,Cisco
+Waskaganish,Upichun,3420,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3420-21,Mixed,Cisco
+Waskaganish,Upichun,3421,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3421-21,Mixed,Cisco
+Waskaganish,Upichun,3422,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3422-21,Mixed,Cisco
+Waskaganish,Upichun,3423,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3423-21,Mixed,Cisco
+Waskaganish,Upichun,3424,Cisco,19-08-2021,51.953168,-78.891547,coarWASm_3424-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2551,Cisco,17-08-2021,53.9083,-79.0684,coarCHIm_2551-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2552,Cisco,17-08-2021,53.9083,-79.0684,coarCHIm_2552-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2553,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2553-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2554,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2554-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2555,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2555-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2556,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2556-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2557,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2557-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2558,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2558-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2559,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2559-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2560,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2560-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2561,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2561-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2562,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2562-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2563,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2563-21,Mixed,Cisco
+Chisasibi,YapawtikwIsland,2564,Cisco,19-08-2021,53.9083,-79.0684,coarCHIm_2564-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4901,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4901-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4902,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4902-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4903,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4903-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4904,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4904-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4905,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4905-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4906,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4906-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4907,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4907-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4908,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4908-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4909,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4909-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4910,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4910-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4911,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4911-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4912,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4912-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4913,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4913-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4914,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4914-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4915,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4915-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4916,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4916-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4917,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4917-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4918,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4918-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4919,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4919-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4920,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4920-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4921,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4921-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4922,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4922-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4923,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4923-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4924,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4924-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4925,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4925-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5076,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5076-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5077,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5077-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5078,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5078-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5079,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5079-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5080,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5080-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5081,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5081-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5082,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5082-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5083,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5083-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5084,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5084-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5085,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5085-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5086,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5086-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5087,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5087-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5088,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5088-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5089,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5089-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5090,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5090-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5091,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5091-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5092,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5092-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5093,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5093-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5094,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5094-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5095,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5095-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5096,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5096-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5097,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5097-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5098,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5098-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5099,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5099-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5700,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5700-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5026,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5026-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5027,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5027-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5028,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5028-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5029,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5029-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5030,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5030-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5031,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5031-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5032,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5032-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5033,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5033-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5034,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5034-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5035,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5035-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5036,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5036-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5037,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5037-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5038,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5038-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5039,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5039-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5040,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5040-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5041,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5041-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5042,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5042-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5043,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5043-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5044,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5044-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5045,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5045-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5046,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5046-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5047,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5047-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5048,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5048-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5049,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5049-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5050,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5050-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2426,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2426-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2427,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2427-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2428,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2428-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2429,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2429-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2430,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2430-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2431,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2431-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2432,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2432-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2433,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2433-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2434,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2434-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2435,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2435-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2436,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2436-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2437,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2437-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2438,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2438-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2439,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2439-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2440,Cisco,21-08-2021,53.40821,-79.038759,coarCHIm_2440-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2441,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2441-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2442,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2442-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2443,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2443-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2444,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2444-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2445,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2445-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2446,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2446-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2447,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2447-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2448,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2448-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2449,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2449-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2450,Cisco,22-08-2021,53.40821,-79.038759,coarCHIm_2450-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2801,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2801-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2802,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2802-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2803,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2803-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2804,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2804-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2805,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2805-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2806,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2806-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2807,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2807-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2808,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2808-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2809,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2809-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2810,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2810-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2811,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2811-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2812,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2812-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2813,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2813-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2814,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2814-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2815,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2815-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2816,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2816-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2817,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2817-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2818,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2818-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2819,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2819-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2820,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2820-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2821,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2821-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2822,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2822-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2823,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2823-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2824,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2824-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,2825,Cisco,22-08-2021,53.40647,-79.033438,coarCHIm_2825-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4976,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4976-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4977,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4977-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4978,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4978-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4979,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4979-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4980,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4980-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4981,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4981-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4982,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4982-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4983,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4983-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4984,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4984-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4985,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4985-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4986,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4986-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4987,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4987-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4988,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4988-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4989,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4989-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4990,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4990-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4991,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4991-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4992,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4992-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4993,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4993-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4994,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4994-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4995,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4995-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4996,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4996-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4997,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4997-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4998,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4998-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,4999,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4999-21,Mixed,Cisco
+Chisasibi,BeaverRiverArea,5000,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_5000-21,Mixed,Cisco
+Eastmain,JamesBay,572,Cisco,14-09-2021,52.395776,-78.585771,coarEASm_572-21,Mixed,Cisco
+Eastmain,JamesBay,573,Cisco,14-09-2021,52.395776,-78.585771,coarEASm_573-21,Mixed,Cisco
+Eastmain,JamesBay,574,Cisco,14-09-2021,52.395776,-78.585771,coarEASm_574-21,Mixed,Cisco
+Eastmain,JamesBay,575,Cisco,14-09-2021,52.395776,-78.585771,coarEASm_575-21,Mixed,Cisco
+Eastmain,JamesBay,576,Cisco,14-09-2021,52.395776,-78.585771,coarEASm_576-21,Mixed,Cisco
+Eastmain,EastmainRiver,578,Cisco,16-09-2021,52.395776,-78.585771,coarEASs_578-21,Source,Cisco
+Eastmain,EastmainRiver,580,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_580-22,Source,Cisco
+Eastmain,EastmainRiver,581,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_581-23,Source,Cisco
+Eastmain,EastmainRiver,582,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_582-24,Source,Cisco
+Eastmain,EastmainRiver,583,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_583-25,Source,Cisco
+Eastmain,EastmainRiver,584,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_584-26,Source,Cisco
+Eastmain,EastmainRiver,585,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_585-27,Source,Cisco
+Eastmain,EastmainRiver,586,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_586-28,Source,Cisco
+Eastmain,EastmainRiver,587,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_587-29,Source,Cisco
+Eastmain,EastmainRiver,588,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_588-30,Source,Cisco
+Eastmain,EastmainRiver,589,Cisco,26-10-2022,52.395776,-78.585771,coarEASs_589-31,Source,Cisco
+Eastmain,JamesBay,601,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_601-21,Mixed,Cisco
+Eastmain,JamesBay,602,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_602-21,Mixed,Cisco
+Eastmain,JamesBay,603,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_603-21,Mixed,Cisco
+Eastmain,JamesBay,604,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_604-21,Mixed,Cisco
+Eastmain,JamesBay,605,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_605-21,Mixed,Cisco
+Eastmain,JamesBay,606,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_606-21,Mixed,Cisco
+Eastmain,JamesBay,607,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_607-21,Mixed,Cisco
+Eastmain,JamesBay,608,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_608-21,Mixed,Cisco
+Eastmain,JamesBay,609,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_609-21,Mixed,Cisco
+Eastmain,JamesBay,610,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_610-21,Mixed,Cisco
+Eastmain,JamesBay,611,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_611-21,Mixed,Cisco
+Eastmain,JamesBay,612,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_612-21,Mixed,Cisco
+Eastmain,JamesBay,613,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_613-21,Mixed,Cisco
+Eastmain,JamesBay,614,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_614-21,Mixed,Cisco
+Eastmain,JamesBay,615,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_615-21,Mixed,Cisco
+Eastmain,JamesBay,616,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_616-21,Mixed,Cisco
+Eastmain,JamesBay,617,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_617-21,Mixed,Cisco
+Eastmain,JamesBay,618,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_618-21,Mixed,Cisco
+Eastmain,JamesBay,619,Cisco,15-09-2021,52.395776,-78.585771,coarEASm_619-21,Mixed,Cisco
+Eastmain,EastmainRiver,620,Cisco,27-10-2021,52.256064,-78.44315,coarEASs_620-21,Source,Cisco
+Eastmain,EastmainRiver,621,Cisco,27-10-2021,52.256064,-78.44315,coarEASs_621-21,Source,Cisco
+Eastmain,EastmainRiver,622,Cisco,27-10-2021,52.256064,-78.44315,coarEASs_622-21,Source,Cisco
+Eastmain,EastmainRiver,623,Cisco,27-10-2021,52.256064,-78.44315,coarEASs_623-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,662,Cisco,22-10-2021,52.256064,-78.44315,coarEASs_662-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,665,Cisco,24-10-2021,52.256064,-78.44315,coarEASs_665-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,666,Cisco,24-10-2021,52.256064,-78.44315,coarEASs_666-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,667,Cisco,24-10-2021,52.256064,-78.44315,coarEASs_667-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,668,Cisco,24-10-2021,52.256064,-78.44315,coarEASs_668-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,669,Cisco,24-10-2021,52.256064,-78.44315,coarEASs_669-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,675,Cisco,27-10-2021,52.256064,-78.44315,coarEASs_675-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,626,Cisco,20-10-2021,52.256064,-78.44315,coarEASs_626-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,627,Cisco,29-10-2021,52.256064,-78.44315,coarEASs_627-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,751,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_751-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,752,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_752-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,753,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_753-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,754,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_754-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,755,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_755-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,756,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_756-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,757,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_757-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,758,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_758-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,759,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_759-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,760,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_760-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,761,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_761-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,762,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_762-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,763,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_763-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,764,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_764-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,765,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_765-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,766,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_766-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,767,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_767-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,768,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_768-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,769,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_769-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,770,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_770-21,Source,Cisco
+Eastmain,EastmainRiver/FishingRiver,771,Cisco,06-11-2021,52.241683,-78.457926,coarEASs_771-21,Source,Cisco
+Eastmain,EastmainRiver,597,Cisco,28-10-2021,52.256064,-78.44315,coarEASs_597-21,Source,Cisco
+Eastmain,EastmainRiver,598,Cisco,28-10-2021,52.256064,-78.44315,coarEASs_598-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_1EARLY,Cisco,02-08-2021,51.177888,-78.908844,coarNOTs_7501-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_2EARLY,Cisco,02-08-2021,51.177888,-78.908844,coarNOTs_7502-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_3EARLY,Cisco,02-08-2021,51.177888,-78.908844,coarNOTs_7503-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_4EARLY,Cisco,02-08-2021,51.177888,-78.908844,coarNOTs_7504-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_5EARLY,Cisco,02-08-2021,51.177888,-78.908844,coarNOTs_7505-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_6EARLY,Cisco,02-08-2021,51.177888,-78.908844,coarNOTs_7506-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_7EARLY,Cisco,02-08-2021,51.177888,-78.908844,coarNOTs_7507-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_8EARLY,Cisco,03-08-2021,51.177888,-78.908844,coarNOTs_7508-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_9EARLY,Cisco,03-08-2021,51.177888,-78.908844,coarNOTs_7509-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_10EARLY,Cisco,03-08-2021,51.177888,-78.908844,coarNOTs_7510-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_11EARLY,Cisco,03-08-2021,51.177888,-78.908844,coarNOTs_7511-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_12EARLY,Cisco,03-08-2021,51.177888,-78.908844,coarNOTs_7512-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_13EARLY,Cisco,03-08-2021,51.177888,-78.908844,coarNOTs_7513-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_14EARLY,Cisco,03-08-2021,51.177888,-78.908844,coarNOTs_7514-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_15EARLY,Cisco,03-08-2021,51.177888,-78.908844,coarNOTs_7515-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_16EARLY,Cisco,03-08-2021,51.177888,-78.908844,coarNOTs_7516-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_17EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7517-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_18EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7518-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_19EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7519-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_20EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7520-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_21EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7521-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_22EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7522-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_23EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7523-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_24EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7524-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_25EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7525-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_26EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7526-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_27EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7527-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_28EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7528-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_29EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7529-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_30EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7530-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_31EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7531-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_32EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7532-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_33EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7533-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_34EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7534-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_35EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7535-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_36EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7536-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_37EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7537-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_38EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7538-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_39EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7539-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_40EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7540-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_41EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7541-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_42EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7542-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_43EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7543-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_44EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7544-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_45EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7545-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_46EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7546-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_47EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7547-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_48EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7548-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_49EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7549-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_50EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7550-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_51EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7551-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_52EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7552-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_53EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7553-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_54EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7554-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_55EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7555-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_56EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7556-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_57EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7557-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_58EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7558-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_59EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7559-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_60EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7560-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_61EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7561-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_62EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7562-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_63EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7563-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_64EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7564-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_65EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7565-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_66EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7566-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_67EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7567-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_68EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7568-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_1,Cisco,20-09-2021,NA,NA,coarRUPs_7601-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_2,Cisco,20-09-2021,NA,NA,coarRUPs_7602-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_3,Cisco,20-09-2021,NA,NA,coarRUPs_7603-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_4,Cisco,20-09-2021,NA,NA,coarRUPs_7604-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_5,Cisco,20-09-2021,NA,NA,coarRUPs_7605-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_6,Cisco,20-09-2021,NA,NA,coarRUPs_7606-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_7,Cisco,20-09-2021,NA,NA,coarRUPs_7607-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_8,Cisco,20-09-2021,NA,NA,coarRUPs_7608-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_9,Cisco,20-09-2021,NA,NA,coarRUPs_7609-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_10,Cisco,20-09-2021,NA,NA,coarRUPs_7610-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_11,Cisco,20-09-2021,NA,NA,coarRUPs_7611-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_12,Cisco,21-09-2021,NA,NA,coarRUPs_7612-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_13,Cisco,21-09-2021,NA,NA,coarRUPs_7613-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_14,Cisco,21-09-2021,NA,NA,coarRUPs_7614-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_15,Cisco,21-09-2021,NA,NA,coarRUPs_7615-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_16,Cisco,21-09-2021,NA,NA,coarRUPs_7616-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_17,Cisco,21-09-2021,NA,NA,coarRUPs_7617-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_18,Cisco,21-09-2021,NA,NA,coarRUPs_7618-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_19,Cisco,21-09-2021,NA,NA,coarRUPs_7619-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_20,Cisco,21-09-2021,NA,NA,coarRUPs_7620-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_21,Cisco,21-09-2021,NA,NA,coarRUPs_7621-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_22,Cisco,21-09-2021,NA,NA,coarRUPs_7622-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_23,Cisco,21-09-2021,NA,NA,coarRUPs_7623-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_24,Cisco,21-09-2021,NA,NA,coarRUPs_7624-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_25,Cisco,21-09-2021,NA,NA,coarRUPs_7625-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_26,Cisco,21-09-2021,NA,NA,coarRUPs_7626-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_27,Cisco,21-09-2021,NA,NA,coarRUPs_7627-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_28,Cisco,21-09-2021,NA,NA,coarRUPs_7628-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_29,Cisco,21-09-2021,NA,NA,coarRUPs_7629-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_30,Cisco,22-09-2021,NA,NA,coarRUPs_7630-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_31,Cisco,22-09-2021,NA,NA,coarRUPs_7631-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_32,Cisco,22-09-2021,NA,NA,coarRUPs_7632-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_33,Cisco,22-09-2021,NA,NA,coarRUPs_7633-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_34,Cisco,22-09-2021,NA,NA,coarRUPs_7634-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_35,Cisco,22-09-2021,NA,NA,coarRUPs_7635-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_36,Cisco,22-09-2021,NA,NA,coarRUPs_7636-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_37,Cisco,22-09-2021,NA,NA,coarRUPs_7637-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_38,Cisco,22-09-2021,NA,NA,coarRUPs_7638-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_39,Cisco,22-09-2021,NA,NA,coarRUPs_7639-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_40,Cisco,22-09-2021,NA,NA,coarRUPs_7640-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_41,Cisco,22-09-2021,NA,NA,coarRUPs_7641-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_42,Cisco,22-09-2021,NA,NA,coarRUPs_7642-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_43,Cisco,22-09-2021,NA,NA,coarRUPs_7643-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_44,Cisco,22-09-2021,NA,NA,coarRUPs_7644-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_45,Cisco,22-09-2021,NA,NA,coarRUPs_7645-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_46,Cisco,22-09-2021,NA,NA,coarRUPs_7646-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_47,Cisco,22-09-2021,NA,NA,coarRUPs_7647-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_48,Cisco,22-09-2021,NA,NA,coarRUPs_7648-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_49,Cisco,22-09-2021,NA,NA,coarRUPs_7649-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_50,Cisco,22-09-2021,NA,NA,coarRUPs_7650-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_51,Cisco,22-09-2021,NA,NA,coarRUPs_7651-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_52,Cisco,22-09-2021,NA,NA,coarRUPs_7652-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_53,Cisco,22-09-2021,NA,NA,coarRUPs_7653-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_54,Cisco,22-09-2021,NA,NA,coarRUPs_7654-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_55,Cisco,22-09-2021,NA,NA,coarRUPs_7655-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_56,Cisco,22-09-2021,NA,NA,coarRUPs_7656-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_57,Cisco,22-09-2021,NA,NA,coarRUPs_7657-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_58,Cisco,22-09-2021,NA,NA,coarRUPs_7658-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_59,Cisco,22-09-2021,NA,NA,coarRUPs_7659-21,Source,Cisco
+Waskaganish,RupertRiver,RUP_60,Cisco,22-09-2021,NA,NA,coarRUPs_7660-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7745-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7746-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7747-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7748-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7749-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7750-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7751-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7752-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7753-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7754-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7755-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7756-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7757-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7758-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7759-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7760-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7761-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,,Cisco,26-09-2021,,,coarNOTs_7762-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,NOT_69_LATE,Cisco,26-09-2021,51.177888,-78.908844,coarNOTs_7701-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_70_LATE,Cisco,26-09-2021,51.177888,-78.908844,coarNOTs_7702-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_71_LATE,Cisco,26-09-2021,51.177888,-78.908844,coarNOTs_7703-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_72_LATE,Cisco,26-09-2021,51.177888,-78.908844,coarNOTs_7704-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_73_LATE,Cisco,26-09-2021,51.177888,-78.908844,coarNOTs_7705-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_74_LATE,Cisco,26-09-2021,51.177888,-78.908844,coarNOTs_7706-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_75_LATE,Cisco,26-09-2021,51.177888,-78.908844,coarNOTs_7707-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_76_LATE,Cisco,26-09-2021,51.177888,-78.908844,coarNOTs_7708-21,Source,Cisco
+Waskaganis+A564:D564h,NottawayRiver,NOT_77_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7709-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_78_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7710-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_79_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7711-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_80_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7712-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_81_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7713-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_82_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7714-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_83_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7715-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_84_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7716-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_85_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7717-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_86_LATE,Cisco,27-09-2021,51.177888,-78.908844,coarNOTs_7718-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_87_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7719-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_88_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7720-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_89_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7721-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_90_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7722-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_91_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7723-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_92_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7724-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_93_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7725-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_94_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7726-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_95_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7727-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_96_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7728-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_97_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7729-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_98_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7730-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_99_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7731-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_100_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7732-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_101_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7733-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_102_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7734-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_103_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7735-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_104_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7736-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_105_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7737-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_106_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7738-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_107_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7739-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_108_LATE,Cisco,28-09-2021,51.177888,-78.908844,coarNOTs_7740-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_109_LATE,Cisco,29-09-2021,51.177888,-78.908844,coarNOTs_7741-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_110_LATE,Cisco,29-09-2021,51.177888,-78.908844,coarNOTs_7742-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_111_LATE,Cisco,29-09-2021,51.177888,-78.908844,coarNOTs_7743-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_112_LATE,Cisco,29-09-2021,51.177888,-78.908844,coarNOTs_7744-21,Source,Cisco
+Eastmain,Mixed,785,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_785-22,Mixed,Cisco
+Eastmain,Mixed,786,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_786-22,Mixed,Cisco
+Eastmain,Mixed,787,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_787-22,Mixed,Cisco
+Eastmain,Mixed,788,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_788-22,Mixed,Cisco
+Eastmain,Mixed,789,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_789-22,Mixed,Cisco
+Eastmain,Mixed,790,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_790-22,Mixed,Cisco
+Eastmain,Mixed,791,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_791-22,Mixed,Cisco
+Eastmain,Mixed,792,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_792-22,Mixed,Cisco
+Eastmain,Mixed,793,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_793-22,Mixed,Cisco
+Eastmain,Mixed,795,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_795-22,Mixed,Cisco
+Eastmain,Mixed,796,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_796-22,Mixed,Cisco
+Eastmain,Mixed,797,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_797-22,Mixed,Cisco
+Eastmain,Mixed,799,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_799-22,Mixed,Cisco
+Eastmain,Mixed,802,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_802-22,Mixed,Cisco
+Eastmain,Mixed,803,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_803-22,Mixed,Cisco
+Eastmain,Mixed,805,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_805-22,Mixed,Cisco
+Eastmain,Mixed,806,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_806-22,Mixed,Cisco
+Eastmain,Mixed,807,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_807-22,Mixed,Cisco
+Eastmain,Mixed,808,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_808-22,Mixed,Cisco
+Eastmain,Mixed,809,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_809-22,Mixed,Cisco
+Eastmain,Mixed,810,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_810-22,Mixed,Cisco
+Eastmain,Mixed,811,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_811-22,Mixed,Cisco
+Eastmain,Mixed,812,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_812-22,Mixed,Cisco
+Eastmain,Mixed,813,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_813-22,Mixed,Cisco
+Eastmain,Mixed,814,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_814-22,Mixed,Cisco
+Eastmain,Mixed,815,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_815-22,Mixed,Cisco
+Eastmain,Mixed,817,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_817-22,Mixed,Cisco
+Eastmain,Mixed,818,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_818-22,Mixed,Cisco
+Eastmain,Mixed,820,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_820-22,Mixed,Cisco
+Eastmain,Mixed,821,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_821-22,Mixed,Cisco
+Eastmain,Mixed,823,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_823-22,Mixed,Cisco
+Eastmain,Mixed,824,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_824-22,Mixed,Cisco
+Eastmain,Mixed,825,Cisco,15-07-2022,52.26318,-78.56783,coarEASm_825-22,Mixed,Cisco
+Eastmain,Mixed,836,Cisco,16-07-2022,52.26318,-78.56783,coarEASm_836-22,Mixed,Cisco
+Eastmain,Mixed,837,Cisco,16-07-2022,52.26318,-78.56783,coarEASm_837-22,Mixed,Cisco
+Eastmain,Mixed,838,Cisco,16-07-2022,52.26318,-78.56783,coarEASm_838-22,Mixed,Cisco
+Eastmain,Mixed,839,Cisco,19-07-2022,52.26318,-78.56783,coarEASm_839-22,Mixed,Cisco
+Eastmain,Mixed,852,Cisco,19-07-2022,52.26318,-78.56783,coarEASm_852-22,Mixed,Cisco
+Eastmain,Mixed,856,Cisco,19-07-2022,52.26318,-78.56783,coarEASm_856-22,Mixed,Cisco
+Eastmain,Mixed,858,Cisco,19-07-2022,52.26318,-78.56783,coarEASm_858-22,Mixed,Cisco
+Eastmain,Mixed,867,Cisco,19-07-2022,52.26318,-78.56783,coarEASm_867-22,Mixed,Cisco
+Eastmain,Mixed,877,Cisco,19-07-2022,52.26318,-78.56783,coarEASm_877-22,Mixed,Cisco
+Eastmain,Mixed,905,Cisco,20-07-2022,52.289404,-78.568662,coarEASm_905-22,Mixed,Cisco
+Eastmain,Mixed,909,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_909-22,Mixed,Cisco
+Eastmain,Mixed,910,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_910-22,Mixed,Cisco
+Eastmain,Mixed,911,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_911-22,Mixed,Cisco
+Eastmain,Mixed,914,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_914-22,Mixed,Cisco
+Eastmain,Mixed,926,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_926-22,Mixed,Cisco
+Eastmain,Mixed,928,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_928-22,Mixed,Cisco
+Eastmain,Mixed,929,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_929-22,Mixed,Cisco
+Eastmain,Mixed,930,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_930-22,Mixed,Cisco
+Eastmain,Mixed,931,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_931-22,Mixed,Cisco
+Eastmain,Mixed,934,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_934-22,Mixed,Cisco
+Eastmain,Mixed,935,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_935-22,Mixed,Cisco
+Eastmain,Mixed,936,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_936-22,Mixed,Cisco
+Eastmain,Mixed,937,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_937-22,Mixed,Cisco
+Eastmain,Mixed,938,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_938-22,Mixed,Cisco
+Eastmain,Mixed,940,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_940-22,Mixed,Cisco
+Eastmain,Mixed,941,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_941-22,Mixed,Cisco
+Eastmain,Mixed,942,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_942-22,Mixed,Cisco
+Eastmain,Mixed,946,Cisco,21-07-2022,52.289404,-78.568662,coarEASm_946-22,Mixed,Cisco
+Eastmain,Mixed,4237,Cisco,17-08-2022,52.2878,-78.5679,coarEASm_4237-22,Mixed,Cisco
+Eastmain,Mixed,4241,Cisco,17-08-2022,52.2878,-78.5679,coarEASm_4241-22,Mixed,Cisco
+Eastmain,Mixed,4265,Cisco,17-08-2022,52.2878,-78.5679,coarEASm_4265-22,Mixed,Cisco
+Eastmain,Mixed,4298,Cisco,18-08-2022,52.28824,-78.566658,coarEASm_4298-22,Mixed,Cisco
+Eastmain,Mixed,4299,Cisco,18-08-2022,52.28824,-78.566658,coarEASm_4299-22,Mixed,Cisco
+Eastmain,Mixed,4300,Cisco,18-08-2022,52.28824,-78.566658,coarEASm_4300-22,Mixed,Cisco
+Eastmain,Mixed,4415,Cisco,18-08-2022,52.398367,-78.577657,coarEASm_4415-22,Mixed,Cisco
+Eastmain,Mixed,4432,Cisco,18-08-2022,52.398367,-78.577657,coarEASm_4432-22,Mixed,Cisco
+Eastmain,Mixed,4433,Cisco,18-08-2022,52.398367,-78.577657,coarEASm_4433-22,Mixed,Cisco
+Eastmain,Spit Island,4354,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_4354-22,Mixed,Cisco
+Eastmain,Spit Island,4355,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_4355-22,Mixed,Cisco
+Eastmain,Spit Island,4356,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_4356-22,Mixed,Cisco
+Eastmain,Spit Island,4357,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_4357-22,Mixed,Cisco
+Eastmain,Spit Island,4380,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_4380-22,Mixed,Cisco
+Eastmain,Spit Island,4381,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_4381-22,Mixed,Cisco
+Eastmain,Spit Island,4382,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_4382-22,Mixed,Cisco
+Eastmain,Spit Island,5136,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_5136-22,Mixed,Cisco
+Eastmain,Spit Island,5137,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_5137-22,Mixed,Cisco
+Eastmain,Spit Island,5138,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_5138-22,Mixed,Cisco
+Eastmain,Spit Island,5139,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_5139-22,Mixed,Cisco
+Eastmain,Spit Island,5140,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_5140-22,Mixed,Cisco
+Eastmain,Spit Island,5141,Cisco,19-08-2022,52.3983,-78.5776,coarEASm_5141-22,Mixed,Cisco
+Waskaganish,OubehJuun,3501,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3501-22,Mixed,Cisco
+Waskaganish,OubehJuun,3502,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3502-22,Mixed,Cisco
+Waskaganish,OubehJuun,3503,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3503-22,Mixed,Cisco
+Waskaganish,OubehJuun,3504,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3504-22,Mixed,Cisco
+Waskaganish,OubehJuun,3505,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3505-22,Mixed,Cisco
+Waskaganish,OubehJuun,3506,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3506-22,Mixed,Cisco
+Waskaganish,OubehJuun,3507,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3507-22,Mixed,Cisco
+Waskaganish,OubehJuun,3508,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3508-22,Mixed,Cisco
+Waskaganish,OubehJuun,3509,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3509-22,Mixed,Cisco
+Waskaganish,OubehJuun,3510,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3510-22,Mixed,Cisco
+Waskaganish,OubehJuun,3511,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3511-22,Mixed,Cisco
+Waskaganish,OubehJuun,3512,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3512-22,Mixed,Cisco
+Waskaganish,OubehJuun,3513,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3513-22,Mixed,Cisco
+Waskaganish,OubehJuun,3514,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3514-22,Mixed,Cisco
+Waskaganish,OubehJuun,3515,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3515-22,Mixed,Cisco
+Waskaganish,OubehJuun,3516,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3516-22,Mixed,Cisco
+Waskaganish,OubehJuun,3517,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3517-22,Mixed,Cisco
+Waskaganish,OubehJuun,3518,cisco,10-07-2022,51.954252,-78.892354,coarWASm_3518-22,Mixed,Cisco
+Waskaganish,OubehJuun,3519,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3519-22,Mixed,Cisco
+Waskaganish,OubehJuun,3520,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3520-22,Mixed,Cisco
+Waskaganish,OubehJuun,3521,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3521-22,Mixed,Cisco
+Waskaganish,OubehJuun,3522,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3522-22,Mixed,Cisco
+Waskaganish,OubehJuun,3523,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3523-22,Mixed,Cisco
+Waskaganish,OubehJuun,3524,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3524-22,Mixed,Cisco
+Waskaganish,OubehJuun,3525,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3525-22,Mixed,Cisco
+Waskaganish,OubehJuun,3526,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3526-22,Mixed,Cisco
+Waskaganish,OubehJuun,3527,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3527-22,Mixed,Cisco
+Waskaganish,OubehJuun,3528,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3528-22,Mixed,Cisco
+Waskaganish,OubehJuun,3529,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3529-22,Mixed,Cisco
+Waskaganish,OubehJuun,3530,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3530-22,Mixed,Cisco
+Waskaganish,OubehJuun,3531,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3531-22,Mixed,Cisco
+Waskaganish,OubehJuun,3532,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3532-22,Mixed,Cisco
+Waskaganish,OubehJuun,3533,cisco,15-07-2022,51.954252,-78.892354,coarWASm_3533-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3551,cisco,09-08-2022,51.300805,-78.923716,coarWASm_3551-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3626,cisco,17-08-2022,51.298731,-78923267,coarWASm_3626-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3627,cisco,17-08-2022,51.298731,-78923267,coarWASm_3627-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3628,cisco,17-08-2022,51.298731,-78923267,coarWASm_3628-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3629,cisco,17-08-2022,51.298731,-78923267,coarWASm_3629-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3630,cisco,17-08-2022,51.298731,-78923267,coarWASm_3630-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3631,cisco,17-08-2022,51.298731,-78923267,coarWASm_3631-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3632,cisco,17-08-2022,51.298731,-78923267,coarWASm_3632-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3633,cisco,17-08-2022,51.298731,-78923267,coarWASm_3633-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3634,cisco,17-08-2022,51.298731,-78923267,coarWASm_3634-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3635,cisco,17-08-2022,51.298731,-78923267,coarWASm_3635-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3636,cisco,17-08-2022,51.298731,-78923267,coarWASm_3636-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3637,cisco,17-08-2022,51.298731,-78923267,coarWASm_3637-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3638,cisco,17-08-2022,51.298731,-78923267,coarWASm_3638-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3639,cisco,17-08-2022,51.499744,-78.808153,coarWASm_3639-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3640,cisco,17-08-2022,51.499744,-78.808153,coarWASm_3640-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3701,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3701-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3702,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3702-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3703,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3703-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3704,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3704-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3705,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3705-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3706,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3706-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3707,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3707-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3708,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3708-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3709,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3709-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3710,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3710-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3711,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3711-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3712,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3712-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3713,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3713-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3714,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3714-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3715,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3715-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3716,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3716-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3717,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3717-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3718,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3718-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3719,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3719-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3720,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3720-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3722,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3722-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3723,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3723-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3724,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3724-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3725,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3725-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3817,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3817-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3818,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3818-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3819,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3819-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3820,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3820-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3821,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3821-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3822,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3822-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3823,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3823-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3824,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3824-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3825,cisco,07-08-2022,51.300805,-78.923716,coarWASm_3825-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3826,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3826-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3827,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3827-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3828,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3828-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3829,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3829-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3830,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3830-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3831,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3831-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3832,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3832-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3833,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3833-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3834,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3834-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3835,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3835-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3836,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3836-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3838,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3838-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3839,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3839-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3840,cisco,12-08-2022,51.298731,-78.923267,coarWASm_3840-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3841,cisco,16-08-2022,51.298731,-78.923267,coarWASm_3841-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3842,cisco,16-08-2022,51.298731,-78.923267,coarWASm_3842-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3843,cisco,16-08-2022,51.298731,-78.923267,coarWASm_3843-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3844,cisco,16-08-2022,51.298731,-78.923267,coarWASm_3844-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3845,cisco,16-08-2022,51.298731,-78.923267,coarWASm_3845-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3846,cisco,16-08-2022,51.298731,-78.923267,coarWASm_3846-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3847,cisco,16-08-2022,51.298731,-78.923267,coarWASm_3847-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3848,cisco,16-08-2022,51.298731,-78.923267,coarWASm_3848-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3849,cisco,16-08-2022,51.298731,-78.923267,coarWASm_3849-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3951,cisco,17-08-2022,51.298731,-78.293267,coarWASm_3951-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3952,cisco,17-08-2022,51.298731,-78.293267,coarWASm_3952-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3953,cisco,17-08-2022,51.298731,-78.293267,coarWASm_3953-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3954,cisco,17-08-2022,51.298731,-78.293267,coarWASm_3954-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3955,cisco,17-08-2022,51.298731,-78.293267,coarWASm_3955-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3956,cisco,17-08-2022,51.298731,-78.293267,coarWASm_3956-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3957,cisco,17-08-2022,51.298731,-78.293267,coarWASm_3957-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3958,cisco,18-08-2022,51.298731,-78.293267,coarWASm_3958-22,Mixed,Cisco
+Waskaganish,Rupert Bay,3959,cisco,18-08-2022,51.298731,-78.293267,coarWASm_3959-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1076,cisco,05-08-2022,52.983365,-78.942004,coarWEMm_1076-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1078,cisco,09-08-2022,52.983365,-78.942004,coarWEMm_1078-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1079,cisco,09-08-2022,52.983365,-78.942004,coarWEMm_1079-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1080,cisco,09-08-2022,52.983365,-78.942004,coarWEMm_1080-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1081,cisco,09-08-2022,52.983365,-78.942004,coarWEMm_1081-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1082,cisco,09-08-2022,52.983365,-78.942004,coarWEMm_1082-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1083,cisco,09-08-2022,52.983365,-78.942004,coarWEMm_1083-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1084,cisco,09-08-2022,52.983365,-78.942004,coarWEMm_1084-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1085,cisco,09-08-2022,52.983365,-78.942004,coarWEMm_1085-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1086,cisco,10-08-2022,52.983365,-78.942004,coarWEMm_1086-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1087,cisco,10-08-2022,52.983365,-78.942004,coarWEMm_1087-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1088,cisco,10-08-2022,52.983365,-78.942004,coarWEMm_1088-22,Mixed,Cisco
+Wemindji,Maaishiipaau-Waayau,1089,cisco,10-08-2022,52.983365,-78.942004,coarWEMm_1089-22,Mixed,Cisco
+Wemindji,First Point,1090,Cisco,23-08-2022,52.983408,-78.901603,coarWEMm_1090-22,Mixed,Cisco
+Wemindji,First Point,1091,Cisco,23-08-2022,52.983408,-78.901603,coarWEMm_1091-22,Mixed,Cisco
+Wemindji,First Point,1092,Cisco,23-08-2022,52.983408,-78.901603,coarWEMm_1092-22,Mixed,Cisco
+Wemindji,Second Point,1093,Cisco,23-08-2022,52.989387,-78.93899,coarWEMm_1093-22,Mixed,Cisco
+Wemindji,Second Point,1094,Cisco,23-08-2022,52.989387,-78.93899,coarWEMm_1094-22,Mixed,Cisco
+Wemindji,Point One,1095,Cisco,24-08-2022,52.983408,-78.901603,coarWEMm_1095-22,Mixed,Cisco
+Wemindji,Point Two,1096,Cisco,24-08-2022,52.989387,-78.93899,coarWEMm_1096-22,Mixed,Cisco
+Wemindji,Point Two,1097,Cisco,24-08-2022,52.989387,-78.93899,coarWEMm_1097-22,Mixed,Cisco
+Wemindji,Point Two,1098,Cisco,24-08-2022,52.989387,-78.93899,coarWEMm_1098-22,Mixed,Cisco
+Wemindji,Point Two,1099,Cisco,24-08-2022,52.989387,-78.93899,coarWEMm_1099-22,Mixed,Cisco
+Wemindji,Point Two,1100,Cisco,24-08-2022,52.989387,-78.93899,coarWEMm_1100-22,Mixed,Cisco
+Eastmain,Eastmain River/Fishing River Opening,638,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_638-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,643,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_643-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,645,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_645-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,646,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_646-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,647,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_647-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,649,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_649-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,650,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_650-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,685,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_685-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,686,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_686-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,687,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_687-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River Opening,689,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_689-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,704,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_704-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,705,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_705-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,706,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_706-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,708,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_708-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,710,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_710-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,711,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_711-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,712,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_712-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,713,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_713-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,714,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_714-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,715,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_715-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,716,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_716-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,717,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_717-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,718,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_718-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,720,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_720-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,722,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_722-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,723,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_723-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,724,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_724-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,728,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_728-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,729,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_729-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,731,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_731-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,732,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_732-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,733,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_733-22,Source,Cisco
+Eastmain,Eastmain River/Fishing River,734,Cisco,28-03-2022,52.257035,-78.436755,coarEASs_734-22,Source,Cisco
+Chisasibi,Beaver River Area,4901,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4901-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4902,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4902-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4903,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4903-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4904,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4904-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4905,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4905-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4906,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4906-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4907,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4907-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4908,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4908-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4909,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4909-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4910,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4910-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4911,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4911-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4912,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4912-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4913,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4913-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4914,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4914-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4915,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4915-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4916,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4916-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4917,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4917-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4918,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4918-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4919,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4919-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4920,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4920-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4921,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4921-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4922,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4922-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4923,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4923-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4924,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4924-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4925,Cisco,23-08-2021,53.40821,-79.038759,coarCHIm_4925-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4976,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4976-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4977,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4977-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4978,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4978-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4979,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4979-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4980,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4980-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4981,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4981-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4982,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4982-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4983,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4983-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4984,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4984-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4985,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4985-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4986,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4986-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4987,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4987-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4988,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4988-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4989,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4989-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4990,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4990-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4991,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4991-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4992,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4992-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4993,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4993-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4994,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4994-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4995,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4995-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4996,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4996-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4997,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4997-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4998,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4998-21,Mixed,Cisco
+Chisasibi,Beaver River Area,4999,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_4999-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5000,Cisco,24-08-2021,53.40647,-79.033438,coarCHIm_5000-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5026,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5026-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5027,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5027-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5028,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5028-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5029,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5029-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5030,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5030-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5031,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5031-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5032,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5032-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5033,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5033-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5034,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5034-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5035,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5035-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5036,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5036-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5037,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5037-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5038,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5038-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5039,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5039-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5040,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5040-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5041,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5041-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5042,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5042-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5043,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5043-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5044,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5044-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5045,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5045-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5046,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5046-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5047,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5047-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5048,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5048-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5049,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5049-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5050,Cisco,25-08-2021,53.40821,-79.038759,coarCHIm_5050-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5076,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5076-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5077,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5077-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5078,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5078-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5079,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5079-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5080,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5080-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5081,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5081-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5082,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5082-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5083,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5083-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5084,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5084-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5085,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5085-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5086,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5086-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5087,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5087-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5088,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5088-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5089,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5089-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5090,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5090-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5091,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5091-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5092,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5092-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5093,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5093-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5094,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5094-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5095,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5095-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5096,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5096-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5097,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5097-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5098,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5098-21,Mixed,Cisco
+Chisasibi,Beaver River Area,5099,Cisco,24-08-2021,53.40821,-79.038759,coarCHIm_5099-21,Mixed,Cisco
+Wemindji,Waapishuchish North,1276,Cisco,29-08-2022,53.146537,-78.944478,coarWEMm_1276-22,Mixed,Cisco
+Wemindji,Waapishuchish North,1277,Cisco,29-08-2022,53.146537,-78.944478,coarWEMm_1277-22,Mixed,Cisco
+Wemindji,Waapishuchish North,1278,Cisco,29-08-2022,53.146537,-78.944478,coarWEMm_1278-22,Mixed,Cisco
+Wemindji,Waapishuchish North,1279,Cisco,29-08-2022,53.146537,-78.944478,coarWEMm_1279-22,Mixed,Cisco
+Wemindji,Waapishuchish North,1280,Cisco,29-08-2022,53.146537,-78.944478,coarWEMm_1280-22,Mixed,Cisco
+Wemindji,Waapishuchish North,1281,Cisco,29-08-2022,53.146537,-78.944478,coarWEMm_1281-22,Mixed,Cisco
+Wemindji,Waapishuchish North,1282,Cisco,29-08-2022,53.146537,-78.944478,coarWEMm_1282-22,Mixed,Cisco
+Wemindji,Waapishuchish South,1283,Cisco,29-08-2022,53.146212,-78.942229,coarWEMm_1283-22,Mixed,Cisco
+Wemindji,Waapishuchish South,1284,Cisco,29-08-2022,53.146212,-78.942229,coarWEMm_1284-22,Mixed,Cisco
+Wemindji,Waapishuchish South,1285,Cisco,29-08-2022,53.146212,-78.942229,coarWEMm_1285-22,Mixed,Cisco
+Wemindji,Waapishuchish South,1286,Cisco,29-08-2022,53.146212,-78.942229,coarWEMm_1286-22,Mixed,Cisco
+Wemindji,Waapishuchish South,1287,Cisco,29-08-2022,53.146212,-78.942229,coarWEMm_1287-22,Mixed,Cisco
+Wemindji,Waapishuchish South,1288,Cisco,29-08-2022,53.146212,-78.942229,coarWEMm_1288-22,Mixed,Cisco
+Wemindji,Waapishuchish South,1289,Cisco,29-08-2022,53.146212,-78.942229,coarWEMm_1289-22,Mixed,Cisco
+Wemindji,Waapishuchish South,1290,Cisco,29-08-2022,53.146212,-78.942229,coarWEMm_1290-22,Mixed,Cisco
+Wemindji,Kakabat's Camp,1291,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1291-22,Mixed,Cisco
+Wemindji,Kakabat's Camp,1292,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1292-22,Mixed,Cisco
+Wemindji,Kakabat's Camp,1293,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1293-22,Mixed,Cisco
+Wemindji,Kakabat's Camp,1294,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1294-22,Mixed,Cisco
+Wemindji,Kakabat's Camp,1295,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1295-22,Mixed,Cisco
+Wemindji,Kakabat's Camp,1296,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1296-22,Mixed,Cisco
+Wemindji,Goose Island,1297,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1297-22,Mixed,Cisco
+Wemindji,Goose Island,1298,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1298-22,Mixed,Cisco
+Wemindji,Goose Island,1299,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1299-22,Mixed,Cisco
+Wemindji,Goose Island,1300,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1300-22,Mixed,Cisco
+Wemindji,Goose Island,1326,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1326-22,Mixed,Cisco
+Wemindji,Goose Island,1327,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1327-22,Mixed,Cisco
+Wemindji,Goose Island,1328,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1328-22,Mixed,Cisco
+Wemindji,Goose Island,1329,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1329-22,Mixed,Cisco
+Wemindji,Goose Island,1330,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1330-22,Mixed,Cisco
+Wemindji,Goose Island,1331,Cisco,30-08-2022,53.146212,-78.942229,coarWEMm_1331-22,Mixed,Cisco
+Eastmain,Fishing River,1,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_1-22,Source,Cisco
+Eastmain,Fishing River,10,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_10-22,Source,Cisco
+Eastmain,Fishing River,11,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_11-22,Source,Cisco
+Eastmain,Fishing River,12,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_12-22,Source,Cisco
+Eastmain,Fishing River,13,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_13-22,Source,Cisco
+Eastmain,Fishing River,14,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_14-22,Source,Cisco
+Eastmain,Fishing River,15,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_15-22,Source,Cisco
+Eastmain,Fishing River,16,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_16-22,Source,Cisco
+Eastmain,Fishing River,17,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_17-22,Source,Cisco
+Eastmain,Fishing River,18,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_18-22,Source,Cisco
+Eastmain,Fishing River,19,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_19-22,Source,Cisco
+Eastmain,Fishing River,2,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_2-22,Source,Cisco
+Eastmain,Fishing River,20,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_20-22,Source,Cisco
+Eastmain,Fishing River,3,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_3-22,Source,Cisco
+Eastmain,Fishing River,4,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_4-22,Source,Cisco
+Eastmain,Fishing River,5,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_5-22,Source,Cisco
+Eastmain,Fishing River,6,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_6-22,Source,Cisco
+Eastmain,Fishing River,7,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_7-22,Source,Cisco
+Eastmain,Fishing River,8,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_8-22,Source,Cisco
+Eastmain,Fishing River,9,Cisco,03-03-2022,52.256100000000004,-78.443023,coarFISs_9-22,Source,Cisco
+Chisasibi,NA,9491,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9491-23,Mixed,Cisco
+Chisasibi,NA,9492,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9492-23,Mixed,Cisco
+Chisasibi,NA,9493,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9493-23,Mixed,Cisco
+Chisasibi,NA,9494,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9494-23,Mixed,Cisco
+Chisasibi,NA,9495,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9495-23,Mixed,Cisco
+Chisasibi,NA,9496,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9496-23,Mixed,Cisco
+Chisasibi,NA,9497,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9497-23,Mixed,Cisco
+Chisasibi,NA,9498,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9498-23,Mixed,Cisco
+Chisasibi,NA,9499,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9499-23,Mixed,Cisco
+Chisasibi,NA,9500,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9500-23,Mixed,Cisco
+Chisasibi,NA,9501,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9501-23,Mixed,Cisco
+Chisasibi,NA,9502,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9502-23,Mixed,Cisco
+Chisasibi,NA,9503,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9503-23,Mixed,Cisco
+Chisasibi,NA,9504,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9504-23,Mixed,Cisco
+Chisasibi,NA,9505,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9505-23,Mixed,Cisco
+Chisasibi,NA,9506,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9506-23,Mixed,Cisco
+Chisasibi,NA,9507,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9507-23,Mixed,Cisco
+Chisasibi,NA,9508,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9508-23,Mixed,Cisco
+Chisasibi,NA,9509,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9509-23,Mixed,Cisco
+Chisasibi,NA,9510,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9510-23,Mixed,Cisco
+Chisasibi,NA,9511,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9511-23,Mixed,Cisco
+Chisasibi,NA,9512,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9512-23,Mixed,Cisco
+Chisasibi,NA,9513,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9513-23,Mixed,Cisco
+Chisasibi,NA,9514,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9514-23,Mixed,Cisco
+Chisasibi,NA,9515,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_9515-23,Mixed,Cisco
+Chisasibi,NA,M10,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M10-23,Mixed,Cisco
+Chisasibi,NA,M11,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M11-23,Mixed,Cisco
+Chisasibi,NA,M12,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M12-23,Mixed,Cisco
+Chisasibi,NA,M13,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M13-23,Mixed,Cisco
+Chisasibi,NA,M14,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M14-23,Mixed,Cisco
+Chisasibi,NA,M15,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M15-23,Mixed,Cisco
+Chisasibi,NA,M16,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M16-23,Mixed,Cisco
+Chisasibi,NA,M17,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M17-23,Mixed,Cisco
+Chisasibi,NA,M18,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M18-23,Mixed,Cisco
+Chisasibi,NA,M19,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M19-23,Mixed,Cisco
+Chisasibi,NA,M20,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M20-23,Mixed,Cisco
+Chisasibi,NA,M21,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M21-23,Mixed,Cisco
+Chisasibi,NA,M22,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M22-23,Mixed,Cisco
+Chisasibi,NA,M23,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M23-23,Mixed,Cisco
+Chisasibi,NA,M24,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M24-23,Mixed,Cisco
+Chisasibi,NA,M25,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M25-23,Mixed,Cisco
+Chisasibi,NA,M26,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M26-23,Mixed,Cisco
+Chisasibi,NA,M27,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M27-23,Mixed,Cisco
+Chisasibi,NA,M28,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M28-23,Mixed,Cisco
+Chisasibi,NA,M29,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M29-23,Mixed,Cisco
+Chisasibi,NA,M30,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M30-23,Mixed,Cisco
+Chisasibi,NA,M31,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M31-23,Mixed,Cisco
+Chisasibi,NA,M32,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M32-23,Mixed,Cisco
+Chisasibi,NA,M33,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M33-23,Mixed,Cisco
+Chisasibi,NA,M34,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M34-23,Mixed,Cisco
+Chisasibi,NA,M35,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M35-23,Mixed,Cisco
+Chisasibi,NA,M36,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M36-23,Mixed,Cisco
+Chisasibi,NA,M37,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M37-23,Mixed,Cisco
+Chisasibi,NA,M38,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M38-23,Mixed,Cisco
+Chisasibi,NA,M39,Cisco,11-08-2023,53.402185,53.402185,coarCHIm_M39-23,Mixed,Cisco
+Chisasibi,NA,M40,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M40-23,Mixed,Cisco
+Chisasibi,NA,M41,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M41-23,Mixed,Cisco
+Chisasibi,NA,M42,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M42-23,Mixed,Cisco
+Chisasibi,NA,M43,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M43-23,Mixed,Cisco
+Chisasibi,NA,M44,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M44-23,Mixed,Cisco
+Chisasibi,NA,M45,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M45-23,Mixed,Cisco
+Chisasibi,NA,M46,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M46-23,Mixed,Cisco
+Chisasibi,NA,M47,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M47-23,Mixed,Cisco
+Chisasibi,NA,M48,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M48-23,Mixed,Cisco
+Chisasibi,NA,M49,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M49-23,Mixed,Cisco
+Chisasibi,NA,M50,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M50-23,Mixed,Cisco
+Chisasibi,NA,M51,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M51-23,Mixed,Cisco
+Chisasibi,NA,M52,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M52-23,Mixed,Cisco
+Chisasibi,NA,M53,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M53-23,Mixed,Cisco
+Chisasibi,NA,M54,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M54-23,Mixed,Cisco
+Chisasibi,NA,M55,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M55-23,Mixed,Cisco
+Chisasibi,NA,M56,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M56-23,Mixed,Cisco
+Chisasibi,NA,M57,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M57-23,Mixed,Cisco
+Chisasibi,NA,M58,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M58-23,Mixed,Cisco
+Chisasibi,NA,M59,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M59-23,Mixed,Cisco
+Chisasibi,NA,M6,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M6-23,Mixed,Cisco
+Chisasibi,NA,M60,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M60-23,Mixed,Cisco
+Chisasibi,NA,M61,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M61-23,Mixed,Cisco
+Chisasibi,NA,M62,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M62-23,Mixed,Cisco
+Chisasibi,NA,M63,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M63-23,Mixed,Cisco
+Chisasibi,NA,M64,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M64-23,Mixed,Cisco
+Chisasibi,NA,M65,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M65-23,Mixed,Cisco
+Chisasibi,NA,M66,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M66-23,Mixed,Cisco
+Chisasibi,NA,M67,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M67-23,Mixed,Cisco
+Chisasibi,NA,M68,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M68-23,Mixed,Cisco
+Chisasibi,NA,M69,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M69-23,Mixed,Cisco
+Chisasibi,NA,M7,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M7-23,Mixed,Cisco
+Chisasibi,NA,M70,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M70-23,Mixed,Cisco
+Chisasibi,NA,M71,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M71-23,Mixed,Cisco
+Chisasibi,NA,M72,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M72-23,Mixed,Cisco
+Chisasibi,NA,M8,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M8-23,Mixed,Cisco
+Chisasibi,NA,M9,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M9-23,Mixed,Cisco
+Chisasibi,NA,M45,Cisco,13-08-2023,53.402185,53.402185,coarCHIm_M45-23,Mixed,Cisco
+Eastmain,Eastmain River/Fishing River Opening,687,Cisco,22-03-2022,52.25548,-78.44465,coarEASs_687-22,Source,Cisco
+Waskaganish,NottawayRiver,NOT_36EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7536-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_37EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7537-21,Source,Cisco
+Waskaganish,NottawayRiver,NOT_38EARLY,Cisco,05-08-2021,51.177888,-78.908844,coarNOTs_7538-21,Source,Cisco
+Waskaganish,Upichun,3012,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3012-21,Mixed,Cisco
+Waskaganish,Upichun,3013,Cisco,28-07-2021,51.95576,-78.872863,coarWASm_3013-21,Mixed,Cisco
+Chisasibi,LaGrande,S21,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_021-20,Source,Whitefish
+Chisasibi,LaGrande,S22,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_022-20,Source,Whitefish
+Chisasibi,LaGrande,S23,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_023-20,Source,Whitefish
+Chisasibi,LaGrande,S24,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_024-20,Source,Whitefish
+Chisasibi,LaGrande,S25,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_025-20,Source,Whitefish
+Chisasibi,LaGrande,S26,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_026-20,Source,Whitefish
+Chisasibi,LaGrande,S27,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_027-20,Source,Whitefish
+Chisasibi,LaGrande,S28,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_028-20,Source,Whitefish
+Chisasibi,LaGrande,S29,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_029-20,Source,Whitefish
+Chisasibi,LaGrande,S30,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_030-20,Source,Whitefish
+Chisasibi,KaapsaouiRiver,2241,Whitefish,10-06-2021,54.324954,-79.463733,coclCHIm_2241-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2240,Whitefish,10-06-2021,54.324954,-79.463733,coclCHIm_2240-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2236,Whitefish,15-06-2021,54.324954,-79.463733,coclCHIm_2236-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2234,Whitefish,15-06-2021,54.324954,-79.463733,coclCHIm_2234-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2232,Whitefish,15-06-2021,54.324954,-79.463733,coclCHIm_2232-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2231,Whitefish,15-06-2021,54.324954,-79.463733,coclCHIm_2231-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2229,Whitefish,15-06-2021,54.324954,-79.463733,coclCHIm_2229-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2227,Whitefish,15-06-2021,54.324954,-79.463733,coclCHIm_2227-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2623,Whitefish,15-06-2021,54.324956,-79.463733,coclCHIm_2623-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2618,Whitefish,16-06-2021,54.324956,-79.463733,coclCHIm_2618-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2613,Whitefish,16-06-2021,54.324956,-79.463733,coclCHIm_2613-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2605,Whitefish,17-06-2021,54.324956,-79.463733,coclCHIm_2605-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2602,Whitefish,17-06-2021,54.324956,-79.463733,coclCHIm_2602-21,Mixed,Whitefish
+Chisasibi,KaapsaouiRiver,2601,Whitefish,17-06-2021,54.324956,-79.463733,coclCHIm_2601-21,Mixed,Whitefish
+Eastmain,JamesBay,101,Whitefish,12-07-2021,52.264913,-78.577624,coclEASm_101-21,Mixed,Whitefish
+Eastmain,JamesBay,102,Whitefish,12-07-2021,52.264913,-78.577624,coclEASm_102-21,Mixed,Whitefish
+Eastmain,JamesBay,118,Whitefish,13-07-2021,52.264913,-78.577624,coclEASm_118-21,Mixed,Whitefish
+Eastmain,JamesBay,124,Whitefish,13-07-2021,52.264913,-78.577624,coclEASm_124-21,Mixed,Whitefish
+Eastmain,JamesBay,127,Whitefish,13-07-2021,52.264913,-78.577624,coclEASm_127-21,Mixed,Whitefish
+Eastmain,JamesBay,173,Whitefish,13-07-2021,52.395776,-78.585771,coclEASm_173-21,Mixed,Whitefish
+Eastmain,JamesBay,174,Whitefish,13-07-2021,52.395776,-78.585771,coclEASm_174-21,Mixed,Whitefish
+Eastmain,JamesBay,281,Whitefish,14-07-2021,52.395776,-78.585771,coclEASm_281-21,Mixed,Whitefish
+Eastmain,JamesBay,313,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_313-21,Mixed,Whitefish
+Eastmain,JamesBay,352,Whitefish,14-07-2021,52.264913,-78.577624,coclEASm_352-21,Mixed,Whitefish
+Eastmain,JamesBay,353,Whitefish,14-07-2021,52.264913,-78.577624,coclEASm_353-21,Mixed,Whitefish
+Eastmain,JamesBay,390,Whitefish,14-07-2021,52.264913,-78.577624,coclEASm_390-21,Mixed,Whitefish
+Eastmain,JamesBay,393,Whitefish,15-07-2021,52.264913,-78.577624,coclEASm_393-21,Mixed,Whitefish
+Eastmain,JamesBay,394,Whitefish,15-07-2021,52.264913,-78.577624,coclEASm_394-21,Mixed,Whitefish
+Eastmain,JamesBay,411,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_411-21,Mixed,Whitefish
+Eastmain,JamesBay,412,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_412-21,Mixed,Whitefish
+Eastmain,JamesBay,416,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_416-21,Mixed,Whitefish
+Eastmain,JamesBay,424,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_424-21,Mixed,Whitefish
+Eastmain,JamesBay,427,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_427-21,Mixed,Whitefish
+Eastmain,JamesBay,431,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_431-21,Mixed,Whitefish
+Eastmain,JamesBay,436,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_436-21,Mixed,Whitefish
+Eastmain,JamesBay,439,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_439-21,Mixed,Whitefish
+Eastmain,JamesBay,441,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_441-21,Mixed,Whitefish
+Eastmain,JamesBay,446,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_446-21,Mixed,Whitefish
+Eastmain,JamesBay,447,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_447-21,Mixed,Whitefish
+Eastmain,JamesBay,452,Whitefish,17-07-2021,52.395776,-78.585771,coclEASm_452-21,Mixed,Whitefish
+Waskaganish,RupertBay,2912,Whitefish,18-06-2021,51.39016,-78.96594,coclWASm_2912-21,Mixed,Whitefish
+Waskaganish,JamesBay,3136,Whitefish,16-07-2021,51.955761,-78.872863,coclWASm_3136-21,Mixed,Whitefish
+Chisasibi,RogganRiver,2001,Whitefish,18-06-2021,54.406767,-79.507696,coclROGs_2001-21,Source,Whitefish
+Chisasibi,RogganRiver,2004,Whitefish,18-06-2021,54.406767,-79.507696,coclROGs_2004-21,Source,Whitefish
+Chisasibi,RogganRiver,2007,Whitefish,18-06-2021,54.406767,-79.507696,coclROGs_2007-21,Source,Whitefish
+Chisasibi,RogganRiver,2008,Whitefish,18-06-2021,54.406767,-79.507696,coclROGs_2008-21,Source,Whitefish
+Chisasibi,RogganRiver,2010,Whitefish,18-06-2021,54.406767,-79.507696,coclROGs_2010-21,Source,Whitefish
+Chisasibi,RogganRiver,2012,Whitefish,18-06-2021,54.406767,-79.507696,coclROGs_2012-21,Source,Whitefish
+Chisasibi,RogganRiver,2013,Whitefish,18-06-2021,54.406767,-79.507696,coclROGs_2013-21,Source,Whitefish
+Chisasibi,RogganRiver,2016,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2016-21,Source,Whitefish
+Chisasibi,RogganRiver,2017,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2017-21,Source,Whitefish
+Chisasibi,RogganRiver,2019,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2019-21,Source,Whitefish
+Chisasibi,RogganRiver,2020,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2020-21,Source,Whitefish
+Chisasibi,RogganRiver,2021,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2021-21,Source,Whitefish
+Chisasibi,RogganRiver,2022,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2022-21,Source,Whitefish
+Chisasibi,RogganRiver,2023,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2023-21,Source,Whitefish
+Chisasibi,RogganRiver,2151,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2151-21,Source,Whitefish
+Chisasibi,RogganRiver,2152,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2152-21,Source,Whitefish
+Chisasibi,RogganRiver,2153,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2153-21,Source,Whitefish
+Chisasibi,RogganRiver,2154,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2154-21,Source,Whitefish
+Chisasibi,RogganRiver,2155,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2155-21,Source,Whitefish
+Chisasibi,RogganRiver,2156,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2156-21,Source,Whitefish
+Chisasibi,RogganRiver,2157,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2157-21,Source,Whitefish
+Chisasibi,RogganRiver,2158,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2158-21,Source,Whitefish
+Chisasibi,RogganRiver,2159,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2159-21,Source,Whitefish
+Chisasibi,RogganRiver,2160,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2160-21,Source,Whitefish
+Chisasibi,RogganRiver,2161,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2161-21,Source,Whitefish
+Chisasibi,RogganRiver,2162,Whitefish,22-06-2021,54.406767,-79.507696,coclROGs_2162-21,Source,Whitefish
+Chisasibi,RogganRiver,2163,Whitefish,23-06-2021,54.406767,-79.507696,coclROGs_2163-21,Source,Whitefish
+Chisasibi,RogganRiver,2165,Whitefish,23-06-2021,54.406767,-79.507696,coclROGs_2165-21,Source,Whitefish
+Chisasibi,RogganRiver,2173,Whitefish,23-06-2021,54.406767,-79.507696,coclROGs_2173-21,Source,Whitefish
+Chisasibi,RogganRiver,2174,Whitefish,23-06-2021,54.406767,-79.507696,coclROGs_2174-21,Source,Whitefish
+Chisasibi,RogganRiver,2175,Whitefish,23-06-2021,54.406767,-79.507696,coclROGs_2175-21,Source,Whitefish
+Chisasibi,BeaverRiver,2176,Whitefish,26-07-2021,53.406114,-79.025822,coclBEAs_2176-21,Source,Whitefish
+Waskaganish,Upichun,3239,Whitefish,23-07-2021,51.955761,-78.872863,coclWASm_3239-21,Mixed,Whitefish
+Waskaganish,Upichun,3266,Whitefish,23-07-2021,51.955761,-78.872863,coclWASm_3266-21,Mixed,Whitefish
+Chisasibi,Biagadwshi,2794,Whitefish,18-08-2021,54.018825,-79.086647,coclBIAs_2794-21,Source,Whitefish
+Chisasibi,Biagadwshi,2797,Whitefish,19-08-2021,54.018825,-79.086647,coclBIAs_2797-21,Source,Whitefish
+Chisasibi,Biagadwshi,2785,Whitefish,20-08-2021,54.018825,-79.086647,coclBIAs_2785-21,Source,Whitefish
+Chisasibi,LaGrandeRiver,1877,Whitefish,28-07-2021,53.843409,-79.053399,coclLAGs_1877-21,Source,Whitefish
+Chisasibi,LaGrandeRiver,1878,Whitefish,29-07-2021,53.843409,-79.053399,coclLAGs_1878-21,Source,Whitefish
+Chisasibi,LaGrandeRiver,1879,Whitefish,31-07-2021,53.843409,-79.053399,coclLAGs_1879-21,Source,Whitefish
+Chisasibi,LaGrandeRiver,1881,Whitefish,31-07-2021,53.843409,-79.053399,coclLAGs_1881-21,Source,Whitefish
+Chisasibi,LaGrandeRiver,1882,Whitefish,31-07-2021,53.843409,-79.053399,coclLAGs_1882-21,Source,Whitefish
+Chisasibi,BeaverRiverArea,1980,Whitefish,21-08-2021,53.40647,-79.033438,coclCHIm_1980-21,Mixed,Whitefish
+Chisasibi,BeaverRiverArea,1981,Whitefish,21-08-2021,53.40647,-79.033438,coclCHIm_1981-21,Mixed,Whitefish
+Chisasibi,Biagadwshi,2423,Whitefish,02-09-2021,54.018825,-79.086647,coclBIAs_2423-21,Source,Whitefish
+Chisasibi,Biagadwshi,2420,Whitefish,02-09-2021,54.018825,-79.086647,coclBIAs_2420-21,Source,Whitefish
+Chisasibi,Biagadwshi,2416,Whitefish,02-09-2021,54.018825,-79.086647,coclBIAs_2416-21,Source,Whitefish
+Chisasibi,Biagadwshi,2409,Whitefish,02-09-2021,54.018825,-79.086647,coclBIAs_2409-21,Source,Whitefish
+Eastmain,JamesBay,553,Whitefish,14-09-2021,52.395776,-78.585771,coclEASm_553-21,Mixed,Whitefish
+Eastmain,JamesBay,566,Whitefish,14-09-2021,52.395776,-78.585771,coclEASm_566-21_1,Mixed,Whitefish
+Eastmain,JamesBay,570,Whitefish,14-09-2021,52.395776,-78.585771,coclEASm_570-21,Mixed,Whitefish
+Eastmain,EastmainRiver,624,Whitefish,27-10-2021,52.256064,-78.44315,coclEASs_624-21,Source,Whitefish
+Wemindji,LongPoint,1028,Whitefish,09-11-2021,52.883406,-78.89101,coclWEMm_1028-21,Mixed,Whitefish
+Waskaganish,NottawayRiver,,Whitefish,01-10-2021,51.177888,-78.908844,coclNOTs_7032-21,Source,Whitefish
+Eastmain,Mixed,800,Whitefish,15-07-2022,52.26318,-78.56783,coclEASm_800-22,Mixed,Whitefish
+Eastmain,Mixed,846,Whitefish,19-07-2022,52.26318,-78.56783,coclEASm_846-22,Mixed,Whitefish
+Eastmain,Mixed,866,Whitefish,19-07-2022,52.26318,-78.56783,coclEASm_866-22,Mixed,Whitefish
+Eastmain,Mixed,4309,Whitefish,18-08-2022,52.398367,-78.577657,coclEASm_4309-22,Mixed,Whitefish
+Eastmain,Spit Island,4360,Whitefish,19-08-2022,52.3983,-78.5776,coclEASm_4360-22,Mixed,Whitefish
+Eastmain,Spit Island,4363,Whitefish,19-08-2022,52.3983,-78.5776,coclEASm_4363-22,Mixed,Whitefish
+Eastmain,Spit Island,4369,Whitefish,19-08-2022,52.3983,-78.5776,coclEASm_4369-22,Mixed,Whitefish
+Eastmain,Spit Island,4373,Whitefish,19-08-2022,52.3983,-78.5776,coclEASm_4373-22,Mixed,Whitefish
+Eastmain,Spit Island,4377,Whitefish,19-08-2022,52.3983,-78.5776,coclEASm_4377-22,Mixed,Whitefish
+Waskaganish,Rupert Bay,3728,whitefish,09-08-2022,51.300805,-78.923716,coclWASm_3728-22,Mixed,Whitefish
+Waskaganish,Rupert Bay,3729,whitefish,09-08-2022,51.300805,-78.923716,coclWASm_3729-22,Mixed,Whitefish
+Waskaganish,Rupert Bay,3732,whitefish,09-08-2022,51.300805,-78.923716,coclWASm_3732-22,Mixed,Whitefish
+Waskaganish,Rupert Bay,3733,whitefish,09-08-2022,51.300805,-78.923716,coclWASm_3733-22,Mixed,Whitefish
+Wemindji,Aachikush Aapish-Kishit,1071,Whitefish,08-09-2022,52.997094,-78.958151,coclWEMm_1071-22,Mixed,Whitefish
+Wemindji,Aachikush Aapish-Kishit,1072,Whitefish,08-09-2022,52.997094,-78.958151,coclWEMm_1072-22,Mixed,Whitefish
+Wemindji,Aachikush Aapish-Kishit,1074,Whitefish,08-09-2022,52.997094,-78.958151,coclWEMm_1074-22,Mixed,Whitefish
+Wemindji,Waayaau,1117,Whitefish,23-08-2022,52.983408,-78.901603,coclWEMm_1117-22,Mixed,Whitefish
+Wemindji,Waamishtikushiish,1161,Whitefish,23-08-2022,52.989387,-78.93899,coclWEMm_1161-22,Mixed,Whitefish
+Wemindji,Uwaayaau,1018,Whitefish,08-05-2022,52.983565,-78.942004,coclWEMm_1018-22,Mixed,Whitefish
+Wemindji,Wamish-Tikushiish,1164,Whitefish,23-08-2022,52.989387,-78.901603,coclWEMm_1164-22,Mixed,Whitefish
+Wemindji,Wamish-Tikushiish,1168,Whitefish,23-08-2022,52.989387,-78.901603,coclWEMm_1168-22,Mixed,Whitefish
+Whapmagoostui,Hudson's Bay - First River,4762,Whitefish,29-07-2022,55.25,-79.6466,coclWHAm_4762-22,Mixed,Whitefish
+Whapmagoostui,Hudson's Bay - First River,4770,Whitefish,29-07-2022,55.25,-79.6466,coclWHAm_4770-22,Mixed,Whitefish
+Whapmagoostui,Hudson's Bay - First River,9055,Whitefish,02-08-2022,55.25,-79.6466,coclWHAm_9055-22,Mixed,Whitefish
+Whapmagoostui,Hudson's Bay - First River,9056,Whitefish,02-08-2022,55.25,-79.6466,coclWHAm_9056-22,Mixed,Whitefish
+Whapmagoostui,Hudson's Bay - First River,9063,Whitefish,02-08-2022,55.25,-79.6466,coclWHAm_9063-22,Mixed,Whitefish
+Whapmagoostui,First River,9067,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9067-22,Mixed,Whitefish
+Whapmagoostui,First River,9068,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9068-22,Mixed,Whitefish
+Whapmagoostui,First River,9069,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9069-22,Mixed,Whitefish
+Whapmagoostui,First River,9071,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9071-22,Mixed,Whitefish
+Whapmagoostui,First River,9073,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9073-22,Mixed,Whitefish
+Whapmagoostui,First River,9074,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9074-22,Mixed,Whitefish
+Whapmagoostui,First River,9077,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9077-22,Mixed,Whitefish
+Whapmagoostui,First River,9079,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9079-22,Mixed,Whitefish
+Whapmagoostui,First River,9088,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9088-22,Mixed,Whitefish
+Whapmagoostui,First River,9166,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9166-22,Mixed,Whitefish
+Whapmagoostui,First River,9167,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9167-22,Mixed,Whitefish
+Whapmagoostui,First River,9168,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9168-22,Mixed,Whitefish
+Whapmagoostui,First River,9171,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9171-22,Mixed,Whitefish
+Whapmagoostui,First River,9174,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9174-22,Mixed,Whitefish
+Whapmagoostui,First River,9177,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9177-22,Mixed,Whitefish
+Whapmagoostui,First River,9180,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9180-22,Mixed,Whitefish
+Whapmagoostui,First River,9182,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9182-22,Mixed,Whitefish
+Whapmagoostui,First River,9231,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9231-22,Mixed,Whitefish
+Whapmagoostui,First River,9233,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9233-22,Mixed,Whitefish
+Whapmagoostui,First River,9234,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9234-22,Mixed,Whitefish
+Whapmagoostui,First River,9235,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9235-22,Mixed,Whitefish
+Whapmagoostui,First River,9236,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9236-22,Mixed,Whitefish
+Whapmagoostui,First River,9238,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9238-22,Mixed,Whitefish
+Whapmagoostui,First River,9317,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9317-22,Mixed,Whitefish
+Whapmagoostui,First River,9319,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9319-22,Mixed,Whitefish
+Whapmagoostui,First River,9326,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9326-22,Mixed,Whitefish
+Whapmagoostui,First River,9327,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9327-22,Mixed,Whitefish
+Whapmagoostui,First River,9328,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9328-22,Mixed,Whitefish
+Whapmagoostui,First River,9330,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9330-22,Mixed,Whitefish
+Whapmagoostui,First River,9334,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9334-22,Mixed,Whitefish
+Whapmagoostui,First River,9336,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9336-22,Mixed,Whitefish
+Whapmagoostui,First River,9337,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9337-22,Mixed,Whitefish
+Whapmagoostui,First River,9338,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9338-22,Mixed,Whitefish
+Whapmagoostui,First River,9340,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9340-22,Mixed,Whitefish
+Whapmagoostui,Little Whale River,9242,Whitefish,14-08-2022,56.5206667,-77.3271667,coclWHAm_9242-22,Mixed,Whitefish
+Whapmagoostui,Little Whale River,9246,Whitefish,14-08-2022,56.5206667,-77.3271667,coclWHAm_9246-22,Mixed,Whitefish
+Whapmagoostui,First River,9395,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9395-22,Mixed,Whitefish
+Whapmagoostui,First River,9401,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9401-22,Mixed,Whitefish
+Whapmagoostui,First River,9410,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9410-22,Mixed,Whitefish
+Whapmagoostui,First River,9415,Whitefish,14-08-2022,55.25,-79.6466,coclWHAm_9415-22,Mixed,Whitefish
+Eastmain,Eastmain River/Fishing River Opening,634,Whitefish,22-03-2022,52.25548,-78.44465,coclEASs_634-22,Source,Whitefish
+Eastmain,Eastmain River/Fishing River Opening,640,Whitefish,22-03-2022,52.25548,-78.44465,coclEASs_640-22,Source,Whitefish
+Eastmain,Eastmain River/Fishing River,726,Whitefish,28-03-2022,52.257035,-78.436755,coclEASs_726-22,Source,Whitefish
+Eastmain,Eastmain River/Fishing River,730,Whitefish,28-03-2022,52.257035,-78.436755,coclEASs_730-22,Source,Whitefish
+Eastmain,Eastmain River/Fishing River,735,Whitefish,28-03-2022,52.257035,-78.436755,coclEASs_735-22,Source,Whitefish
+Eastmain,Eastmain River/Fishing River,738,Whitefish,28-03-2022,52.257035,-78.436755,coclEASs_738-22,Source,Whitefish
+Eastmain,Eastmain River/Fishing River,778,Whitefish,30-03-2022,52.257035,-78.436755,coclEASs_778-22,Source,Whitefish
+Chisasibi,LG1,2842,Whitefish,16-06-2021,54.3445,-77.4905,coclLAGs_2842-22,Source,Whitefish
+Eastmain,JamesBay,566,Whitefish,14-09-2021,52.395776,-78.585771,coclEASm_566-21,Mixed,Whitefish
+Chisasibi,LaGrande,S21,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_021-20,Source,Whitefish
+Chisasibi,LaGrande,S22,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_022-20,Source,Whitefish
+Chisasibi,LaGrande,S23,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_023-20,Source,Whitefish
+Chisasibi,LaGrande,S24,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_024-20,Source,Whitefish
+Chisasibi,LaGrande,S25,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_025-20,Source,Whitefish
+Chisasibi,LaGrande,S26,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_026-20,Source,Whitefish
+Chisasibi,LaGrande,S27,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_027-20,Source,Whitefish
+Chisasibi,LaGrande,S28,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_028-20,Source,Whitefish
+Chisasibi,LaGrande,S29,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_029-20,Source,Whitefish
+Chisasibi,LaGrande,S30,Whitefish,20-10-2020,53.839,-78.947616,coclLAGs_030-20,Source,Whitefish
