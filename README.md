@@ -119,4 +119,4 @@ If you use these scripts, please cite:
 
 ## Contact
 
-Raphaël Bouchard — raphael.bouchard.1@ulaval.ca  
+Raphaël Bouchard — raphael.bouchard.3@ulaval.ca  
