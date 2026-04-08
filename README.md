@@ -2,7 +2,7 @@
 
 This repository contains all custom scripts used for the analyses and figures presented in:
 
-> Bouchard R. et al. (*in review*). [Manuscript title]. *Nature Ecology & Evolution*.
+> Bouchard R. et al. (*in review*). [Indigenous knowledge reveals overlooked eco-evolutionary divergence in anadromous cisco]. *Nature Ecology & Evolution*.
 
 ---
 
