@@ -1,0 +1,23 @@
+# RStudio session files
+.Rproj.user/
+.Rhistory
+.RData
+*.Rproj
+
+# Figures and temporary outputs
+R/figures/*
+R/tmp/*
+!R/figures/.gitkeep
+!R/tmp/.gitkeep
+
+# macOS system files
+.DS_Store
+._*
+
+# Temporary files
+*.tmp
+
+# AlphaFold outputs (large)
+R/data/mc4r/mc4r_kuukamek_6aa7e/
+R/data/mc4r/mc4r_nutamesanio_10238/
+EOF
