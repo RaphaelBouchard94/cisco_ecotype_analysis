@@ -62,7 +62,7 @@ pca_coar
 
 ##add info on pop
 
-ggplot(pca_coar, aes(x = PC1,y = PC2,color = pop ))+
+pca <- ggplot(pca_coar, aes(x = PC1,y = PC2,color = pop ))+
   geom_point(alpha=0.8,size = 4)+
   xlab("PC1 (8.39%)")+
   ylab("PC2 (1.15%)")+
@@ -73,7 +73,13 @@ ggplot(pca_coar, aes(x = PC1,y = PC2,color = pop ))+
         legend.position = c(0.7,0.25))
 
 
-ggsave("figures/04_pca.png",
+ggplotly(pca)
+
+summ <- pca_coar |> filter(PC1 > 0.2) |> pull(id)
+
+write.table(summ, "data/pca/summer_geno.tsv", quote = F, row.names = F, col.names = F)
+
+ggsave("figures/04_pca.png", pca,
        width = 10, height = 10, unit = "cm", dpi = 900)
 
 

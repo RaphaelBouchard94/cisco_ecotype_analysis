@@ -1,20 +1,20 @@
 rm(list = ls())
 
+
 #################
 #### Library ####
 #################
 
+library(MASS)        # load before tidyverse so dplyr::select() isn't masked
+library(car)
 library(tidyverse)
 library(magrittr)
-library(MASS)
-library(vegan)
-library(effectsize)
-library(reshape2)
-library(ggridges)
-library(patchwork)
-library(forcats)
-library(ggrepel)
 library(openxlsx)
+
+source("99_morpho_helpers.R", local = TRUE)
+dir.create("figures", showWarnings = FALSE)
+
+N_PERM <- 1000
 
 #################
 ### Load Data ###
@@ -23,478 +23,188 @@ library(openxlsx)
 data <- read.csv("data/data_gillrak_geomorph_age.csv", header = TRUE)
 
 data %<>%
-  mutate(gill_raker_count = upper_gill_raker + lower_gill_raker) %>%
-  filter(sex %in% c("F", "M"))
+  mutate(gill_raker_count = upper_gill_raker + lower_gill_raker,
+         river = if_else(str_detect(sample_id, 'NOT'), "NOT", "RUP")) %>%
+  filter(sex %in% c("F", "M")) %>%
+  mutate(true_eco = factor(true_eco),
+         sex      = factor(sex),
+         river    = factor(river))
 
-data$true_eco <- as.factor(data$true_eco)
-data$sex <- as.factor(data$sex)
+### CHANGED: traits by name ###################################################
+# Lengths that scale with body size -> size-corrected
+length_traits <- c("MXL", "MDL", "POL", "OOL", "PSL", "TTL", "DOL", "LUL",
+                   "ANL", "CPL", "CPD", "PCL", "PVL", "BDD", "HDD",
+                   "middle_gill_raker_length")
 
-data %<>% mutate(river = if_else(str_detect(sample_id,'NOT'),"NOT","RUP"))
-
-################################################
-# Correlation with fork length (diagnostic only)
-
-panel.cor <- function(x, y, digits = 2, prefix = "", cex.cor, ...) {
-  usr <- par("usr")
-  on.exit(par(usr))
-  par(usr = c(0, 1, 0, 1))
-  r <- abs(cor(x, y, use = "complete.obs"))
-  txt <- formatC(r, format = "f", digits = digits)
-  if (missing(cex.cor)) cex.cor <- 0.8
-  text(0.5, 0.5, txt, cex = cex.cor)
-}
-
-pairs(
-  data[, c(4, 12:30)],
-  upper.panel = panel.cor,
-  lower.panel = panel.smooth
-)
+missing_cols <- setdiff(c(length_traits, "AMO", "long_fourche", "gill_raker_count"), names(data))
+if (length(missing_cols) > 0) stop("Columns not found in the CSV: ", paste(missing_cols, collapse = ", "))
 
 ###################################################
-# Length standardisation (residuals)
+# Size correction (residuals on log fork length)
+###################################################
 
-traits_to_correct <- 13:29
-
-for (i in traits_to_correct) {
-  m <- lm(log(data[[i]]) ~ log(data$long_fourche))
-  data[[paste0(names(data)[i], "_res")]] <- rstandard(m)
+for (tr in length_traits) {
+  m <- lm(log(data[[tr]]) ~ log(data$long_fourche), na.action = na.exclude)
+  data[[paste0(tr, "_res")]] <- rstandard(m)
 }
 
 #######################################
-# MANOVA
+# MANOVA (Type II)
+#######################################
+
+responses <- c("AMO",
+               paste0(length_traits, "_res"),
+               "gill_raker_count")
 
 data_manova <- data %>%
-  dplyr::select(
-    river, sex, true_eco,
-    AMO,
-    MXL_res:HDD_res,
-    -AMO_res,
-    middle_gill_raker_length,
-    gill_raker_count
-  ) %>%
-  drop_na()
+  dplyr::select(sample_id, river, sex, true_eco, long_fourche,
+                all_of(length_traits), all_of(responses)) %>%
+  drop_na(all_of(responses))
 
-manova_fit <- manova(
-  cbind(
-    AMO, MXL_res, MDL_res, POL_res, OOL_res, PSL_res,
-    TTL_res, DOL_res, LUL_res, ANL_res, CPL_res, CPD_res,
-    PCL_res, PVL_res, BDD_res, HDD_res,
-    gill_raker_count, middle_gill_raker_length
-  ) ~ true_eco * sex + river,
-  data = data_manova
-)
+cat("Fish in the MANOVA:", nrow(data_manova), "\n")
+print(table(data_manova$true_eco, data_manova$sex))
 
-summary(manova_fit, test = "Wilks")
+Y <- as.matrix(data_manova[, responses])
+mlm_fit <- lm(Y ~ true_eco * sex + river, data = data_manova)
 
 
-aov_list <- summary.aov(manova_fit)
-
-# Combine into a single data frame
-manova_combined <- bind_rows(
-  lapply(names(aov_list), function(trait) {
-    df <- as.data.frame(aov_list[[trait]])
-    df$Trait <- trait             # add column for trait name
-    df$Term <- rownames(df)       # rownames = model terms
-    df <- df[, c("Trait", "Term", "Df", "Sum Sq", "Mean Sq", "F value", "Pr(>F)")]
-    return(df)
-  })
-)
-
-# Create workbook and add a single sheet
-# wb <- createWorkbook()
-# addWorksheet(wb, "MANOVA_linear_traits")
-# writeData(wb, sheet = "MANOVA_linear_traits", manova_combined)
-# 
-# # Save Excel file
-# saveWorkbook(wb, "res/supplementary_table.xlsx", overwrite = TRUE)
-# 
-
-sign_var_eco <- c("DOL_res","ANL_res","CPL_res","gill_raker_count","middle_gill_raker_length")
-
-#Plot individual trait
-
-prop_var_grk  <- aov_list$` Response gill_raker_count`$`Sum Sq`[1] / (aov_list$` Response gill_raker_count`$`Sum Sq`[1] + aov_list$` Response gill_raker_count`$`Sum Sq`[5]) * 100
-
-f_grk <- aov_list$` Response gill_raker_count`$`F value`[1]
-
-label_text_grk <- paste0("F = ", round(f_grk,3) , "\nPVE = ", round(prop_var_grk,3))
-
-grk <- ggplot(data %>% mutate(true_eco = fct_relevel(true_eco, "summer_run","fall_run")), aes(x = true_eco, y = gill_raker_count)) +
-  geom_boxplot(fill = "white", width = 0.3, notch = T,outlier.alpha = 0) +
-  geom_jitter(aes(color = true_eco), width = 0.1, alpha = 0.6)+
-  scale_color_manual(values = c("#E69F00","skyblue1"))+
-  scale_x_discrete(labels = c("KUU","NUT"))+
-  xlab("")+
-  ylab("Total rakers counts")+
-  theme_bw(base_size = 14)+
-  theme(panel.border = element_rect(colour = "black",fill=NA),
-        panel.grid = element_blank(),
-        legend.position = "none")+
-  annotate("text", 
-           x = 0.5, # position on x-axis (adjust if needed)
-           y = 32, 
-           label = label_text_grk, 
-           hjust = 0, vjust = -0.2, size = 4)
-
-grk
-
-ggsave("figures/01_totgrc.png",width = 10, height = 10, unit = "cm", dpi = 600)
-
-prop_var_mgr  <- aov_list$` Response middle_gill_raker_length`$`Sum Sq`[1] / (aov_list$` Response middle_gill_raker_length`$`Sum Sq`[1] + aov_list$` Response middle_gill_raker_length`$`Sum Sq`[5]) * 100
-
-f_mgr <- aov_list$` Response middle_gill_raker_length`$`F value`[1]
-
-label_text_mgr <- paste0("F = ", round(f_mgr,3) , "\nPVE = ", round(prop_var_mgr,3))
-
-mgrk <- ggplot(data %>% mutate(true_eco = fct_relevel(true_eco, "summer_run","fall_run")), aes(x = true_eco, y = middle_gill_raker_length)) +
-  geom_boxplot(fill = "white", width = 0.3, notch = T,outlier.alpha = 0) +
-  geom_jitter(aes(color = true_eco), width = 0.1, alpha = 0.6)+
-  scale_color_manual(values = c("#E69F00","skyblue1"))+
-  scale_x_discrete(labels = c("KUU","NUT"))+
-  xlab("")+
-  ylab("Middle gill raker length")+
-  theme_bw(base_size = 14)+
-  theme(panel.border = element_rect(colour = "black",fill=NA),
-        panel.grid = element_blank(),
-        legend.position = "none")+
-  annotate("text", 
-           x = 0.5, 
-           y = 33, 
-           label = label_text_mgr, 
-           hjust = 0, vjust = -0.2, size = 4)
-
-mgrk
-
-ggsave("figures/01_mgrc.png",width = 10, height = 10, unit = "cm", dpi = 600)
-
-prop_var_anl  <- aov_list$` Response ANL_res`$`Sum Sq`[1] / (aov_list$` Response ANL_res`$`Sum Sq`[1] + aov_list$` Response ANL_res`$`Sum Sq`[5]) * 100
-
-f_anl <- aov_list$` Response ANL_res`$`F value`[1]
-
-label_text_anl <- paste0("F = ", round(f_anl,3) , "\nPVE = ", round(prop_var_anl,3))
-
-anl <- ggplot(data %>% mutate(true_eco = fct_relevel(true_eco, "summer_run","fall_run")), aes(x = true_eco, y = ANL/long_fourche)) +
-  geom_boxplot(fill = "white", width = 0.3, notch = T, outlier.alpha = 0) +
-  geom_jitter(aes(color = true_eco), width = 0.1, alpha = 0.6)+
-  scale_color_manual(values = c("#E69F00","skyblue1"))+
-  scale_x_discrete(labels = c("KUU","NUT"))+
-  xlab("")+
-  ylab("Anal")+
-  theme_bw(base_size = 14)+
-  theme(panel.border = element_rect(colour = "black",fill=NA),
-        panel.grid = element_blank(),
-        legend.position = "none")+
-  annotate("text", 
-           x = 0.5, 
-           y = 0.007, 
-           label = label_text_anl, 
-           hjust = 0, vjust = -0.2, size = 4)
-
-anl
-
-ggsave("figures/01_anl.png",width = 10, height = 10, unit = "cm", dpi = 600)
-
-prop_var_dol  <- aov_list$` Response DOL_res`$`Sum Sq`[1] / (aov_list$` Response DOL_res`$`Sum Sq`[1] + aov_list$` Response DOL_res`$`Sum Sq`[5]) * 100
-
-f_dol <- aov_list$` Response DOL_res`$`F value`[1]
-
-label_text_dol <- paste0("F = ", round(f_dol,3) , "\nPVE = ", round(prop_var_dol,3))
-
-dol <- ggplot(data %>% mutate(true_eco = fct_relevel(true_eco, "summer_run","fall_run")), aes(x = true_eco, y = DOL/long_fourche)) +
-  geom_boxplot(fill = "white", width = 0.3, notch = T, outlier.alpha = 0) +
-  geom_jitter(aes(color = true_eco), width = 0.1, alpha = 0.6)+
-  scale_color_manual(values = c("#E69F00","skyblue1"))+
-  scale_x_discrete(labels = c("KUU","NUT"))+
-  xlab("")+
-  ylab("Dorsal")+
-  theme_bw(base_size = 14)+
-  theme(panel.border = element_rect(colour = "black",fill=NA),
-        panel.grid = element_blank(),
-        legend.position = "none")+
-  annotate("text", 
-           x = 0.5, 
-           y = 0.008, 
-           label = label_text_dol, 
-           hjust = 0, vjust = -0.2, size = 4)
-
-dol
-
-ggsave("figures/01_dol.png",width = 10, height = 10, unit = "cm", dpi = 600)
-
-prop_var_cpl  <- aov_list$` Response CPL_res`$`Sum Sq`[1] / (aov_list$` Response CPL_res`$`Sum Sq`[1] + aov_list$` Response CPL_res`$`Sum Sq`[5]) * 100
-
-f_cpl <- aov_list$` Response CPL_res`$`F value`[1]
-
-label_text_cpl <- paste0("F = ", round(f_cpl,3) , "\nPVE = ", round(prop_var_cpl,3))
-
-cpl <- ggplot(data %>% mutate(true_eco = fct_relevel(true_eco, "summer_run","fall_run")), aes(x = true_eco, y = CPL/long_fourche)) +
-  geom_boxplot(fill = "white", width = 0.3, notch = T, outlier.alpha = 0) +
-  geom_jitter(aes(color = true_eco), width = 0.1, alpha = 0.6)+
-  scale_color_manual(values = c("#E69F00","skyblue1"))+
-  scale_x_discrete(labels = c("KUU","NUT"))+
-  xlab("")+
-  ylab("Caudal Peduncle")+
-  theme_bw(base_size = 14)+
-  theme(panel.border = element_rect(colour = "black",fill=NA),
-        panel.grid = element_blank(),
-        legend.position = "none")+
-  annotate("text", 
-           x = 0.5, 
-           y = 0.0055, 
-           label = label_text_cpl, 
-           hjust = 0, vjust = -0.2, size = 4)
-
-cpl
-
-ggsave("figures/01_cpl.png",width = 10, height = 10, unit = "cm", dpi = 600)
+manova_II <- car::Manova(mlm_fit, type = "II")
+manova_multi <- wilks_table(manova_II)
+print(manova_multi)
+write_sheet(manova_multi, "MANOVA_multivariate")
 
 
-#######################################
-# LDA 
+uni <- map_dfr(responses, function(tr) {
+  fit <- lm(reformulate(c("true_eco * sex", "river"), response = tr), data = data_manova)
+  tab <- car::Anova(fit, type = "II")
+  ss_res <- tab["Residuals", "Sum Sq"]
+  tibble(Trait = tr,
+         Term  = rownames(tab),
+         SS    = tab[["Sum Sq"]],
+         Df    = tab[["Df"]],
+         F_value = tab[["F value"]],
+         p_value = tab[["Pr(>F)"]]) %>%
+    filter(Term != "Residuals") %>%
+    mutate(eta2_partial = SS / (SS + ss_res))     # partial eta-squared
+}) %>%
+  group_by(Term) %>%
+  mutate(p_adj_BH = p.adjust(p_value, method = "BH")) %>%   # across the 18 traits
+  ungroup()
 
-lda_data <- data_manova %>%
-  dplyr::select(
-    true_eco,
-    ANL_res,
-    DOL_res,
-    CPL_res,
-    gill_raker_count,
-    middle_gill_raker_length
-  ) %>%
-  drop_na()
+print(uni %>% filter(Term == "true_eco") %>% arrange(desc(eta2_partial)), n = Inf)
+write_sheet(uni, "MANOVA_linear_traits")
 
-lda_data$true_eco <- droplevels(lda_data$true_eco)
+#####################################################
+# Fig. 1c: partial eta-squared per trait and effect
+#####################################################
 
-set.seed(123)  # for reproducibility
-
-train_prop <- 0.7  # 70% training, 30% testing
-
-train_index <- lda_data %>%
-  group_by(true_eco) %>%
-  group_map(~ sample(seq_len(nrow(.)), size = floor(train_prop * nrow(.)))) %>%
-  unlist()
-
-train_data <- lda_data[train_index, ]
-test_data  <- lda_data[-train_index, ]
-
-lda_fit <- lda(true_eco ~ ., data = train_data)
-
-lda_pred <- predict(lda_fit, newdata = test_data)
-
-conf_mat <- table(
-  Observed  = test_data$true_eco,
-  Predicted = lda_pred$class
-)
-
-conf_mat
-
-accuracy <- sum(diag(conf_mat)) / sum(conf_mat)
-accuracy
-
-prop.table(table(test_data$true_eco))
-#My classifier performs worst that a naive majority-class classifier
-
-table(test_data$true_eco) / nrow(test_data)
-
-
-n_perm <- 1000
-perm_acc <- numeric(n_perm)
-
-for (i in seq_len(n_perm)) {
-  perm_labels <- sample(train_data$true_eco)
-  
-  lda_perm <- lda(perm_labels ~ ., data = train_data)
-  pred_perm <- predict(lda_perm, newdata = test_data)$class
-  
-  perm_acc[i] <- mean(pred_perm == test_data$true_eco)
-}
-
-p_value <- mean(perm_acc >= accuracy)
-
-p_value
-
-# -----------------------------
-# Settings
-# -----------------------------
-terms_keep <- c("true_eco", "sex", "river", "true_eco:sex")
-
-term_to_pred <- c(
-  "true_eco"     = "Ecotype",
-  "sex"          = "Sex",
-  "river"        = "River",
-  "true_eco:sex" = "Ecotype×Sex"
-)
-
-pred_levels <- c("Ecotype", "Sex", "River", "Ecotype×Sex")
+term_to_pred <- c("true_eco" = "Ecotype", "sex" = "Sex",
+                  "river" = "River", "true_eco:sex" = "Ecotype×Sex")
+pred_levels <- c("Ecotype", "Ecotype×Sex", "Sex", "River")
 
 trait_label <- function(x) {
   x %>%
     str_remove("_res$") %>%
-    recode(
-      "middle_gill_raker_length" = "MGRL",
-      "gill_raker_count" = "GRC"
-    )
+    dplyr::recode("middle_gill_raker_length" = "MGRL",
+                  "gill_raker_count" = "GRC")
 }
 
+alpha_sig   <- 0.05
 dodge_width <- 0.7
 
-# -----------------------------
-# Build eta_df from MANOVA univariate tables
-# -----------------------------
-aov_list <- summary.aov(manova_fit)
 
-eta_df <- purrr::imap_dfr(aov_list, function(tab, resp_name) {
-  df <- as.data.frame(tab) %>%
-    mutate(
-      Term  = str_squish(rownames(tab)),                       # trim trailing spaces
-      Trait = str_replace(resp_name, "^ Response ", "")
-    ) %>%
-    filter(Term %in% c(terms_keep, "Residuals")) %>%
-    dplyr::select(Trait, Term, `Sum Sq`, `Df`, `F value`, `Pr(>F)`)
-  
-  ss_resid <- df$`Sum Sq`[df$Term == "Residuals"][1]
-  
-  df %>%
-    filter(Term != "Residuals") %>%
-    mutate(
-      eta2_partial = `Sum Sq` / (`Sum Sq` + ss_resid),
-      Predictor    = unname(term_to_pred[Term])
-    )
-})
+eta_df <- uni %>%
+  mutate(Predictor = unname(term_to_pred[Term]),
+         Significance = factor(if_else(p_value < alpha_sig, "p < 0.05", "p ≥ 0.05"),
+                               levels = c("p < 0.05", "p ≥ 0.05")))
 
-alpha_sig <- 0.05
-
-eta_df <- eta_df %>%
-  mutate(
-    Significance = factor(
-      if_else(`Pr(>F)` < alpha_sig,
-              "p < 0.05",
-              "p ≥ 0.05"),
-      levels = c("p < 0.05", "p ≥ 0.05")
-    )
-  )
-
-
-
-# -----------------------------
-# Order traits by decreasing Ecotype eta^2
-# -----------------------------
 eco_order <- eta_df %>%
   filter(Predictor == "Ecotype") %>%
   arrange(desc(eta2_partial)) %>%
   pull(Trait)
 
-# -----------------------------
-# Prep plotting data (clean labels + manual x positions)
-# -----------------------------
-
-pred_levels <- c("Ecotype", "Ecotype×Sex", "Sex", "River")
-
 plot_df <- eta_df %>%
-  mutate(
-    Trait     = factor(Trait, levels = eco_order),
-    Trait_lab = factor(trait_label(as.character(Trait)),
-                       levels = trait_label(eco_order)),
-    Predictor = factor(Predictor, levels = pred_levels),
-    x_base    = as.numeric(Trait_lab),
-    n_pred    = nlevels(Predictor),
-    x_pos     = x_base + ((as.numeric(Predictor) - (n_pred + 1)/2) *
-                            (dodge_width / n_pred))
-  )
+  mutate(Trait_lab = factor(trait_label(Trait), levels = trait_label(eco_order)),
+         Predictor = factor(Predictor, levels = pred_levels),
+         x_base    = as.numeric(Trait_lab),
+         n_pred    = nlevels(Predictor),
+         # nudge the 4 predictors side by side around each trait position
+         x_pos     = x_base + ((as.numeric(Predictor) - (n_pred + 1) / 2) * (dodge_width / n_pred)))
 
-# -----------------------------
-# Plot: lollipop (vertical sticks)
-# -----------------------------
-# ggplot(plot_df, aes(y = eta2_partial, color = Predictor)) +
-#   
-#   geom_segment(aes(x = x_pos,
-#                    xend = x_pos,
-#                    y = 0,
-#                    yend = eta2_partial,
-#                    linetype = Significance),
-#                linewidth = 1) +
-#   
-#   geom_point(aes(x = x_pos), size = 3) +
-#   
-#   scale_x_continuous(
-#     breaks = seq_along(levels(plot_df$Trait_lab)),
-#     labels = levels(plot_df$Trait_lab),
-#     expand = expansion(mult = c(0.02, 0.02))
-#   ) +
-#   
-#   scale_color_manual(values = c(
-#     "Ecotype"     = "#D18F00",   # deeper amber
-#     "Ecotype×Sex" = "#1B6F6A",   # dark teal
-#     "Sex"         = "grey40",
-#     "River"       = "grey65"
-#   )) +
-#   
-#   scale_linetype_manual(
-#     name = "Significance",
-#     values = c(
-#       "p < 0.05" = "solid",
-#       "p ≥ 0.05" = "22"
-#     )
-#   ) +
-#   
-#   theme_bw(base_size = 14) +
-#   theme(
-#     panel.grid = element_blank(),
-#     axis.text.x = element_text(angle = 60, hjust = 1),
-#     legend.spacing.y = unit(2, "pt"),
-#     legend.key.height = unit(10, "pt"),
-#     legend.box.spacing = unit(3, "pt"),
-#     legend.background = element_blank(),
-#     legend.position = "none"
-#   ) +
-#   ylab(expression("Partial " * eta^2)) +
-#   xlab("")
-
-# ggsave("figures/01_linear_trait_effect.png", unit = "cm", width = 22, height = 8, dpi = 600, )
-
-
-ggplot(plot_df, aes(y = eta2_partial, color = Predictor)) +
-  
-  geom_segment(aes(x = x_pos,
-                   xend = x_pos,
-                   y = 0,
-                   yend = eta2_partial),
-               linewidth = 1) +
-  
+fig1c <- ggplot(plot_df, aes(y = eta2_partial, color = Predictor)) +
+  geom_segment(aes(x = x_pos, xend = x_pos, y = 0, yend = eta2_partial), linewidth = 1) +
   geom_point(aes(x = x_pos, shape = Significance), size = 3) +
-  
-  scale_x_continuous(
-    breaks = seq_along(levels(plot_df$Trait_lab)),
-    labels = levels(plot_df$Trait_lab),
-    expand = expansion(mult = c(0.02, 0.02))
-  ) +
-  
-  scale_color_manual(values = c(
-    "Ecotype"     = "#D18F00",   # deeper amber
-    "Ecotype×Sex" = "#1B6F6A",   # dark teal
-    "Sex"         = "grey40",
-    "River"       = "grey65"
-  )) +
-  
-  scale_shape_manual(
-    name = "Significance",
-    values = c(
-      "p < 0.05" = 8,
-      "p ≥ 0.05" = 16
-    )
-  ) +
-  
+  scale_x_continuous(breaks = seq_along(levels(plot_df$Trait_lab)),
+                     labels = levels(plot_df$Trait_lab),
+                     expand = expansion(mult = c(0.02, 0.02))) +
+  scale_color_manual(values = c("Ecotype" = "#D18F00", "Ecotype×Sex" = "#1B6F6A",
+                                "Sex" = "grey40", "River" = "grey65")) +
+  scale_shape_manual(name = "Significance", values = c("p < 0.05" = 8, "p ≥ 0.05" = 16), drop = FALSE) +
   theme_bw(base_size = 14) +
-  theme(
-    panel.grid = element_blank(),
-    axis.text.x = element_text(angle = 60, hjust = 1),
-    legend.spacing.y = unit(2, "pt"),
-    legend.key.height = unit(10, "pt"),
-    legend.box.spacing = unit(3, "pt"),
-    legend.background = element_blank(),
-    legend.position = "none"
-  ) +
+  theme(panel.grid = element_blank(),
+        axis.text.x = element_text(angle = 60, hjust = 1),
+        legend.position = "none") +
   ylab(expression("Partial " * eta^2)) +
   xlab("")
 
-ggsave("figures/01_linear_trait_effect.png", unit = "cm", width = 22, height = 8, dpi = 600, )
+fig1c
+ggsave("figures/01_linear_trait_effect.png", fig1c, unit = "cm", width = 22, height = 8, dpi = 600)
+
+#####################################################
+# Single-trait plots for the ecotype-significant traits
+#####################################################
+
+sig_eco <- uni %>% filter(Term == "true_eco", p_value < alpha_sig) %>% pull(Trait)
+cat("Traits with a significant ecotype effect:", paste(trait_label(sig_eco), collapse = ", "), "\n")
+
+y_for_trait <- function(tr) {
+  raw <- str_remove(tr, "_res$")
+  if (raw %in% c("gill_raker_count", "AMO")) data_manova[[raw]] else data_manova[[raw]] / data_manova$long_fourche
+}
+
+for (tr in sig_eco) {
+  st <- uni %>% filter(Trait == tr, Term == "true_eco")
+  df <- data_manova %>%
+    mutate(y = y_for_trait(tr),
+           true_eco = fct_relevel(true_eco, "summer_run", "fall_run"))
+  p <- ggplot(df, aes(x = true_eco, y = y)) +
+    geom_boxplot(fill = "white", width = 0.3, notch = TRUE, outlier.alpha = 0) +
+    geom_jitter(aes(color = true_eco), width = 0.1, alpha = 0.6) +
+    scale_color_manual(values = c("#E69F00", "skyblue1")) +
+    scale_x_discrete(labels = c("KUU", "NUT")) +
+    xlab("") +
+    ylab(if (tr %in% c("gill_raker_count", "AMO")) trait_label(tr) else paste(trait_label(tr), "/ fork length")) +
+    annotate("text", x = 0.5, y = Inf, hjust = 0, vjust = 1.3, size = 4,
+             label = paste0("F = ", round(st$F_value, 2),
+                            "\npartial eta² = ", round(st$eta2_partial, 3))) +
+    theme_bw(base_size = 14) +
+    theme(panel.border = element_rect(colour = "black", fill = NA),
+          panel.grid = element_blank(),
+          legend.position = "none")
+  ggsave(paste0("figures/01_", trait_label(tr), ".png"), p,
+         width = 10, height = 10, unit = "cm", dpi = 600)
+}
+
+#######################################
+# LDA on the ecotype-significant traits
+#######################################
+
+if (length(sig_eco) == 0) stop("No trait has a significant ecotype effect, so there is nothing to put in the LDA.")
+lda_X <- data_manova %>% dplyr::select(all_of(sig_eco))
+
+lda_lin <- lda_loo(lda_X, data_manova$true_eco)
+lda_lin$confusion
+lda_lin$sensitivity
+cat("Balanced accuracy:", round(lda_lin$balanced_accuracy, 3), "\n")
+
+p_lin <- lda_perm_test(lda_X, data_manova$true_eco, lda_lin$balanced_accuracy, n_perm = N_PERM)
+cat("Permutation p-value (vs chance = 0.5):", signif(p_lin, 3), "\n")
+
+write_sheet(data.frame(traits = paste(trait_label(sig_eco), collapse = ", "),
+                       n_fish = nrow(lda_X),
+                       balanced_accuracy  = lda_lin$balanced_accuracy,
+                       success_fall_run   = lda_lin$sensitivity[["fall_run"]],
+                       success_summer_run = lda_lin$sensitivity[["summer_run"]],
+                       permutation_p = p_lin,
+                       n_permutations = N_PERM),
+            "LDA_linear_traits")

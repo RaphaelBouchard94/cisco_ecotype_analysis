@@ -1,593 +1,442 @@
 rm(list = ls())
 
+###############################################################################
+# 03 - Life history: age comparison, back-calculated growth, von Bertalanffy
+#      mixed models (Fig. 2c, Supplementary Table 4)
+#
+# CHANGES vs your original script
+#  1. Back-calculation now uses the BIOLOGICAL INTERCEPT method (Campana 1990)
+#     with literature values for cisco (see "Biological intercept" below).
+#     Your previous body-proportional method (v = 0.23, estimated from adults
+#     only) gave age-1 lengths of ~250-300 mm. Set BACKCALC <- "BPH" to get it back.
+#  2. The last otolith measurement of each fish is checked: on your data it is
+#     the otolith EDGE (n measurements = age + 1). It is now used as the radius
+#     at capture and no longer plotted/modelled as an extra year of growth.
+#  3. Sensitivity analysis: refits the growth model across the published range
+#     of length at hatch and a range of otolith radius at hatch, so you can show
+#     the results don't depend on the exact values.
+#  4. Best model: chosen by a stated rule (BEST_MODEL = "auto": among models
+#     within 2 AIC units of the lowest, the one with fewest parameters), or
+#     set by hand. Curves, CIs and phi' work for any of the 8 models.
+#  5. Growth performance phi' = log10(K) + 2*log10(Linf). The old code used
+#     log10(K + K) for the summer run (0.30 too high). Fixed.
+#  6. Likelihood-ratio tests (as the Methods say) + Wald tests from the full model.
+#  7. Age and length-at-age models on the real scale (years, mm).
+#  8. Starting values are checked and fall back to safe values if FSA's are bad.
+###############################################################################
+
 ########################
-# 1 - Library  #
+# Library
 ########################
 
+library(MASS)     # mvrnorm(); load before tidyverse so dplyr::select() isn't masked
+library(nlme)
+library(FSA)
 library(tidyverse)
 library(magrittr)
-library(performance)
-library(FSA)
-library(FSAsim)
-library(FSAmisc)
-library(nlstools)
-library(nlme)
-library(lme4)
-library(MASS)
-library(ggpubr)
-library(grid)
-library(patchwork)
-library(scales)
 library(openxlsx)
 
+source("99_morpho_helpers.R", local = TRUE)
+dir.create("figures", showWarnings = FALSE)
 
 ########################
-# 2 - Load Data  #
+# Settings
 ########################
 
-data <- read.table("data/data_gillrak_geomorph_age_morphres.csv", header = T)
+# Is the last otolith measurement of each fish the otolith EDGE (radius at
+# capture)? NA = decide from the data (compares number of measurements with
+# otolith age). On your data this comes out TRUE.
+LAST_RING_IS_EDGE <- NA
 
-data$ecotype <- as.factor(data$true_eco)
+# ---- Back-calculation method ----
+#   "BI"  = biological intercept (Campana 1990)   <- default
+#   "BPH" = body proportional hypothesis, Li = (Si/S)^v * L (previous method)
+BACKCALC <- "BI"
 
-str(data)
+# ---- Biological intercept: length and otolith radius at hatch ----
+# L0 = total length at hatch (mm). At hatch the caudal fin isn't forked, so
+#      total length = fork length.
+#   * 10.69 +/- 0.42 mm (mean +/- SD): Lake Superior cisco reared in the lab
+#     (Oyadomari & Auer 2007, Trans. Am. Fish. Soc. 136: 766-777).
+#   * 8.68-10.21 mm (Lake Superior) and 9.75-11.32 mm (Lake Ontario) cisco
+#     incubated at 9 to 2 degC; larvae from colder incubation hatch larger
+#     (Stewart et al. 2021, "Influence of warming temperatures on coregonine
+#     embryogenesis within and among species").
+#   James Bay eggs incubate under ice near 0-2 degC, i.e. at the cold end, so
+#   we use 10.69 mm and test 8.68-11.32 mm in the sensitivity analysis.
+BI_L0_MM <- 10.69
 
-data %>% filter(!is.na(true_age)) %>% ggplot(aes(x=as.factor(true_age),fill = ecotype))+
-  geom_bar(position=position_dodge2(width = 0.9, preserve = "single"))+
-  xlab("Age")+
-  ylab("Count")+
-  scale_fill_manual(labels=c("Fall run","Summer run"),values = c("skyblue1","#E69F00"))+
-  theme_bw()+
-  theme(panel.grid = element_blank(),
-        axis.title = element_text(size = 18),
-        axis.text.y = element_text(size = 18),
-        axis.text.x = element_text(size = 18),
-        legend.text = element_text(size = 18),
-        legend.title = element_blank(),
-        legend.position = c(0.8,0.8))
+# R0 = otolith radius at hatch (same units as the X..._um columns).
+#   * Otoliths at hatch were 65.6 +/- 4.6 um long in Oyadomari & Auer (2007)
+#     (same Lake Superior cisco), so radius ~ 65.6 / 2 = 32.8 um. No hatch check
+#     forms in cisco (the first check appears ~28 d after hatch, enclosing a
+#     region 63.1 +/- 5.6 um long), so you can't measure this on your sections.
+#   This is half the otolith length, not necessarily the radius along your
+#   reading axis, so the sensitivity analysis tests 20-50 um.
+BI_R0_UM <- 32.8
 
-# ggsave("figures/age_dist.jpeg",width = 10,height=10)  
+# Ranges for the sensitivity analysis (only run when BACKCALC == "BI")
+SENS_L0 <- c(8.68, 10.69, 11.32)
+SENS_R0 <- c(20, 32.8, 50)
 
+# ---- Growth model choice ----
+# "auto" = among models within 2 AIC units of the lowest AIC, take the one with
+# the fewest parameters (the usual parsimony rule). Or name one: "mL", "mLK", ...
+BEST_MODEL <- "auto"
 
+N_BOOT <- 1000    # parametric bootstrap draws for the confidence bands
+set.seed(123)
 
+########################
+# Load Data
+########################
 
-data %>% dplyr::group_by(ecotype) %>% dplyr::summarise(mean_eco = mean(true_age,na.rm=T),
-                                                       sd_eco = sd(true_age,na.rm=T))
+data <- read.table("data/data_gillrak_geomorph_age_morphres.csv", header = TRUE)
 
-data$rescale_age <- rescale(data$true_age)
+data$ecotype <- factor(data$true_eco)
+data$river   <- if_else(str_detect(data$sample_id, "NOT"), "NOT", "RUP")
 
-t.test(rescale_age~ecotype,data=data)
+#############################################
+# 1. Age at reproduction: Welch's t-test
+#############################################
 
-#
+age_summary <- data %>%
+  filter(!is.na(true_age)) %>%
+  group_by(ecotype) %>%
+  summarise(n = n(), mean_age = mean(true_age), sd_age = sd(true_age))
+print(age_summary)
 
-data$rescale_fl <- rescale(data$long_fourche)
+age_test <- t.test(true_age ~ ecotype, data = data)   # Welch's test by default
+age_test
 
-size_diff <- lm(rescale_fl ~ rescale_age,data=data)
+age_out <- tibble(mean_fall   = age_test$estimate[[1]],
+                  mean_summer = age_test$estimate[[2]],
+                  difference  = age_test$estimate[[2]] - age_test$estimate[[1]],
+                  t = age_test$statistic[[1]], df = age_test$parameter[[1]],
+                  p_value = age_test$p.value)
+write_sheet(age_out, "Age_comparison")
 
-summary(size_diff)
+#############################################
+# 2. Are summer-run fish larger at a given age?
+#############################################
 
-size_diff_eco <- lm(rescale_fl ~ rescale_age*ecotype,data=data)
+# This result needs no back-calculation: otolith age + length at capture.
+len_age     <- lm(long_fourche ~ true_age + ecotype, data = data)
+len_age_int <- lm(long_fourche ~ true_age * ecotype, data = data)
+summary(len_age)              # ecotypesummer_run = extra mm at the same age
+anova(len_age, len_age_int)   # does the age slope differ between ecotypes?
 
-summary(size_diff_eco)
-
-#
-data %>% group_by(is.na(true_age),ecotype) %>% count()
-
+write_sheet(as.data.frame(summary(len_age)$coefficients) %>% rownames_to_column("Term"),
+            "Length_given_age")
 
 ##########################
-##Back-calculated length##
+# 3. Otolith measurements
 ##########################
 
-## 1- Calculate total radius size
+# Otolith radius columns X1_um, X2_um, ... sorted by their number
+ring_cols <- grep("^X[0-9]+_um$", names(data), value = TRUE)
+ring_cols <- ring_cols[order(as.integer(str_extract(ring_cols, "[0-9]+")))]
 
-back_calc_tmp <- mutate_all(data %>% dplyr::select(X1_um:X9_um), ~replace_na(.,0))
+bc <- data %>%
+  filter(!is.na(long_fourche)) %>%
+  mutate(across(all_of(ring_cols), ~ replace_na(.x, 0)))
 
-back_calc <- bind_cols(data %>% dplyr::select(-(X1_um:X9_um)),back_calc_tmp)
+R <- as.matrix(bc[, ring_cols])
+bc$n_rings   <- rowSums(R > 0)                                    # number of measurements
+bc$last_ring <- apply(R > 0, 1, function(r) if (any(r)) max(which(r)) else 0)
+bc$total_rad <- do.call(pmax, as.data.frame(R))                   # largest = outermost
+bc <- bc %>% filter(total_rad > 0)
 
+# Edge or last annulus?
+ring_check <- bc %>% filter(!is.na(true_age)) %>% count(measurements_minus_age = n_rings - true_age)
+print(ring_check)
 
-back_calc %<>% group_by(sample_id) %>% dplyr::mutate(total_rad = max(across(X1_um:X9_um)))
-
-#Remove individuals without data, total_rad = 0
-
-back_calc %<>% filter(total_rad > 0)
-
-back_calc %>%
-  ggplot(aes(x=long_fourche,y=total_rad,color=ecotype))+
-  geom_point()+
-  geom_smooth(method = "lm")+
-  xlab("Fork Length (mm)")+
-  ylab("Otholith radius")+
-  scale_color_manual(values = c("skyblue","#E69F00"))+
-  theme_bw()+
-  theme(panel.grid = element_blank(),
-        axis.title = element_text(size = 18),
-        axis.text.y = element_text(size = 18),
-        axis.text.x = element_text(size = 18),
-        legend.text = element_text(size = 18),
-        legend.title = element_text(size = 18))
-
-
-##2 - Regress length against radius
-
-##without ecotype
-
-lm1 <- lm(log(long_fourche)~log(total_rad), data=back_calc)
-
-summary(lm1)
-
-##with ecotype
-
-lm2 <- lm(log(long_fourche)~log(total_rad)+ecotype, data=back_calc)
-
-summary(lm2)
-
-#Model assumptions are respected, normality of residuals not perfect but still ok
-
-##with ecotype + interaction
-
-lm3 <- lm(log(long_fourche)~log(total_rad)*ecotype, data=back_calc)
-
-summary(lm3)
-
-#Pas d'interaction!
-
-##3 - Back calculate fish length using regression results
-
-#Using model lm2 slope 
-
-lm2 <- lm(log(long_fourche)~log(total_rad)+ecotype, data=back_calc)
-
-summary(lm2)
-
-v = lm2$coefficients[2]
-
-#v = 
-
-#Calculate length at age using equation
-##Li=[(Si/S)]^v*L
-
-back_mutate <- back_calc %>% mutate(across(X1_um:X9_um,
-                             ~ (.x / total_rad)^v * long_fourche,
-                             .names = "age{col}"))
-
-##Change 0 to NA
-length_at_age <- back_mutate %>% dplyr::select(ageX1_um:ageX9_um) %>% dplyr::mutate_all(~na_if(., 0))
-
-##Join length at age data to the dataset
-length_at_age %<>% left_join(back_calc %>% dplyr::select(sample_id:total_rad),by = "sample_id")
-
-##Tidy dataframe 
-length_at_age %<>% pivot_longer(ageX1_um:ageX9_um,names_to = "back_age",values_to = "length_at_age")
-
-##Create column "back age" with age as numeric
-
-length_at_age %<>% mutate(age_at_length = case_when(back_age == "ageX1_um" ~ 1,
-                                                    back_age == "ageX2_um" ~ 2,
-                                                    back_age == "ageX3_um" ~ 3,
-                                                    back_age == "ageX4_um" ~ 4,
-                                                    back_age == "ageX5_um" ~ 5,
-                                                    back_age == "ageX6_um" ~ 6,
-                                                    back_age == "ageX7_um" ~ 7,
-                                                    back_age == "ageX8_um" ~ 8,
-                                                    back_age == "ageX9_um" ~ 9))
-
-str(length_at_age)
-
-##Plot length at age relationship
-
-length_at_age %>% 
-  ggplot(aes(x=as.factor(age_at_length),y=length_at_age,color=ecotype,group=sample_id))+
-  geom_line()+
-  geom_point(alpha=0.4)+
-  xlab("Age")+
-  ylab("Fork Length (mm)")
-
-###########################
-#Between-group comparaison#
-###########################
-
-# Implementing model with random effect
-
-#create river of origin column
-
-length_at_age %<>% mutate(river = if_else(str_detect(sample_id, "NOT"),"NOT","RUP"))
-
-length_at_age$true_eco <- as.factor(length_at_age$true_eco)
-
-#list random effects
-
-random = list(
-  river = pdDiag(Linf ~ 1),
-  sample_id = pdDiag(Linf ~ 1)
-)
-
-#Provide starting value for VB model
-
-sv0 <- vbStarts(length_at_age ~ age_at_length, data = length_at_age)
-sv0
-
-#
-
-vb <- function(age, Linf, K, t0) {
-  Linf * (1 - exp(-K * (age - t0)))
+if (is.na(LAST_RING_IS_EDGE)) {
+  d <- bc$n_rings - bc$true_age
+  LAST_RING_IS_EDGE <- if (all(is.na(d))) FALSE else
+    mean(d == 1, na.rm = TRUE) > mean(d == 0, na.rm = TRUE)
+}
+if (LAST_RING_IS_EDGE) {
+  message("Last measurement treated as the otolith EDGE (radius at capture).")
+} else {
+  warning("Last measurement treated as the last ANNULUS: the edge radius isn't in the data, ",
+          "so growth after the last annulus is ignored.")
 }
 
+# Fish length vs otolith radius. v is only used by the BPH method, but the
+# no-interaction test is worth reporting either way.
+lm_eco <- lm(log(long_fourche) ~ log(total_rad) + ecotype, data = bc)
+lm_int <- lm(log(long_fourche) ~ log(total_rad) * ecotype, data = bc)
+anova(lm_eco, lm_int)
+v <- unname(coef(lm_eco)["log(total_rad)"])
+cat("Body-proportional exponent v =", round(v, 3), "(used only if BACKCALC = \"BPH\")\n")
 
-#Full model
-fit_mix_Linf_river <- nlme(
-  length_at_age ~ vb(age_at_length, Linf, K, t0),
-  data = length_at_age,
-  
-  fixed = Linf + K + t0 ~ true_eco,
-  random = Linf ~ 1 | river/sample_id,
-  
-  start = list(fixed = c(
-    Linf = c(sv0["Linf"], 0),  # intercept and slope for true_eco
-    K    = c(sv0["K"], 0),
-    t0   = c(sv0["t0"], 0)
-  )),
-  
-  na.action = na.omit
-)
+##########################
+# 4. Back-calculation
+##########################
 
-(fit_mix_Linf_river)
+# backcalc() returns one row per fish per annulus with the back-calculated length.
+#   Si = radius at annulus i (radius), S = radius at capture (total_rad),
+#   L  = fork length at capture (long_fourche)
+#   BI : Li = L + (Si - S) * (L - L0) / (S - R0)
+#        = a straight line, for each fish, through its capture point (S, L)
+#          and the hatch point (R0, L0) shared by all fish.
+#   BPH: Li = (Si / S)^v * L
+backcalc <- function(bc, method = BACKCALC, L0 = BI_L0_MM, R0 = BI_R0_UM) {
+  bc %>%
+    dplyr::select(sample_id, true_eco, river, long_fourche, total_rad, last_ring, all_of(ring_cols)) %>%
+    pivot_longer(all_of(ring_cols), names_to = "ring", values_to = "radius") %>%
+    mutate(age_at_length = as.integer(str_extract(ring, "[0-9]+"))) %>%
+    filter(radius > 0) %>%
+    filter(!(LAST_RING_IS_EDGE & age_at_length == last_ring)) %>%    # drop the edge point
+    mutate(length_at_age = if (method == "BI") {
+                             long_fourche + (radius - total_rad) * (long_fourche - L0) / (total_rad - R0)
+                           } else {
+                             (radius / total_rad)^v * long_fourche
+                           },
+           true_eco = factor(true_eco))
+}
 
-#Rivers do not meaningfully differ in asymptotic length once ecotype is accounted for.
-#Most unexplained variation is among individuals
+cat("Back-calculation method:", BACKCALC,
+    if (BACKCALC == "BI") paste0("(L0 = ", BI_L0_MM, " mm, R0 = ", BI_R0_UM, " um)") else "", "\n")
+length_at_age <- backcalc(bc)
 
-#Linf fall-run : 311.64
-#Linf summer-run: 360.34
+# Sanity check: mean back-calculated length at ages 1-3
+laa_check <- length_at_age %>%
+  filter(age_at_length <= 3) %>%
+  group_by(true_eco, age_at_length) %>%
+  summarise(n_fish = n(), mean_length = mean(length_at_age),
+            min = min(length_at_age), max = max(length_at_age), .groups = "drop")
+print(laa_check)
 
-#No evidence for ecotype differences in growth rate.
-#No ecotype effect on t0.
+write_sheet(data.frame(method = BACKCALC, L0_mm = BI_L0_MM, R0_um = BI_R0_UM, v = v,
+                       last_measurement_is_edge = LAST_RING_IS_EDGE,
+                       p_radius_x_ecotype = anova(lm_eco, lm_int)$`Pr(>F)`[2]),
+            "Backcalc_settings")
+write_sheet(laa_check, "Backcalc_length_age1to3")
 
-####
-#Model selection
+cat("Fish in the growth models (for the Fig. 2c caption):\n")
+print(length_at_age %>% distinct(sample_id, true_eco) %>% count(true_eco))
 
-#model 1 - no ecotype effect
-start0 <- c(
-  Linf = as.numeric(sv0["Linf"]),
-  K    = as.numeric(sv0["K"]),
-  t0   = as.numeric(sv0["t0"])
-)
+###########################
+# 5. von Bertalanffy mixed models
+###########################
 
-m0 <- nlme(
-  length_at_age ~ vb(age_at_length, Linf, K, t0),
-  data = length_at_age,
-  fixed = Linf + K + t0 ~ 1,
-  random = Linf ~ 1 | river/sample_id,
-  start = start0,
-  na.action = na.omit
-)
+vb <- function(age, Linf, K, t0) Linf * (1 - exp(-K * (age - t0)))
 
-#model2: Ecoype affects Linf only
-start_m2 <- c(
-  "Linf.(Intercept)" = start0["Linf"],
-  "Linf.true_ecosummer_run" = 0,   # difference from baseline
-  "K.(Intercept)" = start0["K"],
-  "t0.(Intercept)" = start0["t0"]
-)
-
-m2 <- nlme(
-  length_at_age ~ vb(age_at_length, Linf, K, t0),
-  data = length_at_age,
-  fixed = list(
-    Linf ~ true_eco,  # Linf varies by ecotype
-    K    ~ 1,
-    t0   ~ 1
-  ),
-  random = Linf ~ 1 | river/sample_id,
-  start = start_m2,
-  na.action = na.omit
-)
-
-#model 3 : Ecoype affects K only
-start_m3 <- c(
-  "Linf.(Intercept)" = start0["Linf"],
-  "K.(Intercept)" = start0["K"],
-  "K.true_ecosummer_run" = 0,   # difference from baseline
-  "t0.(Intercept)" = start0["t0"]
-)
-
-m3 <- nlme(
-  length_at_age ~ vb(age_at_length, Linf, K, t0),
-  data = length_at_age,
-  fixed = list(
-    Linf ~ 1,  # Linf varies by ecotype
-    K    ~ true_eco,
-    t0   ~ 1
-  ),
-  random = Linf ~ 1 | river/sample_id,
-  start = start_m3,
-  na.action = na.omit
-)
-
-#model 4 : Ecoype affects t0 only
-start_m4 <- c(
-  "Linf.(Intercept)" = start0["Linf"],
-  "K.(Intercept)" = start0["K"],
-  "t0.(Intercept)" = start0["t0"],
-  "t0.true_ecosummer_run" = 0  # difference from baseline
-)
-
-m4 <- nlme(
-  length_at_age ~ vb(age_at_length, Linf, K, t0),
-  data = length_at_age,
-  fixed = list(
-    Linf ~ 1,  # Linf varies by ecotype
-    K    ~ 1,
-    t0   ~ true_eco
-  ),
-  random = Linf ~ 1 | river/sample_id,
-  start = start_m4,
-  na.action = na.omit
-)
-
-#model 5: ecotype affects Linf + K
-
-start_m5 <- c(
-  "Linf.(Intercept)" = start0["Linf"],
-  "Linf.true_ecosummer_run" = 0,
-  "K.(Intercept)" = start0["K"],
-  "K.true_ecosummer_run" = 0,
-  "t0.(Intercept)" = start0["t0"]
-)
-
-m5 <- nlme(
-  length_at_age ~ vb(age_at_length, Linf, K, t0),
-  data = length_at_age,
-  fixed = list(
-    Linf ~ true_eco,
-    K    ~ true_eco,  # K now varies by ecotype
-    t0   ~ 1
-  ),
-  random = Linf ~ 1 | river/sample_id,
-  start = start_m5,
-  na.action = na.omit
-)
-
-#model 6: ecotype affects Linf + t0
-
-start_m6 <- c(
-  "Linf.(Intercept)" = start0["Linf"],
-  "Linf.true_ecosummer_run" = 0,
-  "K.(Intercept)" = start0["K"],
-  "t0.(Intercept)" = start0["t0"],
-  "t0.true_ecosummer_run" = 0
-)
-
-m6 <- nlme(
-  length_at_age ~ vb(age_at_length, Linf, K, t0),
-  data = length_at_age,
-  fixed = list(
-    Linf ~ true_eco,
-    K    ~ 1,  # K now varies by ecotype
-    t0   ~ true_eco
-    ),
-  random = Linf ~ 1 | river/sample_id,
-  start = start_m6,
-  na.action = na.omit
-)
-
-#model 7: ecotype affects K + t0
-
-start_m7 <- c(
-  "Linf.(Intercept)" = start0["Linf"],
-  "K.(Intercept)" = start0["K"],
-  "K.true_ecosummer_run" = 0,
-  "t0.(Intercept)" = start0["t0"],
-  "t0.true_ecosummer_run" = 0
-)
-
-m7 <- nlme(
-  length_at_age ~ vb(age_at_length, Linf, K, t0),
-  data = length_at_age,
-  fixed = list(
-    Linf ~ 1,
-    K    ~ true_eco,  # K now varies by ecotype
-    t0   ~ true_eco
-  ),
-  random = Linf ~ 1 | river/sample_id,
-  start = start_m7,
-  na.action = na.omit
-)
-
-#model 8 : Ecotype affects Linf+K+t0
-
-start_m8 <- c(
-  "Linf.(Intercept)" = start0["Linf"],
-  "Linf.true_ecosummer_run" = 0,
-  "K.(Intercept)" = start0["K"],
-  "K.true_ecosummer_run" = 0,
-  "t0.(Intercept)" = start0["t0"],
-  "t0.true_ecosummer_run" = 0
-)
-
-m8 <- nlme(
-  length_at_age ~ vb(age_at_length, Linf, K, t0),
-  data = length_at_age,
-  fixed = list(
-    Linf ~ true_eco,
-    K    ~ true_eco,
-    t0   ~ true_eco   #
-  ),
-  random = Linf ~ 1 | river/sample_id,
-  start = start_m8,
-  na.action = na.omit
-)
-
-#AIC comparison
-
-models <- list(
-  m0 = m0,
-  mL = m2,
-  mK = m3,
-  mt0 = m4,
-  mLK = m5,
-  mLt0 = m6,
-  mKt0 = m7,
-  mLKt0 = m8
-)
-
-model_summary <- do.call(rbind, lapply(names(models), function(mname) {
-  mod <- models[[mname]]
-  data.frame(
-    Model = mname,
-    AIC   = AIC(mod),
-    BIC   = BIC(mod),
-    logLik = logLik(mod)
+# ---- Starting values (only used to start the optimiser) ----
+# Each candidate is checked (Linf, K > 0 and all finite); on your data
+# findGrowthStarts() returned K < 0 and t0 = NaN, so we try several sources.
+starts_ok <- function(s) {
+  !is.null(s) && all(c("Linf", "K", "t0") %in% names(s)) &&
+    all(is.finite(s[c("Linf", "K", "t0")])) && s[["Linf"]] > 0 && s[["K"]] > 0
+}
+get_starts <- function(df) {
+  f <- length_at_age ~ age_at_length
+  cand <- list(
+    vbStarts = function() unlist(suppressWarnings(FSA::vbStarts(f, data = df))),
+    findGrowthStarts = function() FSA::findGrowthStarts(f, data = df, type = "von Bertalanffy"),
+    nls_means = function() {
+      m <- df %>% group_by(age_at_length) %>% summarise(L = mean(length_at_age), .groups = "drop")
+      coef(nls(L ~ Linf * (1 - exp(-K * (age_at_length - t0))), data = m,
+               start = list(Linf = max(m$L) * 1.1, K = 0.3, t0 = -1)))
+    },
+    generic = function() c(Linf = max(df$length_at_age) * 1.1, K = 0.3, t0 = -1)
   )
-}))
+  for (nm in names(cand)) {
+    s <- tryCatch(cand[[nm]](), error = function(e) NULL)
+    if (starts_ok(s)) {
+      message("Starting values from ", nm, ".")
+      return(s[c("Linf", "K", "t0")])
+    }
+  }
+}
 
-model_summary
+# ---- One model = ecotype affects the parameters listed in eco_on ----
+#   fixed: list of 3 formulas, e.g. Linf ~ true_eco, K ~ 1, t0 ~ 1
+#   start: in the same order as the coefficients:
+#          Linf, [Linf ecotype effect], K, [K effect], t0, [t0 effect]
+#          (an ecotype effect starts at 0 = "no difference")
+#   random: Linf varies among rivers and among fish within rivers (Methods).
+# nlme() fits by maximum likelihood by default, so AIC and LRTs are valid.
+# The VB equation is written out (not vb()) because nlme() can't find
+# functions defined inside a script run with 00_run_all.R.
+vb_model <- function(eco_on, df, sv) {
+  pars  <- c("Linf", "K", "t0")
+  fixed <- lapply(pars, function(p) as.formula(paste(p, if (p %in% eco_on) "~ true_eco" else "~ 1")))
+  start <- unlist(lapply(pars, function(p) if (p %in% eco_on) c(sv[[p]], 0) else sv[[p]]))
+  tryCatch(
+    nlme(length_at_age ~ Linf * (1 - exp(-K * (age_at_length - t0))),
+         data = df, fixed = fixed, random = Linf ~ 1 | river/sample_id,
+         start = start, na.action = na.omit),
+    error = function(e) { warning("Model with ecotype on {", paste(eco_on, collapse = ", "),
+                                  "} did not converge: ", conditionMessage(e)); NULL })
+}
 
-#Save in Supplementary table:
+model_specs <- list(m0 = character(0), mL = "Linf", mK = "K", mt0 = "t0",
+                    mLK = c("Linf", "K"), mLt0 = c("Linf", "t0"),
+                    mKt0 = c("K", "t0"), mLKt0 = c("Linf", "K", "t0"))
 
-wb <- loadWorkbook("res/supplementary_table.xlsx")
+sv0 <- get_starts(length_at_age)
+sv0
+models <- compact(map(model_specs, vb_model, df = length_at_age, sv = sv0))
 
-addWorksheet(wb, "Model_selection_AIC")
-writeData(wb, sheet = "Model_selection_AIC", model_summary)
+if (length(models) == 0) stop("None of the growth models converged; see warnings().")
+if (!"mLKt0" %in% names(models)) warning("The full model (mLKt0) didn't converge.")
 
-saveWorkbook(wb, "res/supplementary_table.xlsx", overwrite = TRUE)
+# ---- AIC model selection (Supplementary Table 4) ----
+model_summary <- map_dfr(names(models), function(m) {
+  ll <- logLik(models[[m]])
+  tibble(Model = m, n_par = attr(ll, "df"), AIC = AIC(models[[m]]), BIC = BIC(models[[m]]),
+         logLik = as.numeric(ll))
+}) %>%
+  mutate(delta_AIC = AIC - min(AIC)) %>%
+  arrange(AIC)
+print(model_summary)
+write_sheet(model_summary, "Model_selection_AIC")
 
+# Parsimony rule: simplest model among those within 2 AIC units of the best
+best <- if (BEST_MODEL == "auto") {
+  model_summary %>% filter(delta_AIC <= 2) %>% arrange(n_par, AIC) %>% slice(1) %>% pull(Model)
+} else BEST_MODEL
+cat("Model used for Fig. 2c and parameters:", best,
+    "(ecotype affects:", paste(model_specs[[best]], collapse = " + "), ")\n")
 
-#Save best model
+# ---- Wald tests in the full model ----
+if ("mLKt0" %in% names(models)) {
+  full_tab <- as.data.frame(summary(models$mLKt0)$tTable) %>% rownames_to_column("Parameter")
+  print(full_tab)
+  write_sheet(full_tab, "Full_model_Wald")
+}
 
-# Extract fixed effects
-fixef_tab <- summary(models$mL)$tTable %>%
-  as.data.frame() %>%
-  tibble::rownames_to_column("Parameter") %>%
-  dplyr::rename(
-    Estimate = Value,
-    SE = Std.Error,
-    DF = DF,
-    t_value = `t-value`,
-    p_value = `p-value`
-  )
+# ---- Likelihood-ratio tests (Methods: "compared ... using likelihood-ratio tests") ----
+lrt <- function(simple, complex, label) {
+  if (!all(c(simple, complex) %in% names(models))) return(NULL)
+  a <- anova(models[[simple]], models[[complex]])
+  tibble(Comparison = label, L_ratio = a$L.Ratio[2], df = diff(a$df), p_value = a$`p-value`[2])
+}
+lrt_tab <- bind_rows(
+  lrt("m0", "mL",   "Ecotype effect on Linf (m0 vs mL)"),
+  lrt("mL", "mLK",  "Adding ecotype effect on K (mL vs mLK)"),
+  lrt("mL", "mLt0", "Adding ecotype effect on t0 (mL vs mLt0)")
+)
+print(lrt_tab)
+write_sheet(lrt_tab, "LRT_tests")
 
-fixef_tab %<>% mutate(across(.cols = Estimate:p_value, ~ round(.x , 4)))
-
-addWorksheet(wb, "Best_model_parameters")
-
-writeData(wb, sheet = "Best_model_parameters", fixef_tab )
-
-# Save workbook
-saveWorkbook(wb, "res/supplementary_table.xlsx", overwrite = TRUE)
+# ---- Best model parameters ----
+m_best <- models[[best]]
+fixef_tab <- as.data.frame(summary(m_best)$tTable) %>%
+  rownames_to_column("Parameter") %>%
+  dplyr::rename(Estimate = Value, SE = Std.Error, t_value = `t-value`, p_value = `p-value`) %>%
+  mutate(across(Estimate:p_value, ~ round(.x, 4)))
+print(fixef_tab)
+write_sheet(fixef_tab, "Best_model_parameters")
 
 #########################################
-#Model-based predictions based on mL
+# 6. Population growth curves (Fig. 2c)
+#########################################
 
-fe <- fixed.effects(m2)
-fe
-
-# Population-level parameter table
-pars <- data.frame(
-  ecotype = c("fall_run", "summer_run"),
-  Linf = c(
-    fe["Linf.(Intercept)"],
-    fe["Linf.(Intercept)"] + fe["Linf.true_ecosummer_run"]
-  ),
-  K = rep(fe["K"], 2),   # K constant
-  t0 = rep(fe["t0"], 2)  # t0 constant
-)
-
-pars
-
-# Predict population-level growth curves
-age_seq <- seq(0, 9, length.out = 200)
-
-pred_pop <- expand.grid(
-  age = age_seq,
-  ecotype = pars$ecotype
-) %>%
-  merge(pars, by = "ecotype") %>%
-  mutate(length = Linf * (1 - exp(-K * (age - t0))))
-
-# Confidence intervals via parametric bootstrap
-vc <- vcov(m2)
-nsim <- 1000
-beta_sim <- mvrnorm(nsim, mu = fe, Sigma = vc)
-
-get_curve <- function(beta_row, eco, age) {
-  # Linf differs by ecotype; K and t0 are constant
-  if (eco == "fall_run") {
-    Linf <- beta_row["Linf.(Intercept)"]
-  } else {
-    Linf <- beta_row["Linf.(Intercept)"] + beta_row["Linf.true_ecosummer_run"]
-  }
-  K  <- beta_row["K"]
-  t0 <- beta_row["t0"]
-  
-  Linf * (1 - exp(-K * (age - t0)))
+# par_value(): the value of parameter p (Linf, K or t0) for one ecotype, from a
+# vector of fixed effects (one fit) or a matrix (one row per bootstrap draw).
+# nlme names a parameter "K" when it is shared, and "K.(Intercept)" +
+# "K.true_ecosummer_run" when it differs between ecotypes.
+par_value <- function(beta, p, eco) {
+  nms <- if (is.matrix(beta)) colnames(beta) else names(beta)
+  col <- function(nm) if (is.matrix(beta)) beta[, nm] else beta[[nm]]
+  base <- if (p %in% nms) col(p) else col(paste0(p, ".(Intercept)"))
+  eff  <- paste0(p, ".true_ecosummer_run")
+  if (eco == "summer_run" && eff %in% nms) base + col(eff) else base
 }
 
-ci_pop <- expand.grid(
-  age = age_seq,
-  ecotype = pars$ecotype
-) %>%
-  rowwise() %>%
-  mutate(
-    sim = list(apply(beta_sim, 1, get_curve, eco = ecotype, age = age)),
-    LCI = quantile(unlist(sim), 0.025, na.rm = T),
-    UCI = quantile(unlist(sim), 0.975, na.rm = T)
-  ) %>%
-  ungroup()
+ecos <- c("fall_run", "summer_run")
+fe <- fixef(m_best)
+pars <- map_dfr(ecos, function(e) tibble(ecotype = e,
+                                         Linf = par_value(fe, "Linf", e),
+                                         K    = par_value(fe, "K", e),
+                                         t0   = par_value(fe, "t0", e)))
+print(pars)
+cat("Delta Linf (summer - fall):", round(diff(pars$Linf), 1), "mm\n")
+cat("Predicted length at age 1:", paste(ecos, round(vb(1, pars$Linf, pars$K, pars$t0)), "mm", collapse = "; "), "\n")
 
-# Plot per population growth rates
-ggplot() +
-  geom_point(data = length_at_age,
-             aes(age_at_length, length_at_age, color = true_eco),
-             alpha = 0.3) +
-  geom_line(data = pred_pop,
-            aes(age, length, color = ecotype),
-            linewidth = 1.2) +
-  geom_ribbon(data = ci_pop,
-              aes(age, ymin = LCI, ymax = UCI, fill = ecotype),
-              alpha = 0.25, color = NA) +
-  scale_color_manual(values = c("skyblue","#E69F00"))+
-  scale_fill_manual(values = c("skyblue","#E69F00"))+
-  scale_x_continuous(breaks = seq(0, 9, by = 1)) +
-  theme_bw(base_size = 16)+
-  theme(panel.border = element_rect(colour = "black",fill=NA),
+max_age  <- max(length_at_age$age_at_length)
+age_seq  <- seq(0, max_age, length.out = 200)
+pred_pop <- expand.grid(age = age_seq, ecotype = ecos, stringsAsFactors = FALSE) %>%
+  left_join(pars, by = "ecotype") %>%
+  mutate(length = vb(age, Linf, K, t0))
+
+# Parametric bootstrap: draw fixed effects from their estimated sampling
+# distribution (multivariate normal), recompute the curve for each draw and
+# take the 2.5% / 97.5% quantiles. Population curve uncertainty only.
+beta_sim <- mvrnorm(N_BOOT, mu = fe, Sigma = vcov(m_best))
+sim_pars <- map(purrr::set_names(ecos), function(e)     # purrr:: because magrittr masks set_names()
+  list(Linf = par_value(beta_sim, "Linf", e), K = par_value(beta_sim, "K", e), t0 = par_value(beta_sim, "t0", e)))
+
+ci_pop <- expand.grid(age = age_seq, ecotype = ecos, stringsAsFactors = FALSE) %>%
+  mutate(LCI = NA_real_, UCI = NA_real_)
+for (i in seq_len(nrow(ci_pop))) {
+  sp <- sim_pars[[ci_pop$ecotype[i]]]
+  sims <- vb(ci_pop$age[i], sp$Linf, sp$K, sp$t0)
+  ci_pop$LCI[i] <- quantile(sims, 0.025, na.rm = TRUE)
+  ci_pop$UCI[i] <- quantile(sims, 0.975, na.rm = TRUE)
+}
+
+fig2c <- ggplot() +
+  geom_point(data = length_at_age, aes(age_at_length, length_at_age, color = true_eco), alpha = 0.3) +
+  geom_ribbon(data = ci_pop, aes(age, ymin = LCI, ymax = UCI, fill = ecotype), alpha = 0.25, color = NA) +
+  geom_line(data = pred_pop, aes(age, length, color = ecotype), linewidth = 1.2) +
+  scale_color_manual(values = c("fall_run" = "skyblue", "summer_run" = "#E69F00")) +
+  scale_fill_manual(values = c("fall_run" = "skyblue", "summer_run" = "#E69F00")) +
+  scale_x_continuous(breaks = seq(0, max_age, by = 1)) +
+  theme_bw(base_size = 16) +
+  theme(panel.border = element_rect(colour = "black", fill = NA),
         panel.grid = element_blank(),
-        legend.position = "none")+
+        legend.position = "none") +
   labs(x = "Age", y = "Fork length (mm)")
-
-ggsave("figures/03_vb_growth_rates.png",
-       width = 10, height = 10, unit = "cm", dpi = 900)
-
+fig2c
+ggsave("figures/03_vb_growth_rates.png", fig2c, width = 10, height = 10, unit = "cm", dpi = 900)
 
 ##############################################
-#Test for difference in omega
+# 7. Growth performance index phi' (FIXED)
+##############################################
 
-#Compute for each ecotype
+# phi' = log10(K) + 2 * log10(Linf)   (Pauly & Munro 1984; unitless).
+# If K is shared in the best model, delta-phi' = 2*log10(Linf ratio): it just
+# restates the Linf difference.
+phi_sim <- tibble(
+  fall   = log10(sim_pars$fall_run$K)   + 2 * log10(sim_pars$fall_run$Linf),
+  summer = log10(sim_pars$summer_run$K) + 2 * log10(sim_pars$summer_run$Linf)
+) %>%
+  mutate(delta = summer - fall)
 
-pars$omega <- with(pars, log10(K) + 2 * log10(Linf))
-pars
+phi_out <- map_dfr(names(phi_sim), function(nm) {
+  q <- quantile(phi_sim[[nm]], c(0.025, 0.5, 0.975), na.rm = TRUE)
+  tibble(quantity = nm, median = q[[2]], lower_95 = q[[1]], upper_95 = q[[3]])
+})
+print(phi_out)
+write_sheet(phi_out, "Growth_performance_phi")
 
-omega_sim <- data.frame(
-  fall = log10(
-    beta_sim[, "K"]
-  ) + 2 * log10(
-    beta_sim[, "Linf.(Intercept)"]
-  ),
-  summer = log10(
-    beta_sim[, "K"] + beta_sim[, "K"]
-  ) + 2 * log10(
-    beta_sim[, "Linf.(Intercept)"] + beta_sim[, "Linf.true_ecosummer_run"]
-  )
-)
+##############################################
+# 8. Sensitivity to length and radius at hatch (BI only)
+##############################################
 
-apply(omega_sim, 2, quantile, probs = c(0.025, 0.5, 0.975))
-
-#Test delta mega via parametric bootstrap
-
-delta_omega <- with(
-  omega_sim,
-  summer - fall
-)
-
-quantile(delta_omega, probs = c(0.025, 0.5, 0.975))
-
-#There is a significant difference in growth performance among ecotypes
-
-
+# Refit the selected model for every combination of L0 and R0 in SENS_L0 x
+# SENS_R0 and compare Linf, K, t0 and length at age 1. If these barely move,
+# the results don't hinge on the exact literature values.
+if (BACKCALC == "BI") {
+  sens <- expand.grid(L0 = SENS_L0, R0 = SENS_R0) %>%
+    pmap_dfr(function(L0, R0) {
+      laa <- backcalc(bc, "BI", L0, R0)
+      fit <- vb_model(model_specs[[best]], laa, get_starts(laa))
+      if (is.null(fit)) return(tibble(L0_mm = L0, R0_um = R0, converged = FALSE))
+      f <- fixef(fit)
+      tibble(L0_mm = L0, R0_um = R0, converged = TRUE,
+             Linf_fall = par_value(f, "Linf", "fall_run"), Linf_summer = par_value(f, "Linf", "summer_run"),
+             K_fall = par_value(f, "K", "fall_run"), K_summer = par_value(f, "K", "summer_run"),
+             t0_fall = par_value(f, "t0", "fall_run"), t0_summer = par_value(f, "t0", "summer_run"),
+             L1_mean_fall   = mean(laa$length_at_age[laa$age_at_length == 1 & laa$true_eco == "fall_run"]),
+             L1_mean_summer = mean(laa$length_at_age[laa$age_at_length == 1 & laa$true_eco == "summer_run"]))
+    }) %>%
+    mutate(delta_Linf = Linf_summer - Linf_fall)
+  print(sens, width = Inf)
+  write_sheet(sens, "BI_sensitivity")
+}

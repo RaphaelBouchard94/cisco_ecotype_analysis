@@ -1,218 +1,145 @@
-rm(list=ls())
+rm(list = ls())
+
+###############################################################################
+# 02b - Geometric morphometrics: allometry (Fig. 1d, Supplementary Tables)
+#
+# Needs: tmp/final_data_gpa_projected.Rds and tmp/real_csize.Rds
+#        (made by 02_geometric_morphometric_arching_biais_corr.R)
+#
+# CHANGES vs the previous version
+#  1. Size = the fish's real centroid size (tmp/real_csize.Rds), not the Csize
+#     of the re-aligned shapes, which was ~1 for every fish. ALL size results
+#     change: the size effect, the size x ecotype interaction, Fig. 1d, and the
+#     ecotype/sex R-squared values (they are adjusted for size).
+#  2. Metadata are matched to shapes by fish ID, not by row order.
+#  3. Every test uses 9,999 iterations (= 10,000 permutations including the
+#     observed data, as in the Methods). The group-effects table used 1,000.
+#  4. Removed `logsz = T` from procD.lm(): it isn't a procD.lm() argument
+#     and was silently ignored.
+#  5. Removed the duplicated code at the end of the old script.
+###############################################################################
 
 #################
 #### Library ####
 #################
 
+library(geomorph)
+library(RRPP)
 library(tidyverse)
 library(magrittr)
-library(geomorph)
-library(abind)
-library(Morpho)
-library(MASS)
-library(ggpubr)
-library(plyr)
-library(cowplot)
-library(ggExtra)
-library(png)
-library(patchwork)
-library(car)
-library(multcomp)
-library(RRPP)
-library(caret)
-library(klaR)
 library(openxlsx)
 
+source("99_morpho_helpers.R", local = TRUE)
+dir.create("figures", showWarnings = FALSE)
+
+##################################
+### Load data                  ###
 ##################################
 
-#Allometric relationship analysis
-
 final_data_gpa_projected <- readRDS("tmp/final_data_gpa_projected.Rds")
+real_csize <- readRDS("tmp/real_csize.Rds")
 
-data <- read.csv("data/data_with_gillrakers.csv", header = T,sep = ",")
+spec_ids <- dimnames(final_data_gpa_projected$coords)[[3]]
+stopifnot(identical(names(real_csize), spec_ids))   # sizes are in the same fish order as the shapes
 
-data %<>% mutate(river = if_else(str_detect(sample_id,'NOT'),"NOT","RUP"))
+data <- read.csv("data/data_with_gillrakers.csv", header = TRUE, sep = ",")
+data %<>% mutate(river = if_else(str_detect(sample_id, 'NOT'), "NOT", "RUP"))
+
+### CHANGED: match metadata to shapes by ID
+data <- align_to_shapes(data, spec_ids)
 
 gdf <- geomorph.data.frame(shape = final_data_gpa_projected$coords,
-                           pop = data$river,
-                           sex = data$sex,
-                           eco = data$true_eco,
-                           cs = final_data_gpa_projected$Csize)
+                           pop   = factor(data$river),
+                           sex   = factor(data$sex),
+                           eco   = factor(data$true_eco),
+                           cs    = as.numeric(real_csize))     ### CHANGED: real size
 
-#Is allometry significant?
+##################################
+### Is allometry significant?  ###
+##################################
 
-ciscoAllometry <- procD.lm(shape ~ cs, data = gdf, iter = 10000,SS.type = "III")
-
+ciscoAllometry <- procD.lm(shape ~ log(cs), data = gdf, iter = 9999,
+                           SS.type = "III", print.progress = FALSE)
 summary(ciscoAllometry)
 
-plot(ciscoAllometry)
+##################################################
+### Do allometric slopes differ between ecotypes?
+##################################################
 
-#Yes! Effect of size on shape
+common_allo <- procD.lm(shape ~ log(cs) + eco + sex + pop,
+                        data = gdf, iter = 9999, SS.type = "II", print.progress = FALSE)
+diff_allo   <- procD.lm(shape ~ log(cs) + eco + sex + pop + log(cs):eco,
+                        data = gdf, iter = 9999, SS.type = "II", print.progress = FALSE)
 
-#Test allometric slope heterogeneity
+onto <- anova(common_allo, diff_allo, print.progress = FALSE)
+onto
 
-common_allo <- procD.lm(shape ~ log(cs) + eco + sex + pop, logsz = T, data = gdf, iter = 9999,SS.type = "II")
-diff_allo <- procD.lm(shape ~ log(cs) + eco + sex + log(cs):eco + pop, logsz = T, data = gdf, iter = 9999,SS.type = "II")
+anova_onto_df <- as.data.frame(onto$table) %>%
+  rownames_to_column("Term")
 
-anova(common_allo, diff_allo)
+write_sheet(anova_onto_df, "Ontogenic_allometric_slope_diff")
 
-#############################################################
-#Save results of ontogenic difference in supplementary table
-onto <- anova(common_allo, diff_allo)
-
-anova_onto_df <- as.data.frame(onto$table)
-
-# Add the model/term names as a column
-anova_onto_df$Term <- rownames(anova_onto_df)
-
-# Reorder columns for readability
-anova_onto_df <- anova_onto_df %>%
-  dplyr::select(Term, ResDf, Df, RSS, SS, MS, Rsq, "F", Z, P, `Pr(>F)`)
-
-# Create workbook and add a single sheet
-wb <- loadWorkbook("res/supplementary_table.xlsx")
-addWorksheet(wb, "Ontogenic_allometric_slope_diff")
-writeData(wb, sheet = "Ontogenic_allometric_slope_diff", anova_onto_df)
-
-# Save Excel file
-saveWorkbook(wb, "res/supplementary_table.xlsx", overwrite = T)
-
-#Hypothesis tests; vector lengths
+# Pairwise comparison of slopes (length and angle). Not reported in the
+# manuscript, but useful if a reviewer asks how the slopes differ.
 PW.u <- pairwise(diff_allo, groups = gdf$eco,
                  covariate = log(gdf$cs), print.progress = FALSE)
-
 summary(PW.u, test = "dist")
-
-#Hypothesis tests: angles between vectors
 summary(PW.u, test = "VC", angle.type = "deg")
 
-#Suggests allometric slopes are not parallel and significantly diverge
+#####################################################################
+### Effects of size, ecotype, sex and river on shape (full model) ###
+#####################################################################
 
-####################################################################
-#Is there difference between group on this allometric relationship?
+# Same model as diff_allo. The R-squared column gives the share of shape
+# variance per term (the old 1.05% ecotype / 3.49% size / 4.38% sex values).
+anova_tab <- anova(diff_allo)
+anova_tab
 
-ciscoAllometry_group_effect <- procD.lm(shape ~ log(cs) + eco + sex + log(cs):eco + pop, logsz = T, data = gdf, iter = 1000,SS.type = "II")
+anova_df <- as.data.frame(anova_tab$table) %>%
+  rownames_to_column("Effect")
 
-summary(ciscoAllometry_group_effect)
-
-anova_tab <- anova(ciscoAllometry_group_effect)
-
-anova_df <- as.data.frame(anova_tab$table)
-
-# Keep term names explicit
-anova_df$Effect <- rownames(anova_df)
-rownames(anova_df) <- NULL
-
-# Optional: reorder columns nicely
-anova_df <- anova_df %>%
-  dplyr::select(
-    Effect, Df, SS, MS, Rsq, "F", Z, "Pr(>F)"
-  )
-
-###TO ADJUST
-
-data %<>% mutate(color_allo = case_when(true_eco == "summer_run" ~ "#E69F00",
-                                        true_eco == "fall_run" ~ "skyblue1"),
-                 shape_allo = case_when(sex == "F" ~ 1,
-                                        sex == "M" ~ 19))
+write_sheet(anova_df, "Allometry_group_effects")
 
 ##############################
-plotAllometry(f = ciscoAllometry_group_effect, 
-              size = gdf$cs, 
-              method = "RegScore",
-              pch = data$shape_allo,
-              col = data$color_allo,
-              xlab = "Centroid Size",
-              ylab = "Shape (Predicted)")
+### Fig. 1d               ###
+##############################
 
-##########
+data %<>% mutate(color_allo = case_when(true_eco == "summer_run" ~ "#E69F00",
+                                        true_eco == "fall_run"   ~ "skyblue1"),
+                 shape_allo = case_when(sex == "F" ~ 1,
+                                        sex == "M" ~ 19,
+                                        TRUE ~ 4))    # any other sex code (e.g. R) = x
+
 png("figures/02_allometry_fit.png",
-    width = 1200,
-    height = 1200,
-    res = 300,
-    bg = "transparent")
+    width = 1200, height = 1200, res = 300, bg = "transparent")
 
-# ---- Graphics parameters ----
-par(
-  cex.lab  = 1.2,
-  cex.axis = 1,
-  mar      = c(4.5, 5.5, 2, 2),
-  col.axis = "grey25",
-  col.lab  = "black",
-  col      = "black",
-  bty      = "n",
-  mgp      = c(2, 0.3, 0)   # prevent automatic box
-)
+par(cex.lab = 1.2, cex.axis = 1, mar = c(4.5, 5.5, 2, 2),
+    col.axis = "grey25", col.lab = "black", col = "black",
+    bty = "n", mgp = c(3.3, 0.3, 0))   # axis titles 3.3 lines out, clear of the tick labels
 
-# ---- Main plot (suppress default axes) ----
-plotAllometry(
-  fit    = ciscoAllometry_group_effect,
-  size   = gdf$cs,
-  method = "PredLine",
-  pch    = data$shape_allo,
-  col    = data$color_allo,
-  xlab   = "Centroid Size",
-  ylab   = "",
-  xaxt   = "n",
-  yaxt   = "n"
-)
+# plotAllometry() logs the size you give it (logsz = TRUE by default), so the
+# x-axis is log(centroid size).
+plotAllometry(fit    = diff_allo,
+              size   = gdf$cs,
+              method = "PredLine",
+              pch    = data$shape_allo,
+              col    = data$color_allo,
+              xlab   = "log(centroid size)",
+              ylab   = "",
+              xaxt   = "n",
+              yaxt   = "n")
 
-# ---- Custom Y axis ----
+# signif() keeps 2-3 significant digits, so small values like -0.005 don't
+# all round to "0.00" (and the minus sign is kept).
 yticks <- axTicks(2)
-yticks_sub <- yticks[seq(1, length(yticks), by = 2)]
+axis(2, at = yticks, labels = signif(yticks, 2),
+     las = 1, col.axis = "grey25", lwd = 0.5, tck = -0.015)
 
-axis(2,
-     at     = yticks_sub,
-     labels = sprintf("%.2f", yticks_sub),
-     las    = 1,
-     col.axis = "grey25",
-     lwd = 0.5,
-     tck = -0.015)
-
-# ---- Custom X axis ----
 xticks <- axTicks(1)
-xticks_sub <- xticks[seq(1, length(xticks), by = 2)]
+axis(1, at = xticks, labels = signif(xticks, 3),
+     las = 1, col.axis = "grey25", lwd = 0.5, tck = -0.015)
 
-axis(1,
-     at     = xticks_sub,
-     labels = sprintf("%.4f", xticks_sub),
-     las    = 1,
-     col.axis = "grey25",
-     lwd = 0.5,
-     tck = -0.015)
-
-# ---- Thin full panel border ----
 usr <- par("usr")
-rect(usr[1], usr[3], usr[2], usr[4],
-     border = "grey25",
-     lwd = 1.5,
-     xpd = FALSE)
+rect(usr[1], usr[3], usr[2], usr[4], border = "grey25", lwd = 1.5, xpd = FALSE)
 
 dev.off()
-
-
-
-
-
-
-
-# Add the model/term names as a column
-anova_onto_df$Term <- rownames(anova_onto_df)
-
-# Reorder columns for readability
-anova_onto_df <- anova_onto_df %>%
-  dplyr::select(Term, ResDf, Df, RSS, SS, MS, Rsq, "F", Z, P, `Pr(>F)`)
-
-# Create workbook and add a single sheet
-
-wb <- loadWorkbook("res/supplementary_table.xlsx")
-
-addWorksheet(wb, "Allometry_group_effects")
-
-writeData(
-  wb,
-  sheet = "Allometry_group_effects",
-  anova_df
-)
-
-saveWorkbook(wb, "res/supplementary_table.xlsx", overwrite = TRUE)

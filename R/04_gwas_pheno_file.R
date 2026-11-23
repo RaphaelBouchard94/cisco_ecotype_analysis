@@ -39,7 +39,7 @@ pca_coar <- data.frame(pca.mat[,1:20])
 pca_coar$id <- id$V1
 
 #pop column
-metadata <- read.csv("data/data_with_gillrakers.csv",header=T)
+metadata <- read.table("data/data_gillrak_geomorph_age_morphres.csv", header = T)
 
 pca_coar %<>% left_join(metadata, by = c("id" = "FISHES_id"))
 
@@ -55,13 +55,16 @@ metadata_other <- read.csv("data/gtscore_analysis/data_2020_2021.csv")
 
 pca_coar %<>% left_join(metadata_other %>% dplyr::select(FISHES_ID,length), by = c("id" = "FISHES_ID") )
 
-gwas_pheno <- pca_coar %>% mutate(length_all = if_else(is.na(long_fourche),length, long_fourche)) %>% dplyr::select(id,length_all) %>% distinct()
+gwas_pheno <- pca_coar %>% mutate(length_all = if_else(is.na(long_fourche),length, long_fourche)) %>% dplyr::select(id,length_all,sex, infered_age, true_eco) %>% distinct()
 
 gwas_pheno_ord <- id %>% left_join(gwas_pheno, by = c("V1" = "id"))
 
-colnames(gwas_pheno_ord) <- c("FID","length")
+colnames(gwas_pheno_ord) <- c("FID","length","sex", "age","eco")
 
 gwas_pheno_ord$IID <- gwas_pheno_ord$FID
 
-write.table(gwas_pheno_ord[,c(1,3,2)], "data/gwas_length/pheno.sample", quote = F, row.names = F)
+
+
+
+write.table(gwas_pheno_ord[,c(1,5,2,3,4)], "data/gwas_length/pheno.sample", quote = F, row.names = F,sep = "\t")
 
